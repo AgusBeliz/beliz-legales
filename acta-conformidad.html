@@ -1,752 +1,40 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>BELIZ™ Acta de Conformidad v2.2 — HTML Legal Imprimible</title><style>
-/* cspell:disable-file */
-/* webkit printing magic: print all background colors */
-html {
-	-webkit-print-color-adjust: exact;
-}
-* {
-	box-sizing: border-box;
-	-webkit-print-color-adjust: exact;
-}
-
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-@media only screen {
-	body {
-		margin: 2em auto;
-		max-width: 900px;
-		color: rgb(55, 53, 47);
-	}
-}
-
-body {
-	line-height: 1.5;
-	white-space: pre-wrap;
-}
-
-a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
-}
-
-.pdf-relative-link-path {
-	font-size: 80%;
-	color: #444;
-}
-
-h1,
-h2,
-h3 {
-	letter-spacing: -0.01em;
-	line-height: 1.2;
-	font-weight: 600;
-	margin-bottom: 0;
-}
-
-/* Override strong tags inside headings to maintain consistent weight */
-h1 strong,
-h2 strong,
-h3 strong {
-	font-weight: 600;
-}
-
-.page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
-}
-
-h1 {
-	font-size: 1.875rem;
-	margin-top: 1.875rem;
-}
-
-h2 {
-	font-size: 1.5rem;
-	margin-top: 1.5rem;
-}
-
-h3 {
-	font-size: 1.25rem;
-	margin-top: 1.25rem;
-}
-
-.source {
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 1.5em;
-	word-break: break-all;
-}
-
-.callout {
-	border-radius: 10px;
-	padding: 1rem;
-}
-
-figure {
-	margin: 1.25em 0;
-	page-break-inside: avoid;
-}
-
-figcaption {
-	opacity: 0.5;
-	font-size: 85%;
-	margin-top: 0.5em;
-}
-
-mark {
-	background-color: transparent;
-}
-
-.indented {
-	padding-left: 1.5em;
-}
-
-hr {
-	background: transparent;
-	display: block;
-	width: 100%;
-	height: 1px;
-	visibility: visible;
-	border: none;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
-}
-
-img {
-	max-width: 100%;
-}
-
-@media only print {
-	img {
-		max-height: 100vh;
-		object-fit: contain;
-	}
-}
-
-@page {
-	margin: 1in;
-}
-
-.collection-content {
-	font-size: 0.875rem;
-}
-
-.collection-content td {
-	white-space: pre-wrap;
-	word-break: break-word;
-}
-
-.column-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.column {
-	padding: 0 1em;
-}
-
-.column:first-child {
-	padding-left: 0;
-}
-
-.column:last-child {
-	padding-right: 0;
-}
-
-.table_of_contents-item {
-	display: block;
-	font-size: 0.875rem;
-	line-height: 1.3;
-	padding: 0.125rem;
-}
-
-.table_of_contents-indent-1 {
-	margin-left: 1.5rem;
-}
-
-.table_of_contents-indent-2 {
-	margin-left: 3rem;
-}
-
-.table_of_contents-indent-3 {
-	margin-left: 4.5rem;
-}
-
-.table_of_contents-link {
-	text-decoration: none;
-	opacity: 0.7;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-}
-
-table,
-th,
-td {
-	border: 1px solid rgba(55, 53, 47, 0.09);
-	border-collapse: collapse;
-}
-
-table {
-	border-left: none;
-	border-right: none;
-}
-
-th,
-td {
-	font-weight: normal;
-	padding: 0.25em 0.5em;
-	line-height: 1.5;
-	min-height: 1.5em;
-	text-align: left;
-}
-
-th {
-	color: rgba(55, 53, 47, 0.6);
-}
-
-ol,
-ul {
-	margin: 0;
-	margin-block-start: 0.6em;
-	margin-block-end: 0.6em;
-}
-
-li > ol:first-child,
-li > ul:first-child {
-	margin-block-start: 0.6em;
-}
-
-ul > li {
-	list-style: disc;
-}
-
-ul.to-do-list {
-	padding-inline-start: 0;
-}
-
-ul.to-do-list > li {
-	list-style: none;
-}
-
-.to-do-children-checked {
-	text-decoration: line-through;
-	opacity: 0.375;
-}
-
-ul.toggle > li {
-	list-style: none;
-}
-
-ul {
-	padding-inline-start: 1.7em;
-}
-
-ul > li {
-	padding-left: 0.1em;
-}
-
-ol {
-	padding-inline-start: 1.6em;
-}
-
-ol > li {
-	padding-left: 0.2em;
-}
-
-.mono ol {
-	padding-inline-start: 2em;
-}
-
-.mono ol > li {
-	text-indent: -0.4em;
-}
-
-.toggle {
-	padding-inline-start: 0em;
-	list-style-type: none;
-}
-
-/* Indent toggle children */
-.toggle > li > details {
-	padding-left: 1.7em;
-}
-
-.toggle > li > details > summary {
-	margin-left: -1.1em;
-}
-
-.selected-value {
-	display: inline-block;
-	padding: 0 0.5em;
-	background: rgba(206, 205, 202, 0.5);
-	border-radius: 3px;
-	margin-right: 0.5em;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-	white-space: nowrap;
-}
-
-.collection-title {
-	display: inline-block;
-	margin-right: 1em;
-}
-
-.page-description {
-	margin-bottom: 2em;
-}
-
-.simple-table {
-	margin-top: 1em;
-	font-size: 0.875rem;
-	empty-cells: show;
-}
-.simple-table td {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table th {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table-header-color {
-	background: rgb(247, 246, 243);
-	color: black;
-}
-.simple-table-header {
-	font-weight: 500;
-}
-
-time {
-	opacity: 0.5;
-}
-
-.icon {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	max-width: 1.2em;
-	max-height: 1.2em;
-	text-decoration: none;
-	vertical-align: text-bottom;
-	margin-right: 0.5em;
-}
-
-img.icon {
-	border-radius: 3px;
-}
-
-.callout img.notion-static-icon {
-	width: 1em;
-	height: 1em;
-}
-
-.callout p {
-	margin: 0;
-}
-
-.callout h1,
-.callout h2,
-.callout h3 {
-	margin: 0 0 0.6rem;
-}
-
-.user-icon {
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	margin-right: 0.5rem;
-}
-
-.user-icon-inner {
-	font-size: 0.8em;
-}
-
-.text-icon {
-	border: 1px solid #000;
-	text-align: center;
-}
-
-.page-cover-image {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-	max-height: 30vh;
-}
-
-.page-header-icon {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
-
-.page-header-icon-with-cover {
-	margin-top: -0.72em;
-	margin-left: 0.07em;
-}
-
-.page-header-icon img {
-	border-radius: 3px;
-}
-
-.link-to-page {
-	margin: 1em 0;
-	padding: 0;
-	border: none;
-	font-weight: 500;
-}
-
-p > .user {
-	opacity: 0.5;
-}
-
-td > .user,
-td > time {
-	white-space: nowrap;
-}
-
-input[type="checkbox"] {
-	transform: scale(1.5);
-	margin-right: 0.6em;
-	vertical-align: middle;
-}
-
-p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-.image {
-	border: none;
-	margin: 1.5em 0;
-	padding: 0;
-	border-radius: 0;
-	text-align: center;
-}
-
-.code,
-code {
-	background: rgba(135, 131, 120, 0.15);
-	border-radius: 3px;
-	padding: 0.2em 0.4em;
-	border-radius: 3px;
-	font-size: 85%;
-	tab-size: 2;
-}
-
-code {
-	color: #eb5757;
-}
-
-.code {
-	padding: 1.5em 1em;
-}
-
-.code-wrap {
-	white-space: pre-wrap;
-	word-break: break-all;
-}
-
-.code > code {
-	background: none;
-	padding: 0;
-	font-size: 100%;
-	color: inherit;
-}
-
-blockquote {
-	font-size: 1em;
-	margin: 1em 0;
-	padding-left: 1em;
-	border-left: 3px solid rgb(55, 53, 47);
-}
-
-blockquote.quote-large {
-	font-size: 1.25em;
-}
-
-.bookmark {
-	text-decoration: none;
-	max-height: 8em;
-	padding: 0;
-	display: flex;
-	width: 100%;
-	align-items: stretch;
-}
-
-.bookmark-title {
-	font-size: 0.85em;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 1.75em;
-	white-space: nowrap;
-}
-
-.bookmark-text {
-	display: flex;
-	flex-direction: column;
-}
-
-.bookmark-info {
-	flex: 4 1 180px;
-	padding: 12px 14px 14px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.bookmark-image {
-	width: 33%;
-	flex: 1 1 180px;
-	display: block;
-	position: relative;
-	object-fit: cover;
-	border-radius: 1px;
-}
-
-.bookmark-description {
-	color: rgba(55, 53, 47, 0.6);
-	font-size: 0.75em;
-	overflow: hidden;
-	max-height: 4.5em;
-	word-break: break-word;
-}
-
-.bookmark-href {
-	font-size: 0.75em;
-	margin-top: 0.25em;
-}
-
-.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
-.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
-.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
-.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
-.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
-.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
-.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
-.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
-.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
-.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
-.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.highlight-default {
-	color: rgba(44, 44, 43, 1);
-}
-.highlight-gray {
-	color: rgba(125, 122, 117, 1);
-	fill: rgba(125, 122, 117, 1);
-}
-.highlight-brown {
-	color: rgba(159, 118, 90, 1);
-	fill: rgba(159, 118, 90, 1);
-}
-.highlight-orange {
-	color: rgba(210, 123, 45, 1);
-	fill: rgba(210, 123, 45, 1);
-}
-.highlight-yellow {
-	color: rgba(203, 148, 52, 1);
-	fill: rgba(203, 148, 52, 1);
-}
-.highlight-teal {
-	color: rgba(80, 148, 110, 1);
-	fill: rgba(80, 148, 110, 1);
-}
-.highlight-blue {
-	color: rgba(56, 125, 201, 1);
-	fill: rgba(56, 125, 201, 1);
-}
-.highlight-purple {
-	color: rgba(154, 107, 180, 1);
-	fill: rgba(154, 107, 180, 1);
-}
-.highlight-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.highlight-red {
-	color: rgba(207, 81, 72, 1);
-	fill: rgba(207, 81, 72, 1);
-}
-.highlight-default_background {
-	color: rgba(44, 44, 43, 1);
-}
-.highlight-gray_background {
-	background: rgba(42, 28, 0, 0.07);
-}
-.highlight-brown_background {
-	background: rgba(139, 46, 0, 0.086);
-}
-.highlight-orange_background {
-	background: rgba(224, 101, 1, 0.129);
-}
-.highlight-yellow_background {
-	background: rgba(211, 168, 0, 0.137);
-}
-.highlight-teal_background {
-	background: rgba(0, 100, 45, 0.09);
-}
-.highlight-blue_background {
-	background: rgba(0, 124, 215, 0.094);
-}
-.highlight-purple_background {
-	background: rgba(102, 0, 178, 0.078);
-}
-.highlight-pink_background {
-	background: rgba(197, 0, 93, 0.086);
-}
-.highlight-red_background {
-	background: rgba(223, 22, 0, 0.094);
-}
-.block-color-default {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray {
-	color: rgba(125, 122, 117, 1);
-	fill: rgba(125, 122, 117, 1);
-}
-.block-color-brown {
-	color: rgba(159, 118, 90, 1);
-	fill: rgba(159, 118, 90, 1);
-}
-.block-color-orange {
-	color: rgba(210, 123, 45, 1);
-	fill: rgba(210, 123, 45, 1);
-}
-.block-color-yellow {
-	color: rgba(203, 148, 52, 1);
-	fill: rgba(203, 148, 52, 1);
-}
-.block-color-teal {
-	color: rgba(80, 148, 110, 1);
-	fill: rgba(80, 148, 110, 1);
-}
-.block-color-blue {
-	color: rgba(56, 125, 201, 1);
-	fill: rgba(56, 125, 201, 1);
-}
-.block-color-purple {
-	color: rgba(154, 107, 180, 1);
-	fill: rgba(154, 107, 180, 1);
-}
-.block-color-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.block-color-red {
-	color: rgba(207, 81, 72, 1);
-	fill: rgba(207, 81, 72, 1);
-}
-.block-color-default_background {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray_background {
-	background: rgba(240, 239, 237, 1);
-}
-.block-color-brown_background {
-	background: rgba(245, 237, 233, 1);
-}
-.block-color-orange_background {
-	background: rgba(251, 235, 222, 1);
-}
-.block-color-yellow_background {
-	background: rgba(249, 243, 220, 1);
-}
-.block-color-teal_background {
-	background: rgba(232, 241, 236, 1);
-}
-.block-color-blue_background {
-	background: rgba(229, 242, 252, 1);
-}
-.block-color-purple_background {
-	background: rgba(243, 235, 249, 1);
-}
-.block-color-pink_background {
-	background: rgba(250, 233, 241, 1);
-}
-.block-color-red_background {
-	background: rgba(252, 233, 231, 1);
-}
-.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
-.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
-.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
-.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
-.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
-.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
-.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
-.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
-.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
-.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
-
-.checkbox {
-	display: inline-flex;
-	vertical-align: text-bottom;
-	width: 16;
-	height: 16;
-	background-size: 16px;
-	margin-left: 2px;
-	margin-right: 5px;
-}
-
-.checkbox-on {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-	
-</style></head><body><article id="6e44682c-5bc5-4aae-8c22-49a577b5535d" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">✅</span></div><h1 class="page-title" dir="auto">BELIZ™ Acta de Conformidad v2.2 — HTML Legal Imprimible</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="6f404209-0465-4a93-98cb-d7589ef04a6d" class="code code-wrap"><code class="language-HTML" style="white-space:pre-wrap;word-break:break-all">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;es&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;title&gt;BELIZ™ | Acta de Conformidad v2.2&lt;/title&gt;
-&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=Montserrat:wght@700;800;900&amp;family=Lora:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
-&lt;style&gt;
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BELIZ™ | Acta de Conformidad v2.2</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Montserrat:wght@700;800;900&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
 :root{--ink:#0B132B;--txt:#1a1a1a;--mut:#64748B;--ln:#d1d5db;--acc:#0F766E;--gold:#8B7355;}
 *{box-sizing:border-box;margin:0;padding:0;}
 @page{size:A4;margin:32mm 18mm 25mm 18mm;}
-body{font-family:&#x27;Lora&#x27;,Georgia,&#x27;Times New Roman&#x27;,serif;font-size:10pt;color:var(--txt);line-height:1.55;background:#e5e5e5;}
+body{font-family:'Lora',Georgia,'Times New Roman',serif;font-size:10pt;color:var(--txt);line-height:1.55;background:#e5e5e5;}
 .doc{max-width:210mm;margin:20px auto;background:#fff;box-shadow:0 8px 30px rgba(0,0,0,.12);}
 @media print{*,*::before,*::after{overflow:visible !important;}html,body{height:auto !important;overflow:visible !important;background:#fff !important;margin:0 !important;padding:0 !important;width:100% !important;max-width:none !important;}.doc{display:block !important;position:static !important;overflow:visible !important;height:auto !important;max-height:none !important;max-width:none !important;width:100% !important;margin:0 !important;padding:0 !important;box-shadow:none !important;}.body{display:block !important;overflow:visible !important;height:auto !important;max-height:none !important;padding:5px 0 0 !important;}.no-print{display:none !important;}}
-.ph{position:fixed;top:0;left:0;right:0;padding:6px 0;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;font-family:&#x27;Inter&#x27;,sans-serif;background:#fff;z-index:10;}
+.ph{position:fixed;top:0;left:0;right:0;padding:6px 0;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;font-family:'Inter',sans-serif;background:#fff;z-index:10;}
 .ph-ref{font-size:6.5pt;color:var(--mut);text-transform:uppercase;letter-spacing:.8px;}
-.ph-brand{font-family:&#x27;Montserrat&#x27;,sans-serif;font-weight:900;font-size:14pt;color:var(--ink);letter-spacing:-.5px;}
-.pf{position:fixed;bottom:0;left:0;right:0;padding:6px 0;border-top:1px solid var(--ln);display:flex;justify-content:space-between;font-family:&#x27;Inter&#x27;,sans-serif;font-size:6.5pt;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;background:#fff;z-index:10;}
+.ph-brand{font-family:'Montserrat',sans-serif;font-weight:900;font-size:14pt;color:var(--ink);letter-spacing:-.5px;}
+.pf{position:fixed;bottom:0;left:0;right:0;padding:6px 0;border-top:1px solid var(--ln);display:flex;justify-content:space-between;font-family:'Inter',sans-serif;font-size:6.5pt;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;background:#fff;z-index:10;}
 @media screen{.ph,.pf{position:relative;}}
 .body{padding:40px 45px 40px;}
 .cover{text-align:center;padding:20px 0 15px;border-bottom:2px solid var(--ink);margin-bottom:20px;}
-.cover-brand{font-family:&#x27;Montserrat&#x27;,sans-serif;font-weight:900;font-size:28pt;color:var(--ink);letter-spacing:-1px;margin-bottom:5px;}
-.cover-div{font-family:&#x27;Inter&#x27;,sans-serif;font-size:7pt;color:var(--acc);text-transform:uppercase;letter-spacing:2px;margin-bottom:15px;}
-.cover-title{font-family:&#x27;Montserrat&#x27;,sans-serif;font-size:12pt;font-weight:800;color:var(--ink);text-transform:uppercase;line-height:1.35;margin-bottom:5px;}
-.cover-sub{font-family:&#x27;Inter&#x27;,sans-serif;font-size:7.5pt;color:var(--mut);text-transform:uppercase;letter-spacing:1px;}
-.cover-ver{font-family:&#x27;Inter&#x27;,sans-serif;font-size:7pt;color:var(--gold);font-weight:700;margin-top:8px;text-transform:uppercase;letter-spacing:1px;}
-h2{font-family:&#x27;Montserrat&#x27;,sans-serif;font-size:10.5pt;font-weight:800;color:var(--ink);text-transform:uppercase;border-bottom:2px solid var(--ink);padding-bottom:3px;margin:22px 0 12px;page-break-after:avoid;}
-h3{font-family:&#x27;Montserrat&#x27;,sans-serif;font-size:9.5pt;font-weight:700;color:var(--ink);text-transform:uppercase;margin:16px 0 8px;page-break-after:avoid;}
+.cover-brand{font-family:'Montserrat',sans-serif;font-weight:900;font-size:28pt;color:var(--ink);letter-spacing:-1px;margin-bottom:5px;}
+.cover-div{font-family:'Inter',sans-serif;font-size:7pt;color:var(--acc);text-transform:uppercase;letter-spacing:2px;margin-bottom:15px;}
+.cover-title{font-family:'Montserrat',sans-serif;font-size:12pt;font-weight:800;color:var(--ink);text-transform:uppercase;line-height:1.35;margin-bottom:5px;}
+.cover-sub{font-family:'Inter',sans-serif;font-size:7.5pt;color:var(--mut);text-transform:uppercase;letter-spacing:1px;}
+.cover-ver{font-family:'Inter',sans-serif;font-size:7pt;color:var(--gold);font-weight:700;margin-top:8px;text-transform:uppercase;letter-spacing:1px;}
+h2{font-family:'Montserrat',sans-serif;font-size:10.5pt;font-weight:800;color:var(--ink);text-transform:uppercase;border-bottom:2px solid var(--ink);padding-bottom:3px;margin:22px 0 12px;page-break-after:avoid;}
+h3{font-family:'Montserrat',sans-serif;font-size:9.5pt;font-weight:700;color:var(--ink);text-transform:uppercase;margin:16px 0 8px;page-break-after:avoid;}
 p{margin:0 0 7px;text-align:justify;}
 .indent{margin-left:15px;}
 strong{font-weight:700;}
 em{font-style:italic;}
 table{width:100%;border-collapse:collapse;margin:8px 0 12px;font-size:9pt;}
-th{background:var(--ink);color:#fff;padding:5px 8px;text-align:left;font-family:&#x27;Inter&#x27;,sans-serif;font-weight:700;font-size:7.5pt;text-transform:uppercase;letter-spacing:.5px;}
+th{background:var(--ink);color:#fff;padding:5px 8px;text-align:left;font-family:'Inter',sans-serif;font-weight:700;font-size:7.5pt;text-transform:uppercase;letter-spacing:.5px;}
 td{padding:5px 8px;border-bottom:1px solid var(--ln);vertical-align:top;}
 tr:last-child td{border-bottom:none;}
 .tbl-alt tr:nth-child(even) td{background:#f8f9fa;}
-.th-col td:first-child{font-weight:700;background:#f8f9fa;width:32%;font-family:&#x27;Inter&#x27;,sans-serif;font-size:8.5pt;}
+.th-col td:first-child{font-weight:700;background:#f8f9fa;width:32%;font-family:'Inter',sans-serif;font-size:8.5pt;}
 .co{border-left:3px solid var(--acc);background:#f0f9ff;padding:8px 12px;margin:8px 0 12px;font-size:9.5pt;}
 .co.warn{border-color:#f59e0b;background:#fffbeb;}
 .co.danger{border-color:#dc2626;background:#fef2f2;}
@@ -765,146 +53,146 @@ hr{border:none;border-top:1px solid var(--ln);margin:15px 0;}
 .small{font-size:8.5pt;color:var(--mut);}
 .no-break{page-break-inside:avoid;}
 .obs-box{border:1px solid var(--ln);min-height:80px;padding:10px;margin:8px 0 12px;}
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
+</style>
+</head>
+<body>
 
-&lt;div class=&quot;ph&quot;&gt;
-  &lt;span class=&quot;ph-ref&quot;&gt;Ref: Documentación Legal Oficial | Confidencial&lt;/span&gt;
-  &lt;img src=&quot;https://beliz.com.ar/logo.png&quot; alt=&quot;BELIZ™&quot; style=&quot;height:8mm;&quot;&gt;
-&lt;/div&gt;
+<div class="ph">
+  <span class="ph-ref">Ref: Documentación Legal Oficial | Confidencial</span>
+  <img src="https://beliz.com.ar/logo.png" alt="BELIZ™" style="height:8mm;">
+</div>
 
-&lt;div class=&quot;pf&quot;&gt;
-  &lt;span&gt;BELIZ™ | División Forense&lt;/span&gt;
-  &lt;span&gt;Acta de Conformidad v2.2 — Anexo II del Contrato Marco&lt;/span&gt;
-&lt;/div&gt;
+<div class="pf">
+  <span>BELIZ™ | División Forense</span>
+  <span>Acta de Conformidad v2.2 — Anexo II del Contrato Marco</span>
+</div>
 
-&lt;div class=&quot;doc&quot;&gt;
-&lt;div class=&quot;body&quot;&gt;
+<div class="doc">
+<div class="body">
 
-&lt;!-- COVER --&gt;
-&lt;div class=&quot;cover&quot;&gt;
-  &lt;img src=&quot;https://beliz.com.ar/logo.png&quot; alt=&quot;BELIZ™&quot; style=&quot;height:60pt;margin-bottom:5px;&quot;&gt;
-  &lt;div class=&quot;cover-div&quot;&gt;División Forense&lt;/div&gt;
-  &lt;div class=&quot;cover-title&quot;&gt;Acta de Conformidad&lt;/div&gt;
-  &lt;div class=&quot;cover-sub&quot;&gt;Anexo II del Contrato Marco | Pricing v9.1 (Definitiva)&lt;/div&gt;
-  &lt;div class=&quot;cover-ver&quot;&gt;Versión Blindada v2.2&lt;/div&gt;
-&lt;/div&gt;
+<!-- COVER -->
+<div class="cover">
+  <img src="https://beliz.com.ar/logo.png" alt="BELIZ™" style="height:60pt;margin-bottom:5px;">
+  <div class="cover-div">División Forense</div>
+  <div class="cover-title">Acta de Conformidad</div>
+  <div class="cover-sub">Anexo II del Contrato Marco | Pricing v9.1 (Definitiva)</div>
+  <div class="cover-ver">Versión Blindada v2.2</div>
+</div>
 
-&lt;!-- ENCABEZADO --&gt;
-&lt;h2&gt;Acta de Conformidad N.º &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/h2&gt;
+<!-- ENCABEZADO -->
+<h2>Acta de Conformidad N.º <span class="fill-s"></span></h2>
 
-&lt;p&gt;En la ciudad de &lt;strong&gt;Santa Rosa&lt;/strong&gt;, Provincia de La Pampa, República Argentina, a los &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt; días del mes de &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt; de &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;, en el marco del &lt;strong&gt;Contrato Marco de Prestación de Servicios de Auditoría Forense y Licencia de Uso de Tecnología Propietaria&lt;/strong&gt; suscripto entre las Partes con fecha &lt;span class=&quot;fill&quot;&gt;&lt;/span&gt; (en adelante, el &lt;strong&gt;&quot;Contrato&quot;&lt;/strong&gt;), comparecen:&lt;/p&gt;
+<p>En la ciudad de <strong>Santa Rosa</strong>, Provincia de La Pampa, República Argentina, a los <span class="fill-s"></span> días del mes de <span class="fill-s"></span> de <span class="fill-s"></span>, en el marco del <strong>Contrato Marco de Prestación de Servicios de Auditoría Forense y Licencia de Uso de Tecnología Propietaria</strong> suscripto entre las Partes con fecha <span class="fill"></span> (en adelante, el <strong>"Contrato"</strong>), comparecen:</p>
 
-&lt;p&gt;&lt;strong&gt;EL PROVEEDOR:&lt;/strong&gt; BELIZ™ — División Forense, representado por Agustín Beliz.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;EL CLIENTE:&lt;/strong&gt; &lt;span class=&quot;fill-l&quot;&gt;&lt;/span&gt;, representado por &lt;span class=&quot;fill&quot;&gt;&lt;/span&gt;, DNI &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;, en carácter de &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;.&lt;/p&gt;
+<p><strong>EL PROVEEDOR:</strong> BELIZ™ — División Forense, representado por Agustín Beliz.</p>
+<p><strong>EL CLIENTE:</strong> <span class="fill-l"></span>, representado por <span class="fill"></span>, DNI <span class="fill-s"></span>, en carácter de <span class="fill-s"></span>.</p>
 
-&lt;hr&gt;
+<hr>
 
-&lt;!-- 1. PERÍODO --&gt;
-&lt;h2&gt;1. Período de Análisis&lt;/h2&gt;
-&lt;table class=&quot;th-col&quot;&gt;
-&lt;tr&gt;&lt;td&gt;Período analizado&lt;/td&gt;&lt;td&gt;Desde &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt; hasta &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Nivel comercial vigente&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Mes operativo N.º&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Financiadores procesados&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
+<!-- 1. PERÍODO -->
+<h2>1. Período de Análisis</h2>
+<table class="th-col">
+<tr><td>Período analizado</td><td>Desde <span class="fill-s"></span> hasta <span class="fill-s"></span></td></tr>
+<tr><td>Nivel comercial vigente</td><td><span class="fill"></span></td></tr>
+<tr><td>Mes operativo N.º</td><td><span class="fill-s"></span></td></tr>
+<tr><td>Financiadores procesados</td><td><span class="fill"></span></td></tr>
+</table>
 
-&lt;!-- 2. HALLAZGOS --&gt;
-&lt;h2&gt;2. Resumen de Hallazgos Forenses&lt;/h2&gt;
-&lt;table class=&quot;tbl-alt&quot;&gt;
-&lt;tr&gt;&lt;th&gt;Categoría&lt;/th&gt;&lt;th&gt;Regla&lt;/th&gt;&lt;th&gt;Hallazgos&lt;/th&gt;&lt;th&gt;Monto Bruto&lt;/th&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Prestaciones duplicadas&lt;/td&gt;&lt;td&gt;R012&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;$ &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Insumos incluidos en módulo&lt;/td&gt;&lt;td&gt;R004&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;$ &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Alto costo / Desvío de precio&lt;/td&gt;&lt;td&gt;R003&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;$ &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;TC múltiples regiones&lt;/td&gt;&lt;td&gt;R010&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;$ &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Cirugías múltiples&lt;/td&gt;&lt;td&gt;R011&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;$ &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Exceso días prequirúrgicos&lt;/td&gt;&lt;td&gt;R008&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;$ &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Otros&lt;/td&gt;&lt;td&gt;R003 fallback&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;$ &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;&lt;strong&gt;TOTAL&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;&lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;$ &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
+<!-- 2. HALLAZGOS -->
+<h2>2. Resumen de Hallazgos Forenses</h2>
+<table class="tbl-alt">
+<tr><th>Categoría</th><th>Regla</th><th>Hallazgos</th><th>Monto Bruto</th></tr>
+<tr><td>Prestaciones duplicadas</td><td>R012</td><td><span class="fill-s"></span></td><td>$ <span class="fill-s"></span></td></tr>
+<tr><td>Insumos incluidos en módulo</td><td>R004</td><td><span class="fill-s"></span></td><td>$ <span class="fill-s"></span></td></tr>
+<tr><td>Alto costo / Desvío de precio</td><td>R003</td><td><span class="fill-s"></span></td><td>$ <span class="fill-s"></span></td></tr>
+<tr><td>TC múltiples regiones</td><td>R010</td><td><span class="fill-s"></span></td><td>$ <span class="fill-s"></span></td></tr>
+<tr><td>Cirugías múltiples</td><td>R011</td><td><span class="fill-s"></span></td><td>$ <span class="fill-s"></span></td></tr>
+<tr><td>Exceso días prequirúrgicos</td><td>R008</td><td><span class="fill-s"></span></td><td>$ <span class="fill-s"></span></td></tr>
+<tr><td>Otros</td><td>R003 fallback</td><td><span class="fill-s"></span></td><td>$ <span class="fill-s"></span></td></tr>
+<tr><td><strong>TOTAL</strong></td><td></td><td><strong><span class="fill-s"></span></strong></td><td><strong>$ <span class="fill-s"></span></strong></td></tr>
+</table>
 
-&lt;!-- 3. LIQUIDACIÓN --&gt;
-&lt;h2&gt;3. Liquidación de Honorarios&lt;/h2&gt;
-&lt;table class=&quot;tbl-alt&quot;&gt;
-&lt;tr&gt;&lt;th&gt;Concepto&lt;/th&gt;&lt;th&gt;Base&lt;/th&gt;&lt;th&gt;Porcentaje / Monto&lt;/th&gt;&lt;th&gt;Subtotal&lt;/th&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Monto bruto recuperable validado&lt;/td&gt;&lt;td&gt;$ &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;—&lt;/td&gt;&lt;td&gt;—&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Success Fee&lt;/strong&gt; (según nivel y mes operativo)&lt;/td&gt;&lt;td&gt;$ &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;% &lt;em&gt;(cfr. Cl. 9.1)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;$ &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Honorario base mensual (si corresponde)&lt;/td&gt;&lt;td&gt;—&lt;/td&gt;&lt;td&gt;$ &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt; + IVA &lt;em&gt;(cfr. Cl. 9.1)&lt;/em&gt;&lt;/td&gt;&lt;td&gt;$ &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;&lt;strong&gt;TOTAL HONORARIOS DEL PERÍODO&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;$ &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt; + IVA&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
+<!-- 3. LIQUIDACIÓN -->
+<h2>3. Liquidación de Honorarios</h2>
+<table class="tbl-alt">
+<tr><th>Concepto</th><th>Base</th><th>Porcentaje / Monto</th><th>Subtotal</th></tr>
+<tr><td>Monto bruto recuperable validado</td><td>$ <span class="fill-s"></span></td><td>—</td><td>—</td></tr>
+<tr><td><strong>Success Fee</strong> (según nivel y mes operativo)</td><td>$ <span class="fill-s"></span></td><td><span class="fill-s"></span>% <em>(cfr. Cl. 9.1)</em></td><td>$ <span class="fill-s"></span></td></tr>
+<tr><td>Honorario base mensual (si corresponde)</td><td>—</td><td>$ <span class="fill-s"></span> + IVA <em>(cfr. Cl. 9.1)</em></td><td>$ <span class="fill-s"></span></td></tr>
+<tr><td><strong>TOTAL HONORARIOS DEL PERÍODO</strong></td><td></td><td></td><td><strong>$ <span class="fill-s"></span> + IVA</strong></td></tr>
+</table>
 
-&lt;div class=&quot;co warn&quot;&gt;
-&lt;p&gt;&lt;strong&gt;Referencia rápida de tasas vigentes (v9.1):&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Etapa 0:&lt;/strong&gt; Sin success fee ni mensual&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Partner:&lt;/strong&gt; 15% success fee + $2.000.000 mensual&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Riesgo Compartido Mes 1:&lt;/strong&gt; 25% success fee (sin mensual)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Riesgo Compartido Mes 2+:&lt;/strong&gt; 15% success fee + $1.500.000 mensual&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Enterprise:&lt;/strong&gt; 0% hasta $30M, 5% excedente + $6.000.000 mensual&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
+<div class="co warn">
+<p><strong>Referencia rápida de tasas vigentes (v9.1):</strong></p>
+<ul>
+<li><strong>Etapa 0:</strong> Sin success fee ni mensual</li>
+<li><strong>Partner:</strong> 15% success fee + $2.000.000 mensual</li>
+<li><strong>Riesgo Compartido Mes 1:</strong> 25% success fee (sin mensual)</li>
+<li><strong>Riesgo Compartido Mes 2+:</strong> 15% success fee + $1.500.000 mensual</li>
+<li><strong>Enterprise:</strong> 0% hasta $30M, 5% excedente + $6.000.000 mensual</li>
+</ul>
+</div>
 
-&lt;!-- 4. CONFORMIDAD --&gt;
-&lt;h2&gt;4. Conformidad del Cliente&lt;/h2&gt;
-&lt;div class=&quot;co&quot;&gt;
-&lt;p&gt;&lt;strong&gt;Efecto legal:&lt;/strong&gt; La firma de la presente Acta constituye &lt;strong&gt;validación expresa&lt;/strong&gt; de los hallazgos y la liquidación de honorarios a los efectos del devengamiento automático previsto en la Cláusula 10.1 del Contrato Marco.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Plazo de firma:&lt;/strong&gt; El CLIENTE deberá suscribir la presente Acta dentro de los &lt;strong&gt;diez (10) días hábiles&lt;/strong&gt; siguientes a la entrega del informe forense. Transcurrido dicho plazo sin firma ni objeción fundada por escrito (cfr. Cláusula 14.3 del Contrato Marco), los hallazgos y la liquidación se considerarán &lt;strong&gt;tácitamente validados&lt;/strong&gt;.&lt;/p&gt;
-&lt;/div&gt;
+<!-- 4. CONFORMIDAD -->
+<h2>4. Conformidad del Cliente</h2>
+<div class="co">
+<p><strong>Efecto legal:</strong> La firma de la presente Acta constituye <strong>validación expresa</strong> de los hallazgos y la liquidación de honorarios a los efectos del devengamiento automático previsto en la Cláusula 10.1 del Contrato Marco.</p>
+<p><strong>Plazo de firma:</strong> El CLIENTE deberá suscribir la presente Acta dentro de los <strong>diez (10) días hábiles</strong> siguientes a la entrega del informe forense. Transcurrido dicho plazo sin firma ni objeción fundada por escrito (cfr. Cláusula 14.3 del Contrato Marco), los hallazgos y la liquidación se considerarán <strong>tácitamente validados</strong>.</p>
+</div>
 
-&lt;p&gt;El CLIENTE declara:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Haber &lt;strong&gt;recibido y revisado&lt;/strong&gt; el informe forense detallado correspondiente al período analizado.&lt;/li&gt;
-&lt;li&gt;Que los hallazgos identificados son &lt;strong&gt;consistentes&lt;/strong&gt; con los datos provistos y los registros disponibles.&lt;/li&gt;
-&lt;li&gt;Que acepta la &lt;strong&gt;liquidación de honorarios&lt;/strong&gt; expuesta en el punto 3, la cual se ajusta al nivel comercial y las condiciones pactadas en el Contrato Marco.&lt;/li&gt;
-&lt;li&gt;Que se compromete a &lt;strong&gt;gestionar activamente&lt;/strong&gt; los hallazgos conforme a la Cláusula Décimo Primera del Contrato Marco (Deber de Gestión).&lt;/li&gt;
-&lt;li&gt;Que los montos indicados son &lt;strong&gt;brutos&lt;/strong&gt; y que los honorarios de BELIZ™ se calculan &lt;strong&gt;sin deducción alguna&lt;/strong&gt; conforme a la Cláusula 9.3 del Contrato Marco (Prohibición de deducciones).&lt;/li&gt;
-&lt;/ol&gt;
+<p>El CLIENTE declara:</p>
+<ol>
+<li>Haber <strong>recibido y revisado</strong> el informe forense detallado correspondiente al período analizado.</li>
+<li>Que los hallazgos identificados son <strong>consistentes</strong> con los datos provistos y los registros disponibles.</li>
+<li>Que acepta la <strong>liquidación de honorarios</strong> expuesta en el punto 3, la cual se ajusta al nivel comercial y las condiciones pactadas en el Contrato Marco.</li>
+<li>Que se compromete a <strong>gestionar activamente</strong> los hallazgos conforme a la Cláusula Décimo Primera del Contrato Marco (Deber de Gestión).</li>
+<li>Que los montos indicados son <strong>brutos</strong> y que los honorarios de BELIZ™ se calculan <strong>sin deducción alguna</strong> conforme a la Cláusula 9.3 del Contrato Marco (Prohibición de deducciones).</li>
+</ol>
 
-&lt;div class=&quot;co danger&quot;&gt;
-&lt;p&gt;&lt;strong&gt;Cláusula Anti-Bicicleta (recordatorio):&lt;/strong&gt; Si el CLIENTE no gestiona los hallazgos validados dentro de los 30 días corridos, el honorario de éxito se devengará igualmente sobre el monto potencial identificado (cfr. Cláusula 11 del Contrato Marco).&lt;/p&gt;
-&lt;/div&gt;
+<div class="co danger">
+<p><strong>Cláusula Anti-Bicicleta (recordatorio):</strong> Si el CLIENTE no gestiona los hallazgos validados dentro de los 30 días corridos, el honorario de éxito se devengará igualmente sobre el monto potencial identificado (cfr. Cláusula 11 del Contrato Marco).</p>
+</div>
 
-&lt;!-- 5. OBSERVACIONES --&gt;
-&lt;h2&gt;5. Observaciones&lt;/h2&gt;
-&lt;div class=&quot;obs-box&quot;&gt;
-  &lt;p class=&quot;small&quot;&gt;&lt;em&gt;Espacio para observaciones del CLIENTE o del PROVEEDOR, si las hubiera:&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;
+<!-- 5. OBSERVACIONES -->
+<h2>5. Observaciones</h2>
+<div class="obs-box">
+  <p class="small"><em>Espacio para observaciones del CLIENTE o del PROVEEDOR, si las hubiera:</em></p>
+</div>
 
-&lt;div class=&quot;co warn&quot;&gt;
-&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; Las observaciones consignadas en esta sección tienen carácter informativo y &lt;strong&gt;no constituyen objeciones&lt;/strong&gt; a los efectos de la Cláusula 14.3 del Contrato Marco. Cualquier objeción fundada deberá presentarse por escrito separado, con detalle técnico y documentación respaldatoria, dentro del plazo previsto en dicha cláusula. Las observaciones &lt;strong&gt;no suspenden&lt;/strong&gt; la exigibilidad de los honorarios liquidados.&lt;/p&gt;
-&lt;/div&gt;
+<div class="co warn">
+<p><strong>Nota:</strong> Las observaciones consignadas en esta sección tienen carácter informativo y <strong>no constituyen objeciones</strong> a los efectos de la Cláusula 14.3 del Contrato Marco. Cualquier objeción fundada deberá presentarse por escrito separado, con detalle técnico y documentación respaldatoria, dentro del plazo previsto en dicha cláusula. Las observaciones <strong>no suspenden</strong> la exigibilidad de los honorarios liquidados.</p>
+</div>
 
-&lt;hr&gt;
+<hr>
 
-&lt;!-- 6. FIRMAS --&gt;
-&lt;h2&gt;6. Firmas&lt;/h2&gt;
-&lt;p&gt;En prueba de conformidad, se firman &lt;strong&gt;dos (2) ejemplares&lt;/strong&gt; de un mismo tenor y a un solo efecto.&lt;/p&gt;
+<!-- 6. FIRMAS -->
+<h2>6. Firmas</h2>
+<p>En prueba de conformidad, se firman <strong>dos (2) ejemplares</strong> de un mismo tenor y a un solo efecto.</p>
 
-&lt;div class=&quot;sig&quot;&gt;
-  &lt;div class=&quot;sig-box&quot;&gt;
-    &lt;div class=&quot;sig-line&quot;&gt;&lt;/div&gt;
-    &lt;p&gt;&lt;strong&gt;POR EL PROVEEDOR:&lt;/strong&gt;&lt;/p&gt;
-    &lt;p&gt;Nombre: Agustín Beliz&lt;/p&gt;
-    &lt;p&gt;Cargo: CEO — BELIZ™&lt;/p&gt;
-    &lt;p&gt;DNI: &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-    &lt;p&gt;Fecha: &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;sig-box&quot;&gt;
-    &lt;div class=&quot;sig-line&quot;&gt;&lt;/div&gt;
-    &lt;p&gt;&lt;strong&gt;POR EL CLIENTE:&lt;/strong&gt;&lt;/p&gt;
-    &lt;p&gt;Nombre: &lt;span class=&quot;fill&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-    &lt;p&gt;Cargo: &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-    &lt;p&gt;DNI: &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-    &lt;p&gt;Fecha: &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+<div class="sig">
+  <div class="sig-box">
+    <div class="sig-line"></div>
+    <p><strong>POR EL PROVEEDOR:</strong></p>
+    <p>Nombre: Agustín Beliz</p>
+    <p>Cargo: CEO — BELIZ™</p>
+    <p>DNI: <span class="fill-s"></span></p>
+    <p>Fecha: <span class="fill-s"></span></p>
+  </div>
+  <div class="sig-box">
+    <div class="sig-line"></div>
+    <p><strong>POR EL CLIENTE:</strong></p>
+    <p>Nombre: <span class="fill"></span></p>
+    <p>Cargo: <span class="fill-s"></span></p>
+    <p>DNI: <span class="fill-s"></span></p>
+    <p>Fecha: <span class="fill-s"></span></p>
+  </div>
+</div>
 
-&lt;hr&gt;
-&lt;p class=&quot;small center&quot;&gt;Anexo II del Contrato Marco — Documento confidencial — BELIZ™ — Acta de Conformidad v2.2&lt;/p&gt;
+<hr>
+<p class="small center">Anexo II del Contrato Marco — Documento confidencial — BELIZ™ — Acta de Conformidad v2.2</p>
 
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;document.addEventListener(&#x27;DOMContentLoaded&#x27;,function(){var b=document.createElement(&#x27;button&#x27;);b.className=&#x27;no-print&#x27;;b.textContent=&#x27;Imprimir documento&#x27;;b.style.cssText=&#x27;position:fixed;bottom:20px;right:20px;z-index:99999;padding:12px 24px;background:#0F766E;color:#fff;border:none;border-radius:6px;cursor:pointer;font-family:Inter,sans-serif;font-size:11pt;font-weight:700;box-shadow:0 4px 12px rgba(0,0,0,.2);&#x27;;b.onclick=function(){window.print();};document.body.appendChild(b);});&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
+</div>
+</div>
+<script>document.addEventListener('DOMContentLoaded',function(){var b=document.createElement('button');b.className='no-print';b.textContent='Imprimir documento';b.style.cssText='position:fixed;bottom:20px;right:20px;z-index:99999;padding:12px 24px;background:#0F766E;color:#fff;border:none;border-radius:6px;cursor:pointer;font-family:Inter,sans-serif;font-size:11pt;font-weight:700;box-shadow:0 4px 12px rgba(0,0,0,.2);';b.onclick=function(){window.print();};document.body.appendChild(b);});</script>
+</body>
+</html>
