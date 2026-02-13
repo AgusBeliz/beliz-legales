@@ -1,747 +1,35 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>BELIZ™ Contrato Marco v5.1 — HTML Legal Imprimible</title><style>
-/* cspell:disable-file */
-/* webkit printing magic: print all background colors */
-html {
-	-webkit-print-color-adjust: exact;
-}
-* {
-	box-sizing: border-box;
-	-webkit-print-color-adjust: exact;
-}
-
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-@media only screen {
-	body {
-		margin: 2em auto;
-		max-width: 900px;
-		color: rgb(55, 53, 47);
-	}
-}
-
-body {
-	line-height: 1.5;
-	white-space: pre-wrap;
-}
-
-a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
-}
-
-.pdf-relative-link-path {
-	font-size: 80%;
-	color: #444;
-}
-
-h1,
-h2,
-h3 {
-	letter-spacing: -0.01em;
-	line-height: 1.2;
-	font-weight: 600;
-	margin-bottom: 0;
-}
-
-/* Override strong tags inside headings to maintain consistent weight */
-h1 strong,
-h2 strong,
-h3 strong {
-	font-weight: 600;
-}
-
-.page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
-}
-
-h1 {
-	font-size: 1.875rem;
-	margin-top: 1.875rem;
-}
-
-h2 {
-	font-size: 1.5rem;
-	margin-top: 1.5rem;
-}
-
-h3 {
-	font-size: 1.25rem;
-	margin-top: 1.25rem;
-}
-
-.source {
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 1.5em;
-	word-break: break-all;
-}
-
-.callout {
-	border-radius: 10px;
-	padding: 1rem;
-}
-
-figure {
-	margin: 1.25em 0;
-	page-break-inside: avoid;
-}
-
-figcaption {
-	opacity: 0.5;
-	font-size: 85%;
-	margin-top: 0.5em;
-}
-
-mark {
-	background-color: transparent;
-}
-
-.indented {
-	padding-left: 1.5em;
-}
-
-hr {
-	background: transparent;
-	display: block;
-	width: 100%;
-	height: 1px;
-	visibility: visible;
-	border: none;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
-}
-
-img {
-	max-width: 100%;
-}
-
-@media only print {
-	img {
-		max-height: 100vh;
-		object-fit: contain;
-	}
-}
-
-@page {
-	margin: 1in;
-}
-
-.collection-content {
-	font-size: 0.875rem;
-}
-
-.collection-content td {
-	white-space: pre-wrap;
-	word-break: break-word;
-}
-
-.column-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.column {
-	padding: 0 1em;
-}
-
-.column:first-child {
-	padding-left: 0;
-}
-
-.column:last-child {
-	padding-right: 0;
-}
-
-.table_of_contents-item {
-	display: block;
-	font-size: 0.875rem;
-	line-height: 1.3;
-	padding: 0.125rem;
-}
-
-.table_of_contents-indent-1 {
-	margin-left: 1.5rem;
-}
-
-.table_of_contents-indent-2 {
-	margin-left: 3rem;
-}
-
-.table_of_contents-indent-3 {
-	margin-left: 4.5rem;
-}
-
-.table_of_contents-link {
-	text-decoration: none;
-	opacity: 0.7;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-}
-
-table,
-th,
-td {
-	border: 1px solid rgba(55, 53, 47, 0.09);
-	border-collapse: collapse;
-}
-
-table {
-	border-left: none;
-	border-right: none;
-}
-
-th,
-td {
-	font-weight: normal;
-	padding: 0.25em 0.5em;
-	line-height: 1.5;
-	min-height: 1.5em;
-	text-align: left;
-}
-
-th {
-	color: rgba(55, 53, 47, 0.6);
-}
-
-ol,
-ul {
-	margin: 0;
-	margin-block-start: 0.6em;
-	margin-block-end: 0.6em;
-}
-
-li > ol:first-child,
-li > ul:first-child {
-	margin-block-start: 0.6em;
-}
-
-ul > li {
-	list-style: disc;
-}
-
-ul.to-do-list {
-	padding-inline-start: 0;
-}
-
-ul.to-do-list > li {
-	list-style: none;
-}
-
-.to-do-children-checked {
-	text-decoration: line-through;
-	opacity: 0.375;
-}
-
-ul.toggle > li {
-	list-style: none;
-}
-
-ul {
-	padding-inline-start: 1.7em;
-}
-
-ul > li {
-	padding-left: 0.1em;
-}
-
-ol {
-	padding-inline-start: 1.6em;
-}
-
-ol > li {
-	padding-left: 0.2em;
-}
-
-.mono ol {
-	padding-inline-start: 2em;
-}
-
-.mono ol > li {
-	text-indent: -0.4em;
-}
-
-.toggle {
-	padding-inline-start: 0em;
-	list-style-type: none;
-}
-
-/* Indent toggle children */
-.toggle > li > details {
-	padding-left: 1.7em;
-}
-
-.toggle > li > details > summary {
-	margin-left: -1.1em;
-}
-
-.selected-value {
-	display: inline-block;
-	padding: 0 0.5em;
-	background: rgba(206, 205, 202, 0.5);
-	border-radius: 3px;
-	margin-right: 0.5em;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-	white-space: nowrap;
-}
-
-.collection-title {
-	display: inline-block;
-	margin-right: 1em;
-}
-
-.page-description {
-	margin-bottom: 2em;
-}
-
-.simple-table {
-	margin-top: 1em;
-	font-size: 0.875rem;
-	empty-cells: show;
-}
-.simple-table td {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table th {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table-header-color {
-	background: rgb(247, 246, 243);
-	color: black;
-}
-.simple-table-header {
-	font-weight: 500;
-}
-
-time {
-	opacity: 0.5;
-}
-
-.icon {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	max-width: 1.2em;
-	max-height: 1.2em;
-	text-decoration: none;
-	vertical-align: text-bottom;
-	margin-right: 0.5em;
-}
-
-img.icon {
-	border-radius: 3px;
-}
-
-.callout img.notion-static-icon {
-	width: 1em;
-	height: 1em;
-}
-
-.callout p {
-	margin: 0;
-}
-
-.callout h1,
-.callout h2,
-.callout h3 {
-	margin: 0 0 0.6rem;
-}
-
-.user-icon {
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	margin-right: 0.5rem;
-}
-
-.user-icon-inner {
-	font-size: 0.8em;
-}
-
-.text-icon {
-	border: 1px solid #000;
-	text-align: center;
-}
-
-.page-cover-image {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-	max-height: 30vh;
-}
-
-.page-header-icon {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
-
-.page-header-icon-with-cover {
-	margin-top: -0.72em;
-	margin-left: 0.07em;
-}
-
-.page-header-icon img {
-	border-radius: 3px;
-}
-
-.link-to-page {
-	margin: 1em 0;
-	padding: 0;
-	border: none;
-	font-weight: 500;
-}
-
-p > .user {
-	opacity: 0.5;
-}
-
-td > .user,
-td > time {
-	white-space: nowrap;
-}
-
-input[type="checkbox"] {
-	transform: scale(1.5);
-	margin-right: 0.6em;
-	vertical-align: middle;
-}
-
-p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-.image {
-	border: none;
-	margin: 1.5em 0;
-	padding: 0;
-	border-radius: 0;
-	text-align: center;
-}
-
-.code,
-code {
-	background: rgba(135, 131, 120, 0.15);
-	border-radius: 3px;
-	padding: 0.2em 0.4em;
-	border-radius: 3px;
-	font-size: 85%;
-	tab-size: 2;
-}
-
-code {
-	color: #eb5757;
-}
-
-.code {
-	padding: 1.5em 1em;
-}
-
-.code-wrap {
-	white-space: pre-wrap;
-	word-break: break-all;
-}
-
-.code > code {
-	background: none;
-	padding: 0;
-	font-size: 100%;
-	color: inherit;
-}
-
-blockquote {
-	font-size: 1em;
-	margin: 1em 0;
-	padding-left: 1em;
-	border-left: 3px solid rgb(55, 53, 47);
-}
-
-blockquote.quote-large {
-	font-size: 1.25em;
-}
-
-.bookmark {
-	text-decoration: none;
-	max-height: 8em;
-	padding: 0;
-	display: flex;
-	width: 100%;
-	align-items: stretch;
-}
-
-.bookmark-title {
-	font-size: 0.85em;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 1.75em;
-	white-space: nowrap;
-}
-
-.bookmark-text {
-	display: flex;
-	flex-direction: column;
-}
-
-.bookmark-info {
-	flex: 4 1 180px;
-	padding: 12px 14px 14px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.bookmark-image {
-	width: 33%;
-	flex: 1 1 180px;
-	display: block;
-	position: relative;
-	object-fit: cover;
-	border-radius: 1px;
-}
-
-.bookmark-description {
-	color: rgba(55, 53, 47, 0.6);
-	font-size: 0.75em;
-	overflow: hidden;
-	max-height: 4.5em;
-	word-break: break-word;
-}
-
-.bookmark-href {
-	font-size: 0.75em;
-	margin-top: 0.25em;
-}
-
-.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
-.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
-.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
-.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
-.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
-.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
-.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
-.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
-.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
-.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
-.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.highlight-default {
-	color: rgba(44, 44, 43, 1);
-}
-.highlight-gray {
-	color: rgba(125, 122, 117, 1);
-	fill: rgba(125, 122, 117, 1);
-}
-.highlight-brown {
-	color: rgba(159, 118, 90, 1);
-	fill: rgba(159, 118, 90, 1);
-}
-.highlight-orange {
-	color: rgba(210, 123, 45, 1);
-	fill: rgba(210, 123, 45, 1);
-}
-.highlight-yellow {
-	color: rgba(203, 148, 52, 1);
-	fill: rgba(203, 148, 52, 1);
-}
-.highlight-teal {
-	color: rgba(80, 148, 110, 1);
-	fill: rgba(80, 148, 110, 1);
-}
-.highlight-blue {
-	color: rgba(56, 125, 201, 1);
-	fill: rgba(56, 125, 201, 1);
-}
-.highlight-purple {
-	color: rgba(154, 107, 180, 1);
-	fill: rgba(154, 107, 180, 1);
-}
-.highlight-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.highlight-red {
-	color: rgba(207, 81, 72, 1);
-	fill: rgba(207, 81, 72, 1);
-}
-.highlight-default_background {
-	color: rgba(44, 44, 43, 1);
-}
-.highlight-gray_background {
-	background: rgba(42, 28, 0, 0.07);
-}
-.highlight-brown_background {
-	background: rgba(139, 46, 0, 0.086);
-}
-.highlight-orange_background {
-	background: rgba(224, 101, 1, 0.129);
-}
-.highlight-yellow_background {
-	background: rgba(211, 168, 0, 0.137);
-}
-.highlight-teal_background {
-	background: rgba(0, 100, 45, 0.09);
-}
-.highlight-blue_background {
-	background: rgba(0, 124, 215, 0.094);
-}
-.highlight-purple_background {
-	background: rgba(102, 0, 178, 0.078);
-}
-.highlight-pink_background {
-	background: rgba(197, 0, 93, 0.086);
-}
-.highlight-red_background {
-	background: rgba(223, 22, 0, 0.094);
-}
-.block-color-default {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray {
-	color: rgba(125, 122, 117, 1);
-	fill: rgba(125, 122, 117, 1);
-}
-.block-color-brown {
-	color: rgba(159, 118, 90, 1);
-	fill: rgba(159, 118, 90, 1);
-}
-.block-color-orange {
-	color: rgba(210, 123, 45, 1);
-	fill: rgba(210, 123, 45, 1);
-}
-.block-color-yellow {
-	color: rgba(203, 148, 52, 1);
-	fill: rgba(203, 148, 52, 1);
-}
-.block-color-teal {
-	color: rgba(80, 148, 110, 1);
-	fill: rgba(80, 148, 110, 1);
-}
-.block-color-blue {
-	color: rgba(56, 125, 201, 1);
-	fill: rgba(56, 125, 201, 1);
-}
-.block-color-purple {
-	color: rgba(154, 107, 180, 1);
-	fill: rgba(154, 107, 180, 1);
-}
-.block-color-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.block-color-red {
-	color: rgba(207, 81, 72, 1);
-	fill: rgba(207, 81, 72, 1);
-}
-.block-color-default_background {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray_background {
-	background: rgba(240, 239, 237, 1);
-}
-.block-color-brown_background {
-	background: rgba(245, 237, 233, 1);
-}
-.block-color-orange_background {
-	background: rgba(251, 235, 222, 1);
-}
-.block-color-yellow_background {
-	background: rgba(249, 243, 220, 1);
-}
-.block-color-teal_background {
-	background: rgba(232, 241, 236, 1);
-}
-.block-color-blue_background {
-	background: rgba(229, 242, 252, 1);
-}
-.block-color-purple_background {
-	background: rgba(243, 235, 249, 1);
-}
-.block-color-pink_background {
-	background: rgba(250, 233, 241, 1);
-}
-.block-color-red_background {
-	background: rgba(252, 233, 231, 1);
-}
-.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
-.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
-.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
-.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
-.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
-.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
-.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
-.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
-.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
-.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
-
-.checkbox {
-	display: inline-flex;
-	vertical-align: text-bottom;
-	width: 16;
-	height: 16;
-	background-size: 16px;
-	margin-left: 2px;
-	margin-right: 5px;
-}
-
-.checkbox-on {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-	
-</style></head><body><article id="7e9b4ba7-3246-4568-8e24-a857ff3e6a77" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">⚖️</span></div><h1 class="page-title" dir="auto">BELIZ™ Contrato Marco v5.1 — HTML Legal Imprimible</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="f8c2fc2c-dd61-4308-b4f4-27f947e719c0" class="code code-wrap"><code class="language-HTML" style="white-space:pre-wrap;word-break:break-all">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;es&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;title&gt;BELIZ™ | Contrato Marco de Prestación de Servicios v5.1&lt;/title&gt;
-&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=Montserrat:wght@700;800;900&amp;family=Lora:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
-&lt;style&gt;
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BELIZ™ | Contrato Marco de Prestación de Servicios v5.1</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Montserrat:wght@700;800;900&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
 :root{--ink:#0B132B;--txt:#1a1a1a;--mut:#64748B;--ln:#d1d5db;--acc:#0F766E;--gold:#8B7355;}
 *{box-sizing:border-box;margin:0;padding:0;}
 @page{size:A4;margin:32mm 18mm 25mm 18mm;}
-body{font-family:&#x27;Lora&#x27;,Georgia,&#x27;Times New Roman&#x27;,serif;font-size:10pt;color:var(--txt);line-height:1.55;background:#e5e5e5;}
+body{font-family:'Lora',Georgia,'Times New Roman',serif;font-size:10pt;color:var(--txt);line-height:1.55;background:#e5e5e5;}
 .doc{max-width:210mm;margin:20px auto;background:#fff;box-shadow:0 8px 30px rgba(0,0,0,.12);}
 @media print{*,*::before,*::after{overflow:visible !important;}html,body{height:auto !important;overflow:visible !important;background:#fff !important;margin:0 !important;padding:0 !important;width:100% !important;max-width:none !important;}.doc{display:block !important;position:static !important;overflow:visible !important;height:auto !important;max-height:none !important;max-width:none !important;width:100% !important;margin:0 !important;padding:0 !important;box-shadow:none !important;}.body{display:block !important;overflow:visible !important;height:auto !important;max-height:none !important;padding:5px 0 0 !important;}.no-print{display:none !important;}}
 /* PRINT HEADER/FOOTER */
-.ph{position:fixed;top:0;left:0;right:0;padding:6px 0;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;font-family:&#x27;Inter&#x27;,sans-serif;background:#fff;z-index:10;}
+.ph{position:fixed;top:0;left:0;right:0;padding:6px 0;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;font-family:'Inter',sans-serif;background:#fff;z-index:10;}
 .ph-ref{font-size:6.5pt;color:var(--mut);text-transform:uppercase;letter-spacing:.8px;}
-.ph-brand{font-family:&#x27;Montserrat&#x27;,sans-serif;font-weight:900;font-size:14pt;color:var(--ink);letter-spacing:-.5px;}
-.pf{position:fixed;bottom:0;left:0;right:0;padding:6px 0;border-top:1px solid var(--ln);display:flex;justify-content:space-between;font-family:&#x27;Inter&#x27;,sans-serif;font-size:6.5pt;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;background:#fff;z-index:10;}
+.ph-brand{font-family:'Montserrat',sans-serif;font-weight:900;font-size:14pt;color:var(--ink);letter-spacing:-.5px;}
+.pf{position:fixed;bottom:0;left:0;right:0;padding:6px 0;border-top:1px solid var(--ln);display:flex;justify-content:space-between;font-family:'Inter',sans-serif;font-size:6.5pt;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;background:#fff;z-index:10;}
 @media screen{.ph,.pf{position:relative;}}
 /* BODY */
 .body{padding:40px 45px 40px;}
 
 /* COVER BLOCK */
 .cover{text-align:center;padding:20px 0 15px;border-bottom:2px solid var(--ink);margin-bottom:20px;}
-.cover-brand{font-family:&#x27;Montserrat&#x27;,sans-serif;font-weight:900;font-size:28pt;color:var(--ink);letter-spacing:-1px;margin-bottom:5px;}
-.cover-div{font-family:&#x27;Inter&#x27;,sans-serif;font-size:7pt;color:var(--acc);text-transform:uppercase;letter-spacing:2px;margin-bottom:15px;}
-.cover-title{font-family:&#x27;Montserrat&#x27;,sans-serif;font-size:12pt;font-weight:800;color:var(--ink);text-transform:uppercase;line-height:1.35;margin-bottom:5px;}
-.cover-sub{font-family:&#x27;Inter&#x27;,sans-serif;font-size:7.5pt;color:var(--mut);text-transform:uppercase;letter-spacing:1px;}
-.cover-ver{font-family:&#x27;Inter&#x27;,sans-serif;font-size:7pt;color:var(--gold);font-weight:700;margin-top:8px;text-transform:uppercase;letter-spacing:1px;}
+.cover-brand{font-family:'Montserrat',sans-serif;font-weight:900;font-size:28pt;color:var(--ink);letter-spacing:-1px;margin-bottom:5px;}
+.cover-div{font-family:'Inter',sans-serif;font-size:7pt;color:var(--acc);text-transform:uppercase;letter-spacing:2px;margin-bottom:15px;}
+.cover-title{font-family:'Montserrat',sans-serif;font-size:12pt;font-weight:800;color:var(--ink);text-transform:uppercase;line-height:1.35;margin-bottom:5px;}
+.cover-sub{font-family:'Inter',sans-serif;font-size:7.5pt;color:var(--mut);text-transform:uppercase;letter-spacing:1px;}
+.cover-ver{font-family:'Inter',sans-serif;font-size:7pt;color:var(--gold);font-weight:700;margin-top:8px;text-transform:uppercase;letter-spacing:1px;}
 /* HEADINGS */
-h2{font-family:&#x27;Montserrat&#x27;,sans-serif;font-size:10.5pt;font-weight:800;color:var(--ink);text-transform:uppercase;border-bottom:2px solid var(--ink);padding-bottom:3px;margin:22px 0 12px;page-break-after:avoid;}
-h3{font-family:&#x27;Montserrat&#x27;,sans-serif;font-size:9.5pt;font-weight:700;color:var(--ink);text-transform:uppercase;margin:16px 0 8px;page-break-after:avoid;}
+h2{font-family:'Montserrat',sans-serif;font-size:10.5pt;font-weight:800;color:var(--ink);text-transform:uppercase;border-bottom:2px solid var(--ink);padding-bottom:3px;margin:22px 0 12px;page-break-after:avoid;}
+h3{font-family:'Montserrat',sans-serif;font-size:9.5pt;font-weight:700;color:var(--ink);text-transform:uppercase;margin:16px 0 8px;page-break-after:avoid;}
 /* TEXT */
 p{margin:0 0 7px;text-align:justify;}
 .indent{margin-left:15px;}
@@ -750,11 +38,11 @@ strong{font-weight:700;}
 em{font-style:italic;}
 /* TABLES */
 table{width:100%;border-collapse:collapse;margin:8px 0 12px;font-size:9pt;}
-th{background:var(--ink);color:#fff;padding:5px 8px;text-align:left;font-family:&#x27;Inter&#x27;,sans-serif;font-weight:700;font-size:7.5pt;text-transform:uppercase;letter-spacing:.5px;}
+th{background:var(--ink);color:#fff;padding:5px 8px;text-align:left;font-family:'Inter',sans-serif;font-weight:700;font-size:7.5pt;text-transform:uppercase;letter-spacing:.5px;}
 td{padding:5px 8px;border-bottom:1px solid var(--ln);vertical-align:top;}
 tr:last-child td{border-bottom:none;}
 .tbl-alt tr:nth-child(even) td{background:#f8f9fa;}
-.th-col td:first-child{font-weight:700;background:#f8f9fa;width:32%;font-family:&#x27;Inter&#x27;,sans-serif;font-size:8.5pt;}
+.th-col td:first-child{font-weight:700;background:#f8f9fa;width:32%;font-family:'Inter',sans-serif;font-size:8.5pt;}
 /* CALLOUTS */
 .co{border-left:3px solid var(--acc);background:#f0f9ff;padding:8px 12px;margin:8px 0 12px;font-size:9.5pt;}
 .co.warn{border-color:#f59e0b;background:#fffbeb;}
@@ -783,469 +71,469 @@ hr{border:none;border-top:1px solid var(--ln);margin:15px 0;}
 .center{text-align:center;}
 .small{font-size:8.5pt;color:var(--mut);}
 .no-break{page-break-inside:avoid;}
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;!-- PRINT HEADER (repeats on each printed page) --&gt;
-&lt;div class=&quot;ph&quot;&gt;
-  &lt;span class=&quot;ph-ref&quot;&gt;Ref: Documentación Legal Oficial | Confidencial&lt;/span&gt;
-  &lt;img src=&quot;https://beliz.com.ar/logo.png&quot; alt=&quot;BELIZ™&quot; style=&quot;height:8mm;&quot;&gt;
-&lt;/div&gt;
-
-&lt;!-- PRINT FOOTER (repeats on each printed page) --&gt;
-&lt;div class=&quot;pf&quot;&gt;
-  &lt;span&gt;BELIZ™ | División Forense&lt;/span&gt;
-  &lt;span&gt;Contrato Marco v5.1 — Modelo Forense&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;doc&quot;&gt;
-&lt;div class=&quot;body&quot;&gt;
-
-&lt;!-- COVER --&gt;
-&lt;div class=&quot;cover&quot;&gt;
-  &lt;img src=&quot;https://beliz.com.ar/logo.png&quot; alt=&quot;BELIZ™&quot; style=&quot;height:60pt;margin-bottom:5px;&quot;&gt;
-  &lt;div class=&quot;cover-div&quot;&gt;División Forense&lt;/div&gt;
-  &lt;div class=&quot;cover-title&quot;&gt;Contrato Marco de Prestación de Servicios&lt;br&gt;de Auditoría Forense&lt;br&gt;y Licencia de Uso de Tecnología Propietaria&lt;/div&gt;
-  &lt;div class=&quot;cover-sub&quot;&gt;Modelo Forense v5.0 — Pricing v9.1 (Definitiva)&lt;/div&gt;
-  &lt;div class=&quot;cover-ver&quot;&gt;Versión Blindada v5.1&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- COMPARECENCIA --&gt;
-&lt;p&gt;En la ciudad de &lt;strong&gt;Santa Rosa&lt;/strong&gt;, Provincia de La Pampa, República Argentina, a los &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt; días del mes de &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt; de &lt;strong&gt;2026&lt;/strong&gt;, comparecen:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I. EL PROVEEDOR:&lt;/strong&gt;&lt;/p&gt;
-&lt;table class=&quot;th-col&quot;&gt;
-&lt;tr&gt;&lt;td&gt;Denominación&lt;/td&gt;&lt;td&gt;BELIZ™ — División Forense&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Titular&lt;/td&gt;&lt;td&gt;AGUSTÍN BELIZ&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;DNI&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;CUIT&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Domicilio legal&lt;/td&gt;&lt;td&gt;Santa Rosa, Provincia de La Pampa&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;strong&gt;II. EL CLIENTE:&lt;/strong&gt;&lt;/p&gt;
-&lt;table class=&quot;th-col&quot;&gt;
-&lt;tr&gt;&lt;td&gt;Razón social&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill-l&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;CUIT&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Domicilio legal&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill-l&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Representante legal&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill&quot;&gt;&lt;/span&gt;, DNI &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;, en carácter de &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Ambas, en adelante las &lt;strong&gt;&quot;Partes&quot;&lt;/strong&gt;, reconociéndose mutuamente capacidad legal suficiente para obligarse, convienen celebrar el presente &lt;strong&gt;Contrato Marco de Prestación de Servicios de Auditoría Forense y Licencia de Uso de Tecnología Propietaria&lt;/strong&gt; (en adelante, el &lt;strong&gt;&quot;Contrato&quot;&lt;/strong&gt;), sujeto a las siguientes cláusulas y condiciones:&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;!-- TÍTULO I --&gt;
-&lt;h2&gt;Título I — Comparecencia y Declaraciones&lt;/h2&gt;
-
-&lt;h3&gt;Cláusula Segunda — Declaraciones previas del Proveedor&lt;/h3&gt;
-&lt;p&gt;El PROVEEDOR declara bajo juramento que:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;BELIZ™&lt;/strong&gt; es una firma especializada en &lt;strong&gt;Auditoría Forense Financiera&lt;/strong&gt;, &lt;strong&gt;Detección Algorítmica de Inconsistencias Económicas&lt;/strong&gt; y &lt;strong&gt;Blindaje de Facturación&lt;/strong&gt;, operando mediante metodologías, software y reglas de negocio propietarias.&lt;/li&gt;
-&lt;li&gt;El software &lt;strong&gt;&quot;Auditor Pro&quot;&lt;/strong&gt; y la totalidad de sus módulos, algoritmos, reglas de detección y configuraciones constituyen &lt;strong&gt;tecnología propietaria exclusiva&lt;/strong&gt; del PROVEEDOR, protegida por las normas de propiedad intelectual vigentes en la República Argentina (Ley 11.723 y concordantes).&lt;/li&gt;
-&lt;li&gt;Cuenta con la infraestructura técnica, el conocimiento especializado y los recursos humanos necesarios para la ejecución de los servicios objeto del presente Contrato.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3&gt;Cláusula Tercera — Declaraciones previas del Cliente&lt;/h3&gt;
-&lt;p&gt;El CLIENTE declara bajo juramento que:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Es titular legítimo de los datos que serán objeto de procesamiento, o cuenta con autorización suficiente para su tratamiento.&lt;/li&gt;
-&lt;li&gt;Se encuentra al corriente de sus obligaciones fiscales y previsionales.&lt;/li&gt;
-&lt;li&gt;Ha tomado conocimiento integral del presente Contrato y lo suscribe en pleno ejercicio de su autonomía de la voluntad.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3&gt;Cláusula Cuarta — Exclusión expresa de alcance médico-asistencial&lt;/h3&gt;
-&lt;div class=&quot;co warn&quot;&gt;
-&lt;p&gt;Las Partes dejan expresamente establecido que los servicios prestados bajo el presente Contrato &lt;strong&gt;NO&lt;/strong&gt; constituyen, bajo ninguna circunstancia:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Auditoría médica asistencial&lt;/li&gt;
-&lt;li&gt;Práctica clínica o evaluación de actos médicos&lt;/li&gt;
-&lt;li&gt;Diagnóstico, pronóstico o recomendación terapéutica&lt;/li&gt;
-&lt;li&gt;Intervención en decisiones vinculadas a mala praxis profesional&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;El alcance se limita &lt;strong&gt;estrictamente&lt;/strong&gt; al análisis lógico, matemático, algorítmico y administrativo de datos económicos y de facturación.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;hr&gt;
-
-&lt;!-- TÍTULO II --&gt;
-&lt;h2&gt;Título II — Objeto y Alcance&lt;/h2&gt;
-
-&lt;h3&gt;Cláusula Quinta — Objeto del Contrato&lt;/h3&gt;
-&lt;p&gt;El PROVEEDOR prestará al CLIENTE servicios profesionales de &lt;strong&gt;Auditoría Forense de Alta Complejidad&lt;/strong&gt;, comprendiendo:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Identificación, detección y validación de &lt;strong&gt;inconsistencias financieras&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Detección de &lt;strong&gt;desvíos de facturación&lt;/strong&gt; y &lt;strong&gt;subfacturación&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Identificación de &lt;strong&gt;rechazos indebidos&lt;/strong&gt; y &lt;strong&gt;errores sistémicos&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Cuantificación de &lt;strong&gt;oportunidades de recupero y ahorro&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Blindaje preventivo&lt;/strong&gt; de circuitos de facturación y control económico&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Todo ello mediante el uso de &lt;strong&gt;tecnología propietaria&lt;/strong&gt;, modelos forenses, reglas de negocio, algoritmos y know-how exclusivo del PROVEEDOR.&lt;/p&gt;
-
-&lt;h3&gt;Cláusula Sexta — Modalidad de servicio&lt;/h3&gt;
-&lt;p&gt;Las Partes acuerdan la siguiente modalidad y nivel aplicable &lt;em&gt;(marcar los que correspondan)&lt;/em&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Modalidad de procesamiento:&lt;/strong&gt;&lt;/p&gt;
-&lt;p class=&quot;indent&quot;&gt;&lt;span class=&quot;chk&quot;&gt;☐&lt;/span&gt; &lt;strong&gt;Opción A&lt;/strong&gt; — Procesamiento Externo / Auditoría por Resultados (&quot;Partner&quot;)&lt;/p&gt;
-&lt;p class=&quot;indent&quot;&gt;&lt;span class=&quot;chk&quot;&gt;☐&lt;/span&gt; &lt;strong&gt;Opción B&lt;/strong&gt; — Procesamiento On-Premise / Licencia de Software&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Nivel comercial:&lt;/strong&gt;&lt;/p&gt;
-&lt;p class=&quot;indent&quot;&gt;&lt;span class=&quot;chk&quot;&gt;☐&lt;/span&gt; &lt;strong&gt;Etapa 0&lt;/strong&gt; — Validación técnica (30 días)&lt;/p&gt;
-&lt;p class=&quot;indent&quot;&gt;&lt;span class=&quot;chk&quot;&gt;☐&lt;/span&gt; &lt;strong&gt;Partner&lt;/strong&gt; — Operación estándar&lt;/p&gt;
-&lt;p class=&quot;indent&quot;&gt;&lt;span class=&quot;chk&quot;&gt;☐&lt;/span&gt; &lt;strong&gt;Riesgo Compartido&lt;/strong&gt; — Crisis de liquidez / Protocolo Emergencia PAMI 2026&lt;/p&gt;
-&lt;p class=&quot;indent&quot;&gt;&lt;span class=&quot;chk&quot;&gt;☐&lt;/span&gt; &lt;strong&gt;Enterprise&lt;/strong&gt; — Soberanía de datos / On-Premise&lt;/p&gt;
-&lt;p&gt;La modalidad y el nivel seleccionados determinarán el régimen de tratamiento de datos, la arquitectura de ejecución del software y las condiciones económicas aplicables, conforme se detalla en los Títulos III y IV del presente Contrato.&lt;/p&gt;
-
-&lt;h3&gt;Cláusula Séptima — Alcance técnico y reglas de detección&lt;/h3&gt;
-&lt;p&gt;El CLIENTE reconoce y acepta que los servicios se ejecutan mediante un motor de reglas técnicas de detección, clasificadas en:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;a) Reglas Financieras y Administrativas ACTIVAS&lt;/strong&gt;&lt;/p&gt;
-&lt;p class=&quot;indent&quot;&gt;Orientadas a la identificación de inconsistencias económicas, administrativas o de facturación. Forman parte del &lt;strong&gt;alcance estándar&lt;/strong&gt; del servicio y se activan por defecto.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;b) Reglas de Validación Clínica RESERVADAS&lt;/strong&gt;&lt;/p&gt;
-&lt;p class=&quot;indent&quot;&gt;Orientadas a controles de coherencia biológica, frecuencia médica u otros parámetros sensibles. Su activación:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;No&lt;/strong&gt; se encuentra incluida por defecto&lt;/li&gt;
-&lt;li&gt;Solo será implementada a &lt;strong&gt;pedido expreso y por escrito&lt;/strong&gt; del CLIENTE&lt;/li&gt;
-&lt;li&gt;Operará bajo la &lt;strong&gt;exclusiva responsabilidad&lt;/strong&gt; del CLIENTE&lt;/li&gt;
-&lt;li&gt;Requerirá la suscripción de una &lt;strong&gt;Adenda de Activación de Reglas Reservadas&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;co&quot;&gt;
-&lt;p&gt;&lt;strong&gt;Facultad técnica del Proveedor:&lt;/strong&gt; El PROVEEDOR se reserva la facultad exclusiva e irrenunciable de definir, activar, desactivar, ajustar, recalibrar o incorporar reglas técnicas en función de la evolución del servicio, los avances tecnológicos o los cambios normativos, sin que ello constituya modificación contractual ni requiera la suscripción de adenda alguna.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;hr&gt;
-
-&lt;!-- TÍTULO III --&gt;
-&lt;h2&gt;Título III — Condiciones Económicas&lt;/h2&gt;
-
-&lt;h3&gt;Cláusula Octava — Fase 1: Costo de Implementación y Calibración (SETUP)&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;8.1.&lt;/strong&gt; El CLIENTE abonará al PROVEEDOR, en concepto de Costo de Implementación y Calibración (en adelante, &lt;strong&gt;&quot;SETUP&quot;&lt;/strong&gt;), la suma que corresponda según el nivel comercial seleccionado en la Cláusula Sexta:&lt;/p&gt;
-&lt;table class=&quot;tbl-alt&quot;&gt;
-&lt;tr&gt;&lt;th&gt;Nivel&lt;/th&gt;&lt;th&gt;Setup&lt;/th&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Etapa 0 (30 días)&lt;/td&gt;&lt;td&gt;PESOS TRES MILLONES QUINIENTOS MIL ($3.500.000) + IVA&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Partner&lt;/td&gt;&lt;td&gt;PESOS SEIS MILLONES QUINIENTOS MIL ($6.500.000) + IVA&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Riesgo Compartido&lt;/td&gt;&lt;td&gt;PESOS CERO ($0) — absorbido por el PROVEEDOR&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Enterprise&lt;/td&gt;&lt;td&gt;PESOS SEIS MILLONES QUINIENTOS MIL ($6.500.000) + IVA&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;strong&gt;8.2. Naturaleza del pago.&lt;/strong&gt; El SETUP tiene carácter de pago:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Único:&lt;/strong&gt; se abona una sola vez al inicio de la relación contractual&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Firme e irrevocable:&lt;/strong&gt; no sujeto a condición resolutoria&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Definitivo:&lt;/strong&gt; no compensable con honorarios futuros&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;No reembolsable:&lt;/strong&gt; cualquiera sea la causa de rescisión, interrupción del servicio, ausencia de resultados o decisión unilateral del CLIENTE&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;8.3. Condición suspensiva.&lt;/strong&gt; Salvo en el nivel &lt;strong&gt;Riesgo Compartido&lt;/strong&gt; (donde el SETUP es absorbido por el PROVEEDOR), el pago íntegro del SETUP constituye &lt;strong&gt;condición suspensiva, esencial y &lt;em&gt;sine qua non&lt;/em&gt;&lt;/strong&gt; para: el inicio de cualquier tarea, instalación o análisis; la carga de datos y calibración del sistema; el acceso al software y sus módulos; la asunción de cualquier obligación por parte del PROVEEDOR.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;8.4.&lt;/strong&gt; Hasta tanto el SETUP no sea abonado en su totalidad y los fondos se encuentren efectivamente acreditados (o se haya pactado el nivel Riesgo Compartido), el PROVEEDOR &lt;strong&gt;no asume obligación alguna&lt;/strong&gt; frente al CLIENTE.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;8.5. Amortización del SETUP absorbido — Nivel Riesgo Compartido.&lt;/strong&gt; En el nivel &lt;strong&gt;Riesgo Compartido&lt;/strong&gt;, donde el PROVEEDOR absorbe el costo del SETUP, dicha absorción se sujeta a un cronograma de amortización progresiva conforme al siguiente detalle:&lt;/p&gt;
-&lt;table class=&quot;tbl-alt&quot;&gt;
-&lt;tr&gt;&lt;th&gt;Período&lt;/th&gt;&lt;th&gt;Cuota de amortización pendiente&lt;/th&gt;&lt;th&gt;Monto&lt;/th&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Mes 1 a 8&lt;/td&gt;&lt;td&gt;100% del SETUP nominal&lt;/td&gt;&lt;td&gt;$6.500.000 + IVA&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Mes 9 a 16&lt;/td&gt;&lt;td&gt;60% del SETUP nominal&lt;/td&gt;&lt;td&gt;$3.900.000 + IVA&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Mes 17 a 24&lt;/td&gt;&lt;td&gt;30% del SETUP nominal&lt;/td&gt;&lt;td&gt;$1.950.000 + IVA&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Mes 25 en adelante&lt;/td&gt;&lt;td&gt;0% — SETUP íntegramente amortizado&lt;/td&gt;&lt;td&gt;$0&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;strong&gt;8.6. Exigibilidad por rescisión anticipada.&lt;/strong&gt; En caso de rescisión anticipada del Contrato en el nivel &lt;strong&gt;Riesgo Compartido&lt;/strong&gt; —por cualquier causa imputable al CLIENTE, por decisión unilateral del CLIENTE o por incumplimiento esencial del CLIENTE—, el CLIENTE deberá abonar al PROVEEDOR, dentro de los &lt;strong&gt;diez (10) días hábiles&lt;/strong&gt; siguientes a la fecha de rescisión, la &lt;strong&gt;cuota de amortización vigente&lt;/strong&gt; según el cronograma del punto 8.5, calculada al momento de la efectiva terminación del Contrato. Dicho monto se ajustará conforme al mecanismo previsto en la Cláusula 9.5 (Cláusula Gatillo), tomando como base el valor nominal indicado y como período de ajuste el transcurrido desde la suscripción del Contrato hasta la fecha de rescisión. La falta de pago de la cuota de amortización dentro del plazo establecido devengará los intereses punitorios previstos en la Cláusula 11 bis.2.&lt;/p&gt;
-
-&lt;h3&gt;Cláusula Novena — Fase 2: Honorarios Periódicos y de Éxito&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;9.1. Estructura económica por nivel.&lt;/strong&gt; El CLIENTE abonará al PROVEEDOR los honorarios que correspondan según el nivel comercial pactado:&lt;/p&gt;
-&lt;table class=&quot;tbl-alt&quot;&gt;
-&lt;tr&gt;&lt;th&gt;Nivel&lt;/th&gt;&lt;th&gt;Mensual&lt;/th&gt;&lt;th&gt;Success Fee&lt;/th&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Etapa 0&lt;/td&gt;&lt;td&gt;—&lt;/td&gt;&lt;td&gt;—&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Partner&lt;/td&gt;&lt;td&gt;$2.000.000 + IVA&lt;/td&gt;&lt;td&gt;15% sobre recupero bruto&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Riesgo Compartido — Mes 1&lt;/td&gt;&lt;td&gt;—&lt;/td&gt;&lt;td&gt;25% sobre recupero bruto&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Riesgo Compartido — Mes 2+&lt;/td&gt;&lt;td&gt;$1.500.000 + IVA&lt;/td&gt;&lt;td&gt;15% sobre recupero bruto&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Enterprise&lt;/td&gt;&lt;td&gt;$6.000.000 + IVA&lt;/td&gt;&lt;td&gt;0% hasta $30M recupero; 5% sobre excedente&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;strong&gt;9.2. Base de cálculo del Success Fee.&lt;/strong&gt; El honorario de éxito se calcula sobre el &lt;strong&gt;MONTO BRUTO&lt;/strong&gt; recuperado, ahorrado, refacturado, reliquidado o regularizado como consecuencia directa o indirecta de los hallazgos del PROVEEDOR.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;9.3. Prohibición de deducciones.&lt;/strong&gt; Queda &lt;strong&gt;expresamente prohibido&lt;/strong&gt; deducir de la base de cálculo del honorario:&lt;/p&gt;
-&lt;table class=&quot;tbl-alt&quot;&gt;
-&lt;tr&gt;&lt;th&gt;Concepto&lt;/th&gt;&lt;th&gt;Deducible&lt;/th&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Impuestos nacionales, provinciales o municipales&lt;/td&gt;&lt;td&gt;❌ NO&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Tasas, percepciones o retenciones&lt;/td&gt;&lt;td&gt;❌ NO&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Ingresos Brutos / Impuesto a las Ganancias&lt;/td&gt;&lt;td&gt;❌ NO&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Costos administrativos internos del CLIENTE&lt;/td&gt;&lt;td&gt;❌ NO&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Honorarios de terceros (contables, legales, etc.)&lt;/td&gt;&lt;td&gt;❌ NO&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Cualquier otro concepto no previsto&lt;/td&gt;&lt;td&gt;❌ NO&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;&lt;strong&gt;9.4. Independencia del resultado neto.&lt;/strong&gt; El honorario es exigible con independencia del resultado financiero neto final que obtenga el CLIENTE respecto de la gestión de cada hallazgo.&lt;/p&gt;
-
-&lt;h3&gt;Cláusula Novena Bis — Ajuste por Inflación&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;9.5. Cláusula de Ajuste (&quot;Cláusula Gatillo&quot;).&lt;/strong&gt; Los honorarios mensuales fijos establecidos en la presente cláusula se ajustarán &lt;strong&gt;mensualmente&lt;/strong&gt; conforme a la variación del &lt;strong&gt;Índice de Precios al Consumidor (IPC)&lt;/strong&gt; publicado por el INDEC &lt;strong&gt;o del valor del Módulo Salud vigente (PAMI/SEMPRE o equivalente), el que resulte más favorable al PROVEEDOR&lt;/strong&gt;, utilizando como base el mes de suscripción del presente Contrato.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;9.6. Aplicación del ajuste.&lt;/strong&gt; El ajuste se aplicará automáticamente a partir del segundo mes de vigencia del Contrato y será calculado sobre el monto del mes inmediato anterior. En caso de que el INDEC no publique el IPC mensual o no se encuentre disponible el valor del Módulo Salud por causas de fuerza mayor, se utilizará como referencia el índice publicado por la Provincia de La Pampa o, subsidiariamente, por la Confederación Argentina de la Mediana Empresa (CAME).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;9.6 bis. Ajuste del SETUP por demora.&lt;/strong&gt; En caso de que el CLIENTE demore el pago del SETUP por un plazo superior a &lt;strong&gt;quince (15) días corridos&lt;/strong&gt; desde la fecha de suscripción del presente Contrato, el monto del SETUP se ajustará automáticamente conforme al mecanismo previsto en la Cláusula 9.5, calculado desde la fecha de suscripción hasta la fecha de pago efectivo.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;9.7. Comunicación del ajuste.&lt;/strong&gt; El PROVEEDOR notificará por correo electrónico el monto ajustado con una anticipación no menor a &lt;strong&gt;cinco (5) días hábiles&lt;/strong&gt; al vencimiento de cada período de facturación.&lt;/p&gt;
-
-&lt;h3&gt;Cláusula Décima — Devengamiento del honorario&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;10.1.&lt;/strong&gt; El honorario se devengará &lt;strong&gt;automáticamente&lt;/strong&gt; cuando se verifique &lt;strong&gt;cualquiera&lt;/strong&gt; de los siguientes hechos:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;El PROVEEDOR presenta el reporte de recupero y el CLIENTE lo &lt;strong&gt;valida expresamente&lt;/strong&gt; (por escrito o por medios electrónicos), o&lt;/li&gt;
-&lt;li&gt;El CLIENTE &lt;strong&gt;no formula objeciones fundadas&lt;/strong&gt; dentro de los &lt;strong&gt;diez (10) días hábiles&lt;/strong&gt; siguientes a la presentación del reporte (validación tácita por silencio), o&lt;/li&gt;
-&lt;li&gt;El CLIENTE emite Nota de Débito, Nota de Crédito, refacturación, reliquidación o cualquier acto administrativo equivalente, o&lt;/li&gt;
-&lt;li&gt;El CLIENTE &lt;strong&gt;presenta el hallazgo&lt;/strong&gt; ante la obra social, financiador o tercero pagador&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Lo que ocurra primero.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;10.2.&lt;/strong&gt; El cobro efectivo por parte de la obra social, financiador o tercero pagador &lt;strong&gt;NO&lt;/strong&gt; constituye condición para la exigibilidad del honorario.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;10.3.&lt;/strong&gt; El riesgo de incobrabilidad, mora, concurso, quiebra o conflicto con financiadores es de &lt;strong&gt;exclusiva responsabilidad del CLIENTE&lt;/strong&gt;, quien no podrá invocar dichas circunstancias para demorar, suspender o negar el pago del honorario.&lt;/p&gt;
-
-&lt;h3&gt;Cláusula Décimo Primera — Deber de gestión (Cláusula Anti-Bicicleta)&lt;/h3&gt;
-&lt;div class=&quot;co danger&quot;&gt;
-&lt;p&gt;&lt;strong&gt;11.1.&lt;/strong&gt; En caso de que el PROVEEDOR detecte y valide un recupero o ahorro potencial y el CLIENTE decida: no gestionarlo; postergarlo injustificadamente (plazo mayor a &lt;strong&gt;30 días corridos&lt;/strong&gt; desde la notificación); abandonarlo; no impulsarlo por razones políticas, comerciales, internas o de cualquier otra índole — el honorario de éxito correspondiente al nivel pactado se devengará &lt;strong&gt;igualmente&lt;/strong&gt; sobre el monto potencial identificado.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;11.2.&lt;/strong&gt; El informe forense emitido por el PROVEEDOR será &lt;strong&gt;prueba suficiente&lt;/strong&gt; del monto base para el cálculo del honorario, sin necesidad de prueba complementaria alguna.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h3&gt;Cláusula Décimo Primera Bis — Mora automática e intereses&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;11 bis.1. Mora automática.&lt;/strong&gt; La mora en el pago de cualquier obligación dineraria emergente del presente Contrato operará de forma &lt;strong&gt;automática&lt;/strong&gt; por el solo vencimiento del plazo pactado (art. 886 del Código Civil y Comercial de la Nación), sin necesidad de interpelación judicial ni extrajudicial previa.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;11 bis.2. Interés punitorio.&lt;/strong&gt; Los importes adeudados devengarán, desde la fecha de mora y hasta su efectivo pago, un interés punitorio equivalente a &lt;strong&gt;dos (2) veces la tasa activa del Banco de La Pampa S.E.M.&lt;/strong&gt; para operaciones de descuento a treinta (30) días vigente al momento del pago, sin perjuicio de la facultad del PROVEEDOR de reclamar los mayores daños que acredite (art. 1747 CCyCN).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;11 bis.3. Suspensión del servicio.&lt;/strong&gt; Ante la falta de pago de &lt;strong&gt;una (1) o más facturas&lt;/strong&gt; por un plazo superior a &lt;strong&gt;quince (15) días corridos&lt;/strong&gt; desde su vencimiento, el PROVEEDOR quedará facultado a &lt;strong&gt;suspender la prestación del servicio&lt;/strong&gt; sin que ello constituya incumplimiento contractual, hasta tanto el CLIENTE regularice la totalidad de los importes adeudados con más los intereses punitorios correspondientes.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;!-- TÍTULO IV --&gt;
-&lt;h2&gt;Título IV — Tecnología y Propiedad Intelectual&lt;/h2&gt;
-
-&lt;h3&gt;Cláusula Décimo Segunda — Tecnología y modalidad de procesamiento&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;A) MODALIDAD PROCESAMIENTO EXTERNO (PARTNER)&lt;/strong&gt;&lt;/p&gt;
-&lt;p class=&quot;indent&quot;&gt;El PROVEEDOR procesará la información en infraestructura propia con medidas de seguridad que incluyen:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Encriptación de datos en tránsito y en reposo (AES-256 o superior)&lt;/li&gt;
-&lt;li&gt;Eventual traslado temporal de datos en soportes físicos encriptados&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Destrucción certificada&lt;/strong&gt; de datos una vez finalizado cada ciclo de análisis&lt;/li&gt;
-&lt;li&gt;Acceso restringido mediante autenticación multifactor&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;B) MODALIDAD ON-PREMISE (LICENCIA)&lt;/strong&gt;&lt;/p&gt;
-&lt;p class=&quot;indent&quot;&gt;El software se ejecutará &lt;strong&gt;exclusivamente&lt;/strong&gt; en la infraestructura del CLIENTE:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Sin transferencia de datos hacia el PROVEEDOR&lt;/li&gt;
-&lt;li&gt;BELIZ™ &lt;strong&gt;no&lt;/strong&gt; asume el rol de custodio de los datos ni de la información procesada&lt;/li&gt;
-&lt;li&gt;El CLIENTE es responsable de la seguridad física y lógica de su infraestructura&lt;/li&gt;
-&lt;li&gt;El PROVEEDOR brindará soporte remoto sin acceso directo a datos sensibles&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Cláusula Décimo Tercera — Propiedad intelectual&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;13.1. Datos del Cliente.&lt;/strong&gt; Los datos procesados son y seguirán siendo propiedad exclusiva del CLIENTE.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;13.2. Tecnología del Proveedor.&lt;/strong&gt; Constituyen propiedad intelectual &lt;strong&gt;exclusiva e inalienable&lt;/strong&gt; del PROVEEDOR, protegida por la Ley 11.723 y normativa concordante: la lógica de detección y los algoritmos; las reglas de negocio y las estructuras de análisis; los modelos forenses y la metodología; las configuraciones, parámetros y umbrales; el conocimiento generado durante la prestación del servicio; el software &quot;Auditor Pro&quot; y todos sus módulos; los reportes en su formato y estructura (no así los datos que contienen).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;13.3. Prohibiciones.&lt;/strong&gt; Queda &lt;strong&gt;terminantemente prohibido&lt;/strong&gt; al CLIENTE y a cualquier tercero vinculado:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;La &lt;strong&gt;ingeniería inversa&lt;/strong&gt;, descompilación o desmontaje del software&lt;/li&gt;
-&lt;li&gt;La &lt;strong&gt;clonación funcional&lt;/strong&gt; total o parcial&lt;/li&gt;
-&lt;li&gt;La &lt;strong&gt;copia, reproducción, cesión o sublicencia&lt;/strong&gt; de cualquier componente&lt;/li&gt;
-&lt;li&gt;La utilización de la tecnología, reportes o resultados para &lt;strong&gt;entrenar, configurar o replicar&lt;/strong&gt; sistemas propios o de terceros, incluyendo pero no limitado a modelos de inteligencia artificial o machine learning&lt;/li&gt;
-&lt;li&gt;La &lt;strong&gt;divulgación&lt;/strong&gt; de la lógica de detección a competidores o terceros&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;13.4. Penalidad por incumplimiento.&lt;/strong&gt; La violación de cualquiera de las prohibiciones establecidas en el punto 13.3 generará una &lt;strong&gt;penalidad&lt;/strong&gt; equivalente a &lt;strong&gt;diez (10) veces&lt;/strong&gt; el valor del SETUP del nivel contratado, con un piso mínimo de &lt;strong&gt;PESOS CINCUENTA MILLONES ($50.000.000)&lt;/strong&gt;, sin perjuicio de las acciones civiles y penales que correspondan.&lt;/p&gt;
-
-&lt;h3&gt;Cláusula Décimo Tercera Bis — Licencia de Uso&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;13 bis.1. Otorgamiento.&lt;/strong&gt; El PROVEEDOR otorga al CLIENTE una licencia de uso del software &quot;Auditor Pro&quot; de carácter &lt;strong&gt;no exclusiva, intransferible, no sublicenciable, revocable y temporalmente limitada&lt;/strong&gt; a la vigencia del presente Contrato, exclusivamente para el procesamiento de datos propios del CLIENTE conforme al objeto pactado en la Cláusula Quinta.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;13 bis.2. Naturaleza.&lt;/strong&gt; La presente licencia &lt;strong&gt;no implica cesión, transferencia, venta ni enajenación&lt;/strong&gt; de derechos de propiedad intelectual, industrial o de autor sobre el software, sus componentes, módulos, actualizaciones, mejoras o derivados. El CLIENTE reconoce que adquiere únicamente un &lt;strong&gt;derecho de uso limitado&lt;/strong&gt; y no un derecho de propiedad sobre la tecnología.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;13 bis.3. Extinción automática.&lt;/strong&gt; La licencia se extinguirá de pleno derecho, sin necesidad de notificación ni declaración judicial, ante: (a) la terminación del Contrato por cualquier causa; (b) el incumplimiento del CLIENTE de cualquier obligación esencial; o (c) la falta de pago de &lt;strong&gt;dos (2) o más períodos consecutivos&lt;/strong&gt; de honorarios.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;13 bis.4. Obligación de desinstalación.&lt;/strong&gt; Extinguida la licencia, el CLIENTE deberá proceder a la inmediata desinstalación, eliminación y destrucción de toda copia del software y sus componentes instalados en su infraestructura, dentro de un plazo máximo de &lt;strong&gt;cinco (5) días hábiles&lt;/strong&gt;, debiendo acreditar fehacientemente dicho cumplimiento ante el PROVEEDOR mediante declaración jurada.&lt;/p&gt;
-
-&lt;h3&gt;Cláusula Décimo Cuarta — Marco metodológico y limitación de cuestionamiento técnico&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;14.1.&lt;/strong&gt; El CLIENTE reconoce que los informes, reportes, alertas y hallazgos generados por el PROVEEDOR se basan en criterios técnicos, modelos forenses, algoritmos y reglas de detección propias, cuya lógica interna y funcionamiento: &lt;strong&gt;no&lt;/strong&gt; constituyen dictámenes periciales; &lt;strong&gt;no&lt;/strong&gt; constituyen juicios concluyentes; representan &lt;strong&gt;indicios informáticos calificados&lt;/strong&gt; generados por tecnología propietaria.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;14.2.&lt;/strong&gt; En consecuencia, el CLIENTE acepta —habiendo sido debidamente asesorado y en ejercicio de su plena autonomía de la voluntad (cfr. Cláusula 27)— que la &lt;strong&gt;metodología aplicada&lt;/strong&gt;, así como la selección, configuración y calibración de reglas técnicas, &lt;strong&gt;no será objeto de&lt;/strong&gt;: impugnación; reinterpretación; revisión técnica posterior; peritaje por terceros. Constituyendo &lt;strong&gt;base válida y suficiente&lt;/strong&gt; para el devengamiento de honorarios conforme al presente Contrato y a las Actas de Conformidad que se suscriban.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;14.3. Derecho a objeción fundada.&lt;/strong&gt; Sin perjuicio de lo anterior, el CLIENTE podrá formular &lt;strong&gt;objeciones fundadas&lt;/strong&gt; respecto de hallazgos individuales, debiendo presentarlas por escrito dentro de los &lt;strong&gt;diez (10) días hábiles&lt;/strong&gt; siguientes a la recepción del reporte, con detalle técnico y documentación respaldatoria suficiente. El PROVEEDOR evaluará las objeciones y comunicará su resolución dentro de los &lt;strong&gt;cinco (5) días hábiles&lt;/strong&gt; siguientes. La resolución del PROVEEDOR será &lt;strong&gt;definitiva&lt;/strong&gt; a los fines del devengamiento del honorario.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;!-- TÍTULO V --&gt;
-&lt;h2&gt;Título V — Obligaciones de las Partes&lt;/h2&gt;
-
-&lt;h3&gt;Cláusula Décimo Quinta — Obligaciones del Proveedor&lt;/h3&gt;
-&lt;p&gt;El PROVEEDOR se obliga a:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Ejecutar los servicios con la &lt;strong&gt;diligencia y profesionalismo&lt;/strong&gt; propios de su especialidad&lt;/li&gt;
-&lt;li&gt;Mantener la &lt;strong&gt;confidencialidad&lt;/strong&gt; de toda información recibida&lt;/li&gt;
-&lt;li&gt;Emitir &lt;strong&gt;informes forenses&lt;/strong&gt; documentados y trazables&lt;/li&gt;
-&lt;li&gt;Notificar al CLIENTE los hallazgos en un plazo razonable&lt;/li&gt;
-&lt;li&gt;Mantener actualizada la tecnología de detección&lt;/li&gt;
-&lt;li&gt;Garantizar la &lt;strong&gt;seguridad&lt;/strong&gt; de los datos durante su procesamiento (Modalidad Partner)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3&gt;Cláusula Décimo Sexta — Obligaciones del Cliente&lt;/h3&gt;
-&lt;p&gt;El CLIENTE se obliga a:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Abonar el SETUP y los honorarios en tiempo y forma&lt;/li&gt;
-&lt;li&gt;Proveer &lt;strong&gt;acceso oportuno y completo&lt;/strong&gt; a la información requerida&lt;/li&gt;
-&lt;li&gt;Designar un &lt;strong&gt;interlocutor autorizado&lt;/strong&gt; con capacidad de decisión&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Gestionar activamente&lt;/strong&gt; los hallazgos reportados (cfr. Cláusula 11)&lt;/li&gt;
-&lt;li&gt;No realizar ingeniería inversa ni violar la propiedad intelectual del PROVEEDOR&lt;/li&gt;
-&lt;li&gt;Suscribir las &lt;strong&gt;Actas de Conformidad&lt;/strong&gt; dentro de los plazos establecidos&lt;/li&gt;
-&lt;li&gt;Mantener la &lt;strong&gt;confidencialidad&lt;/strong&gt; de la tecnología y la metodología del PROVEEDOR&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3&gt;Cláusula Décimo Sexta Bis — No competencia y no contratación&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;16 bis.1. No competencia.&lt;/strong&gt; Durante la vigencia del Contrato y por un plazo de &lt;strong&gt;veinticuatro (24) meses&lt;/strong&gt; posteriores a su terminación por cualquier causa, el CLIENTE se abstendrá de desarrollar, adquirir, contratar, financiar, promover o facilitar a terceros herramientas, servicios, sistemas o soluciones que repliquen, imiten o sustituyan total o parcialmente la funcionalidad, la lógica de detección o la metodología del software Auditor Pro o de cualquier componente tecnológico del PROVEEDOR.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;16 bis.2. No contratación de personal.&lt;/strong&gt; Durante la vigencia del Contrato y por un plazo de &lt;strong&gt;doce (12) meses&lt;/strong&gt; posteriores a su terminación, el CLIENTE se abstendrá de contratar, vincular o asociar, directa o indirectamente, a personal, colaboradores o consultores del PROVEEDOR que hayan participado en la ejecución del servicio.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;16 bis.3. Penalidad.&lt;/strong&gt; La violación de cualquiera de las obligaciones previstas en la presente cláusula generará una penalidad equivalente a &lt;strong&gt;diez (10) veces&lt;/strong&gt; el valor del SETUP del nivel contratado, sin perjuicio de las acciones civiles y penales que correspondan.&lt;/p&gt;
-
-&lt;h3&gt;Cláusula Décimo Sexta Ter — Derecho de auditoría&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;16 ter.1.&lt;/strong&gt; El PROVEEDOR tendrá derecho a auditar, directamente o a través de terceros designados bajo NDA, los registros contables, administrativos y de facturación del CLIENTE vinculados a los hallazgos reportados, a los efectos de verificar la correcta liquidación del success fee y el cumplimiento del deber de gestión previsto en la Cláusula 11.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;16 ter.2.&lt;/strong&gt; La auditoría podrá ejercerse con una frecuencia no mayor a &lt;strong&gt;trimestral&lt;/strong&gt; y con un preaviso mínimo de &lt;strong&gt;cinco (5) días hábiles&lt;/strong&gt;. El CLIENTE se obliga a facilitar el acceso a la documentación requerida en un plazo no mayor a &lt;strong&gt;diez (10) días hábiles&lt;/strong&gt; desde el requerimiento.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;16 ter.3.&lt;/strong&gt; En caso de que la auditoría revele una diferencia igual o superior al &lt;strong&gt;5%&lt;/strong&gt; entre los montos declarados por el CLIENTE y los efectivamente verificados, el CLIENTE deberá abonar la diferencia con más los intereses punitorios previstos en la Cláusula 11 bis.2, y los costos de la auditoría serán a su exclusivo cargo.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;!-- TÍTULO VI --&gt;
-&lt;h2&gt;Título VI — Confidencialidad&lt;/h2&gt;
-
-&lt;h3&gt;Cláusula Décimo Séptima — Régimen de confidencialidad y protección de datos personales&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;17.1. Alcance.&lt;/strong&gt; Toda información técnica, económica, estratégica, comercial, operativa, médica, de pacientes o de cualquier otra naturaleza intercambiada entre las Partes tendrá carácter &lt;strong&gt;estrictamente confidencial&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;17.2. Marco normativo.&lt;/strong&gt; El tratamiento de datos personales bajo el presente Contrato se rige por la &lt;strong&gt;Ley 25.326 de Protección de Datos Personales&lt;/strong&gt;, su Decreto Reglamentario 1558/2001, las disposiciones de la &lt;strong&gt;Agencia de Acceso a la Información Pública (AAIP)&lt;/strong&gt; y toda normativa complementaria vigente.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;17.3. Roles de las Partes.&lt;/strong&gt; A los efectos de la Ley 25.326: el CLIENTE reviste el carácter de &lt;strong&gt;&quot;Responsable del Tratamiento&quot;&lt;/strong&gt; (art. 2°, Ley 25.326), siendo el titular de las bases de datos de pacientes y de la información de salud objeto de procesamiento. El PROVEEDOR reviste el carácter de &lt;strong&gt;&quot;Encargado de Tratamiento&quot;&lt;/strong&gt; (art. 25, Ley 25.326), procesando los datos exclusivamente por cuenta y orden del CLIENTE, conforme al objeto del presente Contrato y a las instrucciones documentadas del Responsable.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;17.4. Obligaciones del PROVEEDOR como Encargado de Tratamiento.&lt;/strong&gt; El PROVEEDOR se obliga a:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Tratar los datos personales &lt;strong&gt;exclusivamente&lt;/strong&gt; para la finalidad pactada en el presente Contrato&lt;/li&gt;
-&lt;li&gt;Implementar las &lt;strong&gt;medidas de seguridad&lt;/strong&gt; técnicas y organizativas adecuadas conforme al art. 9° de la Ley 25.326, incluyendo encriptación AES-256 o superior en tránsito y en reposo&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;No comunicar ni transferir&lt;/strong&gt; datos personales a terceros sin autorización previa y por escrito del CLIENTE, salvo obligación legal&lt;/li&gt;
-&lt;li&gt;Garantizar que el personal autorizado para tratar datos personales se haya comprometido a respetar la &lt;strong&gt;confidencialidad&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Asistir al CLIENTE&lt;/strong&gt; en el cumplimiento de las obligaciones de respuesta a solicitudes de ejercicio de derechos de los titulares de datos (acceso, rectificación, supresión)&lt;/li&gt;
-&lt;li&gt;Proceder a la &lt;strong&gt;destrucción certificada o devolución&lt;/strong&gt; de los datos personales una vez finalizada la prestación del servicio, salvo obligación legal de conservación&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;17.5. Datos sensibles.&lt;/strong&gt; Las Partes reconocen que los datos de salud procesados bajo el presente Contrato constituyen &lt;strong&gt;datos sensibles&lt;/strong&gt; conforme al art. 2° de la Ley 25.326. El CLIENTE declara y garantiza que cuenta con la &lt;strong&gt;habilitación legal&lt;/strong&gt; suficiente para el tratamiento de dichos datos y para su comunicación al PROVEEDOR en calidad de Encargado de Tratamiento, conforme a las excepciones previstas en el art. 8° de la Ley 25.326 (razones de interés general autorizadas por ley, estadísticas y datos disociados).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;17.6. Derecho a datos anonimizados.&lt;/strong&gt; El PROVEEDOR queda expresamente facultado a utilizar datos &lt;strong&gt;debidamente anonimizados e irreversiblemente disociados&lt;/strong&gt; (conforme al art. 11 inc. 3.e de la Ley 25.326 y al art. 28 del Decreto 1558/2001) para el desarrollo, mejora, entrenamiento y calibración de sus algoritmos, modelos de detección y tecnología propietaria, sin que ello requiera consentimiento adicional del CLIENTE ni de los titulares de los datos, ni constituya cesión, transferencia ni comunicación de datos personales. Los datos anonimizados no serán considerados datos personales a los efectos legales.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;17.7. Vigencia de la confidencialidad.&lt;/strong&gt; La obligación de confidencialidad subsistirá por un plazo de: &lt;strong&gt;cinco (5) años&lt;/strong&gt; posteriores a la terminación del Contrato para información comercial, estratégica y operativa; &lt;strong&gt;diez (10) años&lt;/strong&gt; posteriores a la terminación del Contrato para información relativa a propiedad intelectual, tecnología propietaria y datos de pacientes.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;17.8. Excepciones.&lt;/strong&gt; No se considerará información confidencial aquella que: sea o se torne de &lt;strong&gt;dominio público&lt;/strong&gt; sin culpa de la parte receptora; haya sido conocida &lt;strong&gt;previamente&lt;/strong&gt; por la parte receptora de forma lícita; deba ser revelada por &lt;strong&gt;mandato judicial o legal&lt;/strong&gt;, previa notificación fehaciente a la otra parte con una anticipación mínima de cinco (5) días hábiles a fin de que esta pueda ejercer sus derechos de oposición.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;17.9. Penalidad.&lt;/strong&gt; La violación del deber de confidencialidad o de las obligaciones de protección de datos personales generará una &lt;strong&gt;penalidad&lt;/strong&gt; de &lt;strong&gt;PESOS VEINTE MILLONES ($20.000.000)&lt;/strong&gt; —ajustable conforme al mecanismo de la Cláusula 9.5—, sin perjuicio de la indemnización por los daños y perjuicios efectivamente sufridos y de las sanciones administrativas que pudiera imponer la AAIP.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;!-- TÍTULO VII --&gt;
-&lt;h2&gt;Título VII — Responsabilidad y Garantías&lt;/h2&gt;
-
-&lt;h3&gt;Cláusula Décimo Octava — Limitación de responsabilidad&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;18.1. Obligación de medios.&lt;/strong&gt; El PROVEEDOR asume una &lt;strong&gt;obligación de medios&lt;/strong&gt; y no garantiza resultados económicos específicos, montos determinados ni plazos de recupero.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;18.2. Naturaleza de los reportes.&lt;/strong&gt; Los reportes y alertas emitidos constituyen &lt;strong&gt;indicios informáticos calificados&lt;/strong&gt; y no: dictámenes periciales; opiniones legales vinculantes; dictámenes médicos.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;18.3. Indemnidad y exclusiones.&lt;/strong&gt; El uso de la información contenida en los reportes para la adopción de decisiones sancionatorias, disciplinarias, legales o de cualquier otra índole es de &lt;strong&gt;exclusiva responsabilidad del CLIENTE&lt;/strong&gt;, quien mantendrá &lt;strong&gt;indemne&lt;/strong&gt; al PROVEEDOR frente a cualquier reclamo, acción o demanda de terceros derivada directa o indirectamente de dicho uso.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;18.3.1. Exclusiones expresas de responsabilidad.&lt;/strong&gt; Sin carácter taxativo, el PROVEEDOR &lt;strong&gt;no será responsable&lt;/strong&gt; bajo ninguna circunstancia por:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Multas, sanciones, penalidades o apercibimientos impuestos por &lt;strong&gt;PAMI, SEMPRE&lt;/strong&gt; u otros financiadores, organismos de control o autoridades administrativas&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Débitos retroactivos o futuros&lt;/strong&gt; aplicados por obras sociales, prepagas o entidades financiadoras&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Rechazos de facturación&lt;/strong&gt; total o parcial por parte de financiadores&lt;/li&gt;
-&lt;li&gt;Reclamos vinculados a &lt;strong&gt;mala praxis médica&lt;/strong&gt;, iatrogenia o responsabilidad profesional sanitaria&lt;/li&gt;
-&lt;li&gt;Decisiones administrativas, disciplinarias, sancionatorias o laborales adoptadas por el CLIENTE sobre la base de los reportes&lt;/li&gt;
-&lt;li&gt;Perjuicios derivados de la &lt;strong&gt;inacción, demora o gestión deficiente&lt;/strong&gt; del CLIENTE en el seguimiento de los hallazgos reportados&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;18.4. Límite cuantitativo.&lt;/strong&gt; En ningún caso la responsabilidad total del PROVEEDOR bajo el presente Contrato excederá el equivalente a &lt;strong&gt;una (1) vez&lt;/strong&gt; el monto efectivamente percibido en concepto de honorarios durante los últimos &lt;strong&gt;tres (3) meses&lt;/strong&gt; anteriores al evento generador del reclamo.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;!-- TÍTULO VIII --&gt;
-&lt;h2&gt;Título VIII — Vigencia, Rescisión y Supervivencia&lt;/h2&gt;
-
-&lt;h3&gt;Cláusula Décimo Novena — Plazo y vigencia&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;19.1.&lt;/strong&gt; El presente Contrato entrará en vigencia a partir de la fecha de su suscripción y del pago efectivo del SETUP, y tendrá una duración de &lt;strong&gt;doce (12) meses&lt;/strong&gt;, renovable automáticamente por períodos iguales salvo notificación en contrario con &lt;strong&gt;treinta (30) días&lt;/strong&gt; de anticipación.&lt;/p&gt;
-
-&lt;h3&gt;Cláusula Vigésima — Rescisión&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;20.1. Rescisión sin causa por el PROVEEDOR.&lt;/strong&gt; El PROVEEDOR podrá rescindir el presente Contrato sin expresión de causa, con un preaviso &lt;strong&gt;fehaciente&lt;/strong&gt; de &lt;strong&gt;treinta (30) días corridos&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;20.1 bis. Rescisión sin causa por el CLIENTE.&lt;/strong&gt; El CLIENTE podrá rescindir el presente Contrato sin expresión de causa únicamente una vez transcurrido el &lt;strong&gt;plazo mínimo de permanencia de seis (6) meses&lt;/strong&gt; desde la fecha de inicio efectivo del servicio, con un preaviso &lt;strong&gt;fehaciente&lt;/strong&gt; de &lt;strong&gt;sesenta (60) días corridos&lt;/strong&gt;. La rescisión anticipada (antes del plazo mínimo) por parte del CLIENTE generará una &lt;strong&gt;penalidad&lt;/strong&gt; equivalente a &lt;strong&gt;tres (3) mensualidades&lt;/strong&gt; del abono fijo del nivel contratado, más el &lt;strong&gt;success fee promedio&lt;/strong&gt; de los meses efectivamente operados proyectado a los meses restantes del plazo mínimo. En el nivel &lt;strong&gt;Riesgo Compartido&lt;/strong&gt;, la rescisión generará adicionalmente la obligación de pago de la cuota de amortización del SETUP conforme a la Cláusula 8.5 y 8.6.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;20.2. Rescisión con causa.&lt;/strong&gt; Constituyen causales de rescisión con justa causa:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Incumplimiento grave de las obligaciones esenciales del Contrato&lt;/li&gt;
-&lt;li&gt;Violación del régimen de confidencialidad o propiedad intelectual&lt;/li&gt;
-&lt;li&gt;Concurso preventivo, quiebra o cesación de pagos de cualquiera de las Partes&lt;/li&gt;
-&lt;li&gt;Imposibilidad sobreviniente de cumplimiento&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;20.3. Efectos de la rescisión.&lt;/strong&gt; La rescisión, cualquiera sea su causa: &lt;strong&gt;no afectará&lt;/strong&gt; los honorarios ya devengados; &lt;strong&gt;no extinguirá&lt;/strong&gt; los honorarios derivados de hallazgos detectados durante la vigencia del Contrato; &lt;strong&gt;no liberará&lt;/strong&gt; al CLIENTE del pago del SETUP ni de obligaciones pendientes.&lt;/p&gt;
-
-&lt;h3&gt;Cláusula Vigésimo Primera — Supervivencia&lt;/h3&gt;
-&lt;p&gt;Subsistirán con posterioridad a la terminación del Contrato, por cualquier causa, las siguientes cláusulas:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Propiedad intelectual y licencia (Cláusulas 13 y 13 bis)&lt;/li&gt;
-&lt;li&gt;Confidencialidad y protección de datos personales (Cláusula 17)&lt;/li&gt;
-&lt;li&gt;Limitación de responsabilidad (Cláusula 18)&lt;/li&gt;
-&lt;li&gt;Devengamiento y cobro de honorarios (Cláusulas 9, 10 y 11)&lt;/li&gt;
-&lt;li&gt;Amortización del SETUP absorbido (Cláusulas 8.5 y 8.6)&lt;/li&gt;
-&lt;li&gt;Mora automática e intereses (Cláusula 11 bis)&lt;/li&gt;
-&lt;li&gt;No competencia y no contratación (Cláusula 16 bis)&lt;/li&gt;
-&lt;li&gt;Derecho de auditoría (Cláusula 16 ter)&lt;/li&gt;
-&lt;li&gt;Reglas Maestras Operativas (Cláusula 23)&lt;/li&gt;
-&lt;li&gt;Fuerza mayor (Cláusula 26)&lt;/li&gt;
-&lt;li&gt;Declaración de negociación libre (Cláusula 27)&lt;/li&gt;
-&lt;li&gt;Penalidades contractuales&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr&gt;
-
-&lt;!-- TÍTULO IX --&gt;
-&lt;h2&gt;Título IX — Disposiciones Generales&lt;/h2&gt;
-
-&lt;h3&gt;Cláusula Vigésimo Segunda — Jurisdicción y ley aplicable&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;22.1.&lt;/strong&gt; El presente Contrato se rige por las leyes de la &lt;strong&gt;República Argentina&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;22.2.&lt;/strong&gt; Para cualquier controversia derivada del presente Contrato, las Partes se someten a la jurisdicción exclusiva de los &lt;strong&gt;Tribunales Ordinarios de la ciudad de Santa Rosa, Provincia de La Pampa&lt;/strong&gt;, con &lt;strong&gt;renuncia expresa&lt;/strong&gt; a cualquier otro fuero o jurisdicción que pudiera corresponderles, incluyendo el fuero federal.&lt;/p&gt;
-
-&lt;h3&gt;Cláusula Vigésimo Tercera — Reglas Maestras Operativas y Contractuales&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;23.1.&lt;/strong&gt; El CLIENTE reconoce y acepta que toda prestación de servicios se encuentra regida por &lt;strong&gt;Reglas Maestras Operativas y Contractuales&lt;/strong&gt;, de carácter: &lt;strong&gt;esencial&lt;/strong&gt; (integran el núcleo del Contrato); &lt;strong&gt;obligatorio&lt;/strong&gt; (su cumplimiento es inexcusable); &lt;strong&gt;no negociable&lt;/strong&gt; (no admiten modificación por el CLIENTE); &lt;strong&gt;dinámico&lt;/strong&gt; (evolucionan con la tecnología y la normativa aplicable).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;23.2.&lt;/strong&gt; Las Reglas Maestras se consideran incorporadas &lt;strong&gt;de pleno derecho&lt;/strong&gt; a la relación contractual en su versión vigente al momento de cada procesamiento, aun cuando no se encuentren transcritas íntegramente en el presente instrumento ni sean de acceso público.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;23.3.&lt;/strong&gt; Las mismas comprenden: &lt;strong&gt;Reglas Operativas Activas&lt;/strong&gt; (de aplicación estándar) y &lt;strong&gt;Reglas Técnicas de Validación Avanzada o Reservadas&lt;/strong&gt; (cuya activación, desactivación o parametrización constituye una decisión técnica exclusiva del PROVEEDOR). Ninguna modificación a las Reglas Maestras constituirá alteración contractual ni requerirá adenda alguna.&lt;/p&gt;
-
-&lt;h3&gt;Cláusula Vigésimo Cuarta — Notificaciones&lt;/h3&gt;
-&lt;p&gt;Todas las notificaciones entre las Partes deberán realizarse por escrito y se considerarán válidas cuando sean cursadas mediante: carta documento; correo electrónico con acuse de recibo a las casillas designadas por cada Parte; cualquier otro medio fehaciente.&lt;/p&gt;
-&lt;table class=&quot;th-col&quot;&gt;
-&lt;tr&gt;&lt;td&gt;Domicilio del PROVEEDOR&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill-l&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Correo electrónico del PROVEEDOR&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill-l&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Domicilio del CLIENTE&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill-l&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Correo electrónico del CLIENTE&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill-l&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;h3&gt;Cláusula Vigésimo Quinta — Disposiciones finales&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;25.1. Integridad.&lt;/strong&gt; El presente Contrato, junto con sus Anexos y Adendas, constituye el &lt;strong&gt;acuerdo íntegro&lt;/strong&gt; entre las Partes y reemplaza cualquier entendimiento, negociación o acuerdo previo, verbal o escrito.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;25.2. Independencia.&lt;/strong&gt; La nulidad o inaplicabilidad de cualquier cláusula no afectará la validez de las restantes.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;25.3. No renuncia.&lt;/strong&gt; La tolerancia o demora de cualquiera de las Partes en el ejercicio de sus derechos no constituirá renuncia a los mismos.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;25.4. Cesión.&lt;/strong&gt; El CLIENTE no podrá ceder total ni parcialmente los derechos u obligaciones emergentes del presente Contrato sin la conformidad previa y por escrito del PROVEEDOR.&lt;/p&gt;
-
-&lt;h3&gt;Cláusula Vigésimo Sexta — Fuerza mayor&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;26.1.&lt;/strong&gt; Ninguna de las Partes será responsable por el incumplimiento total o parcial de sus obligaciones cuando dicho incumplimiento sea consecuencia directa de un evento de &lt;strong&gt;fuerza mayor o caso fortuito&lt;/strong&gt; (art. 1730 CCyCN), incluyendo pero no limitado a: catástrofes naturales, pandemias, conflictos bélicos, actos de terrorismo, huelgas generales, interrupciones masivas de servicios públicos, fallas sistémicas de infraestructura tecnológica de terceros, y &lt;strong&gt;cambios normativos o regulatorios abruptos&lt;/strong&gt; de PAMI, SEMPRE u otros organismos que alteren sustancialmente las condiciones de prestación del servicio.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;26.2.&lt;/strong&gt; La Parte afectada deberá notificar a la otra dentro de los &lt;strong&gt;cinco (5) días hábiles&lt;/strong&gt; siguientes a la ocurrencia del evento, acreditando su existencia y su relación causal con el incumplimiento. La suspensión de obligaciones subsistirá mientras dure el evento y por un plazo máximo de &lt;strong&gt;noventa (90) días corridos&lt;/strong&gt;, transcurrido el cual cualquiera de las Partes podrá resolver el Contrato sin penalidad.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;26.3. Exclusión.&lt;/strong&gt; No constituirán fuerza mayor: la falta de recursos económicos del CLIENTE, la mora de financiadores u obras sociales en el pago de prestaciones, ni las dificultades operativas internas del CLIENTE.&lt;/p&gt;
-
-&lt;h3&gt;Cláusula Vigésimo Séptima — Declaración de negociación libre&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;27.1.&lt;/strong&gt; Las Partes declaran que el presente Contrato ha sido &lt;strong&gt;libremente negociado&lt;/strong&gt; entre ellas, en condiciones de igualdad, con pleno conocimiento de su contenido y alcance, habiendo contado cada una con la asistencia de asesores legales y técnicos propios. En consecuencia, las Partes renuncian a invocar la aplicación del régimen de contratos de adhesión o cláusulas abusivas previsto en los artículos 984 a 989 del Código Civil y Comercial de la Nación.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;!-- FIRMAS --&gt;
-&lt;h2&gt;Firmas&lt;/h2&gt;
-&lt;p&gt;En prueba de conformidad, se firman &lt;strong&gt;dos (2) ejemplares&lt;/strong&gt; de un mismo tenor y a un solo efecto, en el lugar y fecha indicados en el encabezamiento.&lt;/p&gt;
-
-&lt;div class=&quot;sig&quot;&gt;
-  &lt;div class=&quot;sig-box&quot;&gt;
-    &lt;div class=&quot;sig-line&quot;&gt;&lt;/div&gt;
-    &lt;p&gt;&lt;strong&gt;POR EL PROVEEDOR:&lt;/strong&gt;&lt;/p&gt;
-    &lt;p&gt;Nombre: &lt;span class=&quot;fill&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-    &lt;p&gt;Cargo: &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-    &lt;p&gt;DNI: &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;sig-box&quot;&gt;
-    &lt;div class=&quot;sig-line&quot;&gt;&lt;/div&gt;
-    &lt;p&gt;&lt;strong&gt;POR EL CLIENTE:&lt;/strong&gt;&lt;/p&gt;
-    &lt;p&gt;Nombre: &lt;span class=&quot;fill&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-    &lt;p&gt;Cargo: &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-    &lt;p&gt;DNI: &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;hr&gt;
-
-&lt;!-- ANEXOS --&gt;
-&lt;div class=&quot;anexo-box&quot;&gt;
-&lt;p&gt;&lt;strong&gt;📎 ANEXOS&lt;/strong&gt; &lt;em&gt;(a incorporar según corresponda)&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;• &lt;strong&gt;Anexo I:&lt;/strong&gt; Especificaciones técnicas del software Auditor Pro&lt;/p&gt;
-&lt;p&gt;• &lt;strong&gt;Anexo II:&lt;/strong&gt; Modelo de Acta de Conformidad&lt;/p&gt;
-&lt;p&gt;• &lt;strong&gt;Anexo III:&lt;/strong&gt; Modelo de Adenda de Activación de Reglas Reservadas&lt;/p&gt;
-&lt;p&gt;• &lt;strong&gt;Anexo IV:&lt;/strong&gt; Protocolo de seguridad de datos&lt;/p&gt;
-&lt;p&gt;• &lt;strong&gt;Anexo V:&lt;/strong&gt; Reglas Maestras Operativas (versión vigente)&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;&lt;!-- /body --&gt;
-&lt;/div&gt;&lt;!-- /doc --&gt;
-&lt;script&gt;document.addEventListener(&#x27;DOMContentLoaded&#x27;,function(){var b=document.createElement(&#x27;button&#x27;);b.className=&#x27;no-print&#x27;;b.textContent=&#x27;Imprimir documento&#x27;;b.style.cssText=&#x27;position:fixed;bottom:20px;right:20px;z-index:99999;padding:12px 24px;background:#0F766E;color:#fff;border:none;border-radius:6px;cursor:pointer;font-family:Inter,sans-serif;font-size:11pt;font-weight:700;box-shadow:0 4px 12px rgba(0,0,0,.2);&#x27;;b.onclick=function(){window.print();};document.body.appendChild(b);});&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
+</style>
+</head>
+<body>
+
+<!-- PRINT HEADER (repeats on each printed page) -->
+<div class="ph">
+  <span class="ph-ref">Ref: Documentación Legal Oficial | Confidencial</span>
+  <img src="https://beliz.com.ar/logo.png" alt="BELIZ™" style="height:8mm;">
+</div>
+
+<!-- PRINT FOOTER (repeats on each printed page) -->
+<div class="pf">
+  <span>BELIZ™ | División Forense</span>
+  <span>Contrato Marco v5.1 — Modelo Forense</span>
+</div>
+
+<div class="doc">
+<div class="body">
+
+<!-- COVER -->
+<div class="cover">
+  <img src="https://beliz.com.ar/logo.png" alt="BELIZ™" style="height:60pt;margin-bottom:5px;">
+  <div class="cover-div">División Forense</div>
+  <div class="cover-title">Contrato Marco de Prestación de Servicios<br>de Auditoría Forense<br>y Licencia de Uso de Tecnología Propietaria</div>
+  <div class="cover-sub">Modelo Forense v5.0 — Pricing v9.1 (Definitiva)</div>
+  <div class="cover-ver">Versión Blindada v5.1</div>
+</div>
+
+<!-- COMPARECENCIA -->
+<p>En la ciudad de <strong>Santa Rosa</strong>, Provincia de La Pampa, República Argentina, a los <span class="fill-s"></span> días del mes de <span class="fill-s"></span> de <strong>2026</strong>, comparecen:</p>
+
+<p><strong>I. EL PROVEEDOR:</strong></p>
+<table class="th-col">
+<tr><td>Denominación</td><td>BELIZ™ — División Forense</td></tr>
+<tr><td>Titular</td><td>AGUSTÍN BELIZ</td></tr>
+<tr><td>DNI</td><td><span class="fill"></span></td></tr>
+<tr><td>CUIT</td><td><span class="fill"></span></td></tr>
+<tr><td>Domicilio legal</td><td>Santa Rosa, Provincia de La Pampa</td></tr>
+</table>
+
+<p><strong>II. EL CLIENTE:</strong></p>
+<table class="th-col">
+<tr><td>Razón social</td><td><span class="fill-l"></span></td></tr>
+<tr><td>CUIT</td><td><span class="fill"></span></td></tr>
+<tr><td>Domicilio legal</td><td><span class="fill-l"></span></td></tr>
+<tr><td>Representante legal</td><td><span class="fill"></span>, DNI <span class="fill-s"></span>, en carácter de <span class="fill-s"></span></td></tr>
+</table>
+
+<p>Ambas, en adelante las <strong>"Partes"</strong>, reconociéndose mutuamente capacidad legal suficiente para obligarse, convienen celebrar el presente <strong>Contrato Marco de Prestación de Servicios de Auditoría Forense y Licencia de Uso de Tecnología Propietaria</strong> (en adelante, el <strong>"Contrato"</strong>), sujeto a las siguientes cláusulas y condiciones:</p>
+
+<hr>
+
+<!-- TÍTULO I -->
+<h2>Título I — Comparecencia y Declaraciones</h2>
+
+<h3>Cláusula Segunda — Declaraciones previas del Proveedor</h3>
+<p>El PROVEEDOR declara bajo juramento que:</p>
+<ol>
+<li><strong>BELIZ™</strong> es una firma especializada en <strong>Auditoría Forense Financiera</strong>, <strong>Detección Algorítmica de Inconsistencias Económicas</strong> y <strong>Blindaje de Facturación</strong>, operando mediante metodologías, software y reglas de negocio propietarias.</li>
+<li>El software <strong>"Auditor Pro"</strong> y la totalidad de sus módulos, algoritmos, reglas de detección y configuraciones constituyen <strong>tecnología propietaria exclusiva</strong> del PROVEEDOR, protegida por las normas de propiedad intelectual vigentes en la República Argentina (Ley 11.723 y concordantes).</li>
+<li>Cuenta con la infraestructura técnica, el conocimiento especializado y los recursos humanos necesarios para la ejecución de los servicios objeto del presente Contrato.</li>
+</ol>
+
+<h3>Cláusula Tercera — Declaraciones previas del Cliente</h3>
+<p>El CLIENTE declara bajo juramento que:</p>
+<ol>
+<li>Es titular legítimo de los datos que serán objeto de procesamiento, o cuenta con autorización suficiente para su tratamiento.</li>
+<li>Se encuentra al corriente de sus obligaciones fiscales y previsionales.</li>
+<li>Ha tomado conocimiento integral del presente Contrato y lo suscribe en pleno ejercicio de su autonomía de la voluntad.</li>
+</ol>
+
+<h3>Cláusula Cuarta — Exclusión expresa de alcance médico-asistencial</h3>
+<div class="co warn">
+<p>Las Partes dejan expresamente establecido que los servicios prestados bajo el presente Contrato <strong>NO</strong> constituyen, bajo ninguna circunstancia:</p>
+<ul>
+<li>Auditoría médica asistencial</li>
+<li>Práctica clínica o evaluación de actos médicos</li>
+<li>Diagnóstico, pronóstico o recomendación terapéutica</li>
+<li>Intervención en decisiones vinculadas a mala praxis profesional</li>
+</ul>
+<p>El alcance se limita <strong>estrictamente</strong> al análisis lógico, matemático, algorítmico y administrativo de datos económicos y de facturación.</p>
+</div>
+
+<hr>
+
+<!-- TÍTULO II -->
+<h2>Título II — Objeto y Alcance</h2>
+
+<h3>Cláusula Quinta — Objeto del Contrato</h3>
+<p>El PROVEEDOR prestará al CLIENTE servicios profesionales de <strong>Auditoría Forense de Alta Complejidad</strong>, comprendiendo:</p>
+<ul>
+<li>Identificación, detección y validación de <strong>inconsistencias financieras</strong></li>
+<li>Detección de <strong>desvíos de facturación</strong> y <strong>subfacturación</strong></li>
+<li>Identificación de <strong>rechazos indebidos</strong> y <strong>errores sistémicos</strong></li>
+<li>Cuantificación de <strong>oportunidades de recupero y ahorro</strong></li>
+<li><strong>Blindaje preventivo</strong> de circuitos de facturación y control económico</li>
+</ul>
+<p>Todo ello mediante el uso de <strong>tecnología propietaria</strong>, modelos forenses, reglas de negocio, algoritmos y know-how exclusivo del PROVEEDOR.</p>
+
+<h3>Cláusula Sexta — Modalidad de servicio</h3>
+<p>Las Partes acuerdan la siguiente modalidad y nivel aplicable <em>(marcar los que correspondan)</em>:</p>
+<p><strong>Modalidad de procesamiento:</strong></p>
+<p class="indent"><span class="chk">☐</span> <strong>Opción A</strong> — Procesamiento Externo / Auditoría por Resultados ("Partner")</p>
+<p class="indent"><span class="chk">☐</span> <strong>Opción B</strong> — Procesamiento On-Premise / Licencia de Software</p>
+<p><strong>Nivel comercial:</strong></p>
+<p class="indent"><span class="chk">☐</span> <strong>Etapa 0</strong> — Validación técnica (30 días)</p>
+<p class="indent"><span class="chk">☐</span> <strong>Partner</strong> — Operación estándar</p>
+<p class="indent"><span class="chk">☐</span> <strong>Riesgo Compartido</strong> — Crisis de liquidez / Protocolo Emergencia PAMI 2026</p>
+<p class="indent"><span class="chk">☐</span> <strong>Enterprise</strong> — Soberanía de datos / On-Premise</p>
+<p>La modalidad y el nivel seleccionados determinarán el régimen de tratamiento de datos, la arquitectura de ejecución del software y las condiciones económicas aplicables, conforme se detalla en los Títulos III y IV del presente Contrato.</p>
+
+<h3>Cláusula Séptima — Alcance técnico y reglas de detección</h3>
+<p>El CLIENTE reconoce y acepta que los servicios se ejecutan mediante un motor de reglas técnicas de detección, clasificadas en:</p>
+<p><strong>a) Reglas Financieras y Administrativas ACTIVAS</strong></p>
+<p class="indent">Orientadas a la identificación de inconsistencias económicas, administrativas o de facturación. Forman parte del <strong>alcance estándar</strong> del servicio y se activan por defecto.</p>
+<p><strong>b) Reglas de Validación Clínica RESERVADAS</strong></p>
+<p class="indent">Orientadas a controles de coherencia biológica, frecuencia médica u otros parámetros sensibles. Su activación:</p>
+<ul>
+<li><strong>No</strong> se encuentra incluida por defecto</li>
+<li>Solo será implementada a <strong>pedido expreso y por escrito</strong> del CLIENTE</li>
+<li>Operará bajo la <strong>exclusiva responsabilidad</strong> del CLIENTE</li>
+<li>Requerirá la suscripción de una <strong>Adenda de Activación de Reglas Reservadas</strong></li>
+</ul>
+<div class="co">
+<p><strong>Facultad técnica del Proveedor:</strong> El PROVEEDOR se reserva la facultad exclusiva e irrenunciable de definir, activar, desactivar, ajustar, recalibrar o incorporar reglas técnicas en función de la evolución del servicio, los avances tecnológicos o los cambios normativos, sin que ello constituya modificación contractual ni requiera la suscripción de adenda alguna.</p>
+</div>
+
+<hr>
+
+<!-- TÍTULO III -->
+<h2>Título III — Condiciones Económicas</h2>
+
+<h3>Cláusula Octava — Fase 1: Costo de Implementación y Calibración (SETUP)</h3>
+<p><strong>8.1.</strong> El CLIENTE abonará al PROVEEDOR, en concepto de Costo de Implementación y Calibración (en adelante, <strong>"SETUP"</strong>), la suma que corresponda según el nivel comercial seleccionado en la Cláusula Sexta:</p>
+<table class="tbl-alt">
+<tr><th>Nivel</th><th>Setup</th></tr>
+<tr><td>Etapa 0 (30 días)</td><td>PESOS TRES MILLONES QUINIENTOS MIL ($3.500.000) + IVA</td></tr>
+<tr><td>Partner</td><td>PESOS SEIS MILLONES QUINIENTOS MIL ($6.500.000) + IVA</td></tr>
+<tr><td>Riesgo Compartido</td><td>PESOS CERO ($0) — absorbido por el PROVEEDOR</td></tr>
+<tr><td>Enterprise</td><td>PESOS SEIS MILLONES QUINIENTOS MIL ($6.500.000) + IVA</td></tr>
+</table>
+
+<p><strong>8.2. Naturaleza del pago.</strong> El SETUP tiene carácter de pago:</p>
+<ul>
+<li><strong>Único:</strong> se abona una sola vez al inicio de la relación contractual</li>
+<li><strong>Firme e irrevocable:</strong> no sujeto a condición resolutoria</li>
+<li><strong>Definitivo:</strong> no compensable con honorarios futuros</li>
+<li><strong>No reembolsable:</strong> cualquiera sea la causa de rescisión, interrupción del servicio, ausencia de resultados o decisión unilateral del CLIENTE</li>
+</ul>
+
+<p><strong>8.3. Condición suspensiva.</strong> Salvo en el nivel <strong>Riesgo Compartido</strong> (donde el SETUP es absorbido por el PROVEEDOR), el pago íntegro del SETUP constituye <strong>condición suspensiva, esencial y <em>sine qua non</em></strong> para: el inicio de cualquier tarea, instalación o análisis; la carga de datos y calibración del sistema; el acceso al software y sus módulos; la asunción de cualquier obligación por parte del PROVEEDOR.</p>
+
+<p><strong>8.4.</strong> Hasta tanto el SETUP no sea abonado en su totalidad y los fondos se encuentren efectivamente acreditados (o se haya pactado el nivel Riesgo Compartido), el PROVEEDOR <strong>no asume obligación alguna</strong> frente al CLIENTE.</p>
+
+<p><strong>8.5. Amortización del SETUP absorbido — Nivel Riesgo Compartido.</strong> En el nivel <strong>Riesgo Compartido</strong>, donde el PROVEEDOR absorbe el costo del SETUP, dicha absorción se sujeta a un cronograma de amortización progresiva conforme al siguiente detalle:</p>
+<table class="tbl-alt">
+<tr><th>Período</th><th>Cuota de amortización pendiente</th><th>Monto</th></tr>
+<tr><td>Mes 1 a 8</td><td>100% del SETUP nominal</td><td>$6.500.000 + IVA</td></tr>
+<tr><td>Mes 9 a 16</td><td>60% del SETUP nominal</td><td>$3.900.000 + IVA</td></tr>
+<tr><td>Mes 17 a 24</td><td>30% del SETUP nominal</td><td>$1.950.000 + IVA</td></tr>
+<tr><td>Mes 25 en adelante</td><td>0% — SETUP íntegramente amortizado</td><td>$0</td></tr>
+</table>
+
+<p><strong>8.6. Exigibilidad por rescisión anticipada.</strong> En caso de rescisión anticipada del Contrato en el nivel <strong>Riesgo Compartido</strong> —por cualquier causa imputable al CLIENTE, por decisión unilateral del CLIENTE o por incumplimiento esencial del CLIENTE—, el CLIENTE deberá abonar al PROVEEDOR, dentro de los <strong>diez (10) días hábiles</strong> siguientes a la fecha de rescisión, la <strong>cuota de amortización vigente</strong> según el cronograma del punto 8.5, calculada al momento de la efectiva terminación del Contrato. Dicho monto se ajustará conforme al mecanismo previsto en la Cláusula 9.5 (Cláusula Gatillo), tomando como base el valor nominal indicado y como período de ajuste el transcurrido desde la suscripción del Contrato hasta la fecha de rescisión. La falta de pago de la cuota de amortización dentro del plazo establecido devengará los intereses punitorios previstos en la Cláusula 11 bis.2.</p>
+
+<h3>Cláusula Novena — Fase 2: Honorarios Periódicos y de Éxito</h3>
+<p><strong>9.1. Estructura económica por nivel.</strong> El CLIENTE abonará al PROVEEDOR los honorarios que correspondan según el nivel comercial pactado:</p>
+<table class="tbl-alt">
+<tr><th>Nivel</th><th>Mensual</th><th>Success Fee</th></tr>
+<tr><td>Etapa 0</td><td>—</td><td>—</td></tr>
+<tr><td>Partner</td><td>$2.000.000 + IVA</td><td>15% sobre recupero bruto</td></tr>
+<tr><td>Riesgo Compartido — Mes 1</td><td>—</td><td>25% sobre recupero bruto</td></tr>
+<tr><td>Riesgo Compartido — Mes 2+</td><td>$1.500.000 + IVA</td><td>15% sobre recupero bruto</td></tr>
+<tr><td>Enterprise</td><td>$6.000.000 + IVA</td><td>0% hasta $30M recupero; 5% sobre excedente</td></tr>
+</table>
+
+<p><strong>9.2. Base de cálculo del Success Fee.</strong> El honorario de éxito se calcula sobre el <strong>MONTO BRUTO</strong> recuperado, ahorrado, refacturado, reliquidado o regularizado como consecuencia directa o indirecta de los hallazgos del PROVEEDOR.</p>
+
+<p><strong>9.3. Prohibición de deducciones.</strong> Queda <strong>expresamente prohibido</strong> deducir de la base de cálculo del honorario:</p>
+<table class="tbl-alt">
+<tr><th>Concepto</th><th>Deducible</th></tr>
+<tr><td>Impuestos nacionales, provinciales o municipales</td><td>❌ NO</td></tr>
+<tr><td>Tasas, percepciones o retenciones</td><td>❌ NO</td></tr>
+<tr><td>Ingresos Brutos / Impuesto a las Ganancias</td><td>❌ NO</td></tr>
+<tr><td>Costos administrativos internos del CLIENTE</td><td>❌ NO</td></tr>
+<tr><td>Honorarios de terceros (contables, legales, etc.)</td><td>❌ NO</td></tr>
+<tr><td>Cualquier otro concepto no previsto</td><td>❌ NO</td></tr>
+</table>
+
+<p><strong>9.4. Independencia del resultado neto.</strong> El honorario es exigible con independencia del resultado financiero neto final que obtenga el CLIENTE respecto de la gestión de cada hallazgo.</p>
+
+<h3>Cláusula Novena Bis — Ajuste por Inflación</h3>
+<p><strong>9.5. Cláusula de Ajuste ("Cláusula Gatillo").</strong> Los honorarios mensuales fijos establecidos en la presente cláusula se ajustarán <strong>mensualmente</strong> conforme a la variación del <strong>Índice de Precios al Consumidor (IPC)</strong> publicado por el INDEC <strong>o del valor del Módulo Salud vigente (PAMI/SEMPRE o equivalente), el que resulte más favorable al PROVEEDOR</strong>, utilizando como base el mes de suscripción del presente Contrato.</p>
+
+<p><strong>9.6. Aplicación del ajuste.</strong> El ajuste se aplicará automáticamente a partir del segundo mes de vigencia del Contrato y será calculado sobre el monto del mes inmediato anterior. En caso de que el INDEC no publique el IPC mensual o no se encuentre disponible el valor del Módulo Salud por causas de fuerza mayor, se utilizará como referencia el índice publicado por la Provincia de La Pampa o, subsidiariamente, por la Confederación Argentina de la Mediana Empresa (CAME).</p>
+
+<p><strong>9.6 bis. Ajuste del SETUP por demora.</strong> En caso de que el CLIENTE demore el pago del SETUP por un plazo superior a <strong>quince (15) días corridos</strong> desde la fecha de suscripción del presente Contrato, el monto del SETUP se ajustará automáticamente conforme al mecanismo previsto en la Cláusula 9.5, calculado desde la fecha de suscripción hasta la fecha de pago efectivo.</p>
+
+<p><strong>9.7. Comunicación del ajuste.</strong> El PROVEEDOR notificará por correo electrónico el monto ajustado con una anticipación no menor a <strong>cinco (5) días hábiles</strong> al vencimiento de cada período de facturación.</p>
+
+<h3>Cláusula Décima — Devengamiento del honorario</h3>
+<p><strong>10.1.</strong> El honorario se devengará <strong>automáticamente</strong> cuando se verifique <strong>cualquiera</strong> de los siguientes hechos:</p>
+<ul>
+<li>El PROVEEDOR presenta el reporte de recupero y el CLIENTE lo <strong>valida expresamente</strong> (por escrito o por medios electrónicos), o</li>
+<li>El CLIENTE <strong>no formula objeciones fundadas</strong> dentro de los <strong>diez (10) días hábiles</strong> siguientes a la presentación del reporte (validación tácita por silencio), o</li>
+<li>El CLIENTE emite Nota de Débito, Nota de Crédito, refacturación, reliquidación o cualquier acto administrativo equivalente, o</li>
+<li>El CLIENTE <strong>presenta el hallazgo</strong> ante la obra social, financiador o tercero pagador</li>
+</ul>
+<p>Lo que ocurra primero.</p>
+<p><strong>10.2.</strong> El cobro efectivo por parte de la obra social, financiador o tercero pagador <strong>NO</strong> constituye condición para la exigibilidad del honorario.</p>
+<p><strong>10.3.</strong> El riesgo de incobrabilidad, mora, concurso, quiebra o conflicto con financiadores es de <strong>exclusiva responsabilidad del CLIENTE</strong>, quien no podrá invocar dichas circunstancias para demorar, suspender o negar el pago del honorario.</p>
+
+<h3>Cláusula Décimo Primera — Deber de gestión (Cláusula Anti-Bicicleta)</h3>
+<div class="co danger">
+<p><strong>11.1.</strong> En caso de que el PROVEEDOR detecte y valide un recupero o ahorro potencial y el CLIENTE decida: no gestionarlo; postergarlo injustificadamente (plazo mayor a <strong>30 días corridos</strong> desde la notificación); abandonarlo; no impulsarlo por razones políticas, comerciales, internas o de cualquier otra índole — el honorario de éxito correspondiente al nivel pactado se devengará <strong>igualmente</strong> sobre el monto potencial identificado.</p>
+<p><strong>11.2.</strong> El informe forense emitido por el PROVEEDOR será <strong>prueba suficiente</strong> del monto base para el cálculo del honorario, sin necesidad de prueba complementaria alguna.</p>
+</div>
+
+<h3>Cláusula Décimo Primera Bis — Mora automática e intereses</h3>
+<p><strong>11 bis.1. Mora automática.</strong> La mora en el pago de cualquier obligación dineraria emergente del presente Contrato operará de forma <strong>automática</strong> por el solo vencimiento del plazo pactado (art. 886 del Código Civil y Comercial de la Nación), sin necesidad de interpelación judicial ni extrajudicial previa.</p>
+<p><strong>11 bis.2. Interés punitorio.</strong> Los importes adeudados devengarán, desde la fecha de mora y hasta su efectivo pago, un interés punitorio equivalente a <strong>dos (2) veces la tasa activa del Banco de La Pampa S.E.M.</strong> para operaciones de descuento a treinta (30) días vigente al momento del pago, sin perjuicio de la facultad del PROVEEDOR de reclamar los mayores daños que acredite (art. 1747 CCyCN).</p>
+<p><strong>11 bis.3. Suspensión del servicio.</strong> Ante la falta de pago de <strong>una (1) o más facturas</strong> por un plazo superior a <strong>quince (15) días corridos</strong> desde su vencimiento, el PROVEEDOR quedará facultado a <strong>suspender la prestación del servicio</strong> sin que ello constituya incumplimiento contractual, hasta tanto el CLIENTE regularice la totalidad de los importes adeudados con más los intereses punitorios correspondientes.</p>
+
+<hr>
+
+<!-- TÍTULO IV -->
+<h2>Título IV — Tecnología y Propiedad Intelectual</h2>
+
+<h3>Cláusula Décimo Segunda — Tecnología y modalidad de procesamiento</h3>
+<p><strong>A) MODALIDAD PROCESAMIENTO EXTERNO (PARTNER)</strong></p>
+<p class="indent">El PROVEEDOR procesará la información en infraestructura propia con medidas de seguridad que incluyen:</p>
+<ul>
+<li>Encriptación de datos en tránsito y en reposo (AES-256 o superior)</li>
+<li>Eventual traslado temporal de datos en soportes físicos encriptados</li>
+<li><strong>Destrucción certificada</strong> de datos una vez finalizado cada ciclo de análisis</li>
+<li>Acceso restringido mediante autenticación multifactor</li>
+</ul>
+<p><strong>B) MODALIDAD ON-PREMISE (LICENCIA)</strong></p>
+<p class="indent">El software se ejecutará <strong>exclusivamente</strong> en la infraestructura del CLIENTE:</p>
+<ul>
+<li>Sin transferencia de datos hacia el PROVEEDOR</li>
+<li>BELIZ™ <strong>no</strong> asume el rol de custodio de los datos ni de la información procesada</li>
+<li>El CLIENTE es responsable de la seguridad física y lógica de su infraestructura</li>
+<li>El PROVEEDOR brindará soporte remoto sin acceso directo a datos sensibles</li>
+</ul>
+
+<h3>Cláusula Décimo Tercera — Propiedad intelectual</h3>
+<p><strong>13.1. Datos del Cliente.</strong> Los datos procesados son y seguirán siendo propiedad exclusiva del CLIENTE.</p>
+<p><strong>13.2. Tecnología del Proveedor.</strong> Constituyen propiedad intelectual <strong>exclusiva e inalienable</strong> del PROVEEDOR, protegida por la Ley 11.723 y normativa concordante: la lógica de detección y los algoritmos; las reglas de negocio y las estructuras de análisis; los modelos forenses y la metodología; las configuraciones, parámetros y umbrales; el conocimiento generado durante la prestación del servicio; el software "Auditor Pro" y todos sus módulos; los reportes en su formato y estructura (no así los datos que contienen).</p>
+<p><strong>13.3. Prohibiciones.</strong> Queda <strong>terminantemente prohibido</strong> al CLIENTE y a cualquier tercero vinculado:</p>
+<ol>
+<li>La <strong>ingeniería inversa</strong>, descompilación o desmontaje del software</li>
+<li>La <strong>clonación funcional</strong> total o parcial</li>
+<li>La <strong>copia, reproducción, cesión o sublicencia</strong> de cualquier componente</li>
+<li>La utilización de la tecnología, reportes o resultados para <strong>entrenar, configurar o replicar</strong> sistemas propios o de terceros, incluyendo pero no limitado a modelos de inteligencia artificial o machine learning</li>
+<li>La <strong>divulgación</strong> de la lógica de detección a competidores o terceros</li>
+</ol>
+<p><strong>13.4. Penalidad por incumplimiento.</strong> La violación de cualquiera de las prohibiciones establecidas en el punto 13.3 generará una <strong>penalidad</strong> equivalente a <strong>diez (10) veces</strong> el valor del SETUP del nivel contratado, con un piso mínimo de <strong>PESOS CINCUENTA MILLONES ($50.000.000)</strong>, sin perjuicio de las acciones civiles y penales que correspondan.</p>
+
+<h3>Cláusula Décimo Tercera Bis — Licencia de Uso</h3>
+<p><strong>13 bis.1. Otorgamiento.</strong> El PROVEEDOR otorga al CLIENTE una licencia de uso del software "Auditor Pro" de carácter <strong>no exclusiva, intransferible, no sublicenciable, revocable y temporalmente limitada</strong> a la vigencia del presente Contrato, exclusivamente para el procesamiento de datos propios del CLIENTE conforme al objeto pactado en la Cláusula Quinta.</p>
+<p><strong>13 bis.2. Naturaleza.</strong> La presente licencia <strong>no implica cesión, transferencia, venta ni enajenación</strong> de derechos de propiedad intelectual, industrial o de autor sobre el software, sus componentes, módulos, actualizaciones, mejoras o derivados. El CLIENTE reconoce que adquiere únicamente un <strong>derecho de uso limitado</strong> y no un derecho de propiedad sobre la tecnología.</p>
+<p><strong>13 bis.3. Extinción automática.</strong> La licencia se extinguirá de pleno derecho, sin necesidad de notificación ni declaración judicial, ante: (a) la terminación del Contrato por cualquier causa; (b) el incumplimiento del CLIENTE de cualquier obligación esencial; o (c) la falta de pago de <strong>dos (2) o más períodos consecutivos</strong> de honorarios.</p>
+<p><strong>13 bis.4. Obligación de desinstalación.</strong> Extinguida la licencia, el CLIENTE deberá proceder a la inmediata desinstalación, eliminación y destrucción de toda copia del software y sus componentes instalados en su infraestructura, dentro de un plazo máximo de <strong>cinco (5) días hábiles</strong>, debiendo acreditar fehacientemente dicho cumplimiento ante el PROVEEDOR mediante declaración jurada.</p>
+
+<h3>Cláusula Décimo Cuarta — Marco metodológico y limitación de cuestionamiento técnico</h3>
+<p><strong>14.1.</strong> El CLIENTE reconoce que los informes, reportes, alertas y hallazgos generados por el PROVEEDOR se basan en criterios técnicos, modelos forenses, algoritmos y reglas de detección propias, cuya lógica interna y funcionamiento: <strong>no</strong> constituyen dictámenes periciales; <strong>no</strong> constituyen juicios concluyentes; representan <strong>indicios informáticos calificados</strong> generados por tecnología propietaria.</p>
+<p><strong>14.2.</strong> En consecuencia, el CLIENTE acepta —habiendo sido debidamente asesorado y en ejercicio de su plena autonomía de la voluntad (cfr. Cláusula 27)— que la <strong>metodología aplicada</strong>, así como la selección, configuración y calibración de reglas técnicas, <strong>no será objeto de</strong>: impugnación; reinterpretación; revisión técnica posterior; peritaje por terceros. Constituyendo <strong>base válida y suficiente</strong> para el devengamiento de honorarios conforme al presente Contrato y a las Actas de Conformidad que se suscriban.</p>
+<p><strong>14.3. Derecho a objeción fundada.</strong> Sin perjuicio de lo anterior, el CLIENTE podrá formular <strong>objeciones fundadas</strong> respecto de hallazgos individuales, debiendo presentarlas por escrito dentro de los <strong>diez (10) días hábiles</strong> siguientes a la recepción del reporte, con detalle técnico y documentación respaldatoria suficiente. El PROVEEDOR evaluará las objeciones y comunicará su resolución dentro de los <strong>cinco (5) días hábiles</strong> siguientes. La resolución del PROVEEDOR será <strong>definitiva</strong> a los fines del devengamiento del honorario.</p>
+
+<hr>
+
+<!-- TÍTULO V -->
+<h2>Título V — Obligaciones de las Partes</h2>
+
+<h3>Cláusula Décimo Quinta — Obligaciones del Proveedor</h3>
+<p>El PROVEEDOR se obliga a:</p>
+<ol>
+<li>Ejecutar los servicios con la <strong>diligencia y profesionalismo</strong> propios de su especialidad</li>
+<li>Mantener la <strong>confidencialidad</strong> de toda información recibida</li>
+<li>Emitir <strong>informes forenses</strong> documentados y trazables</li>
+<li>Notificar al CLIENTE los hallazgos en un plazo razonable</li>
+<li>Mantener actualizada la tecnología de detección</li>
+<li>Garantizar la <strong>seguridad</strong> de los datos durante su procesamiento (Modalidad Partner)</li>
+</ol>
+
+<h3>Cláusula Décimo Sexta — Obligaciones del Cliente</h3>
+<p>El CLIENTE se obliga a:</p>
+<ol>
+<li>Abonar el SETUP y los honorarios en tiempo y forma</li>
+<li>Proveer <strong>acceso oportuno y completo</strong> a la información requerida</li>
+<li>Designar un <strong>interlocutor autorizado</strong> con capacidad de decisión</li>
+<li><strong>Gestionar activamente</strong> los hallazgos reportados (cfr. Cláusula 11)</li>
+<li>No realizar ingeniería inversa ni violar la propiedad intelectual del PROVEEDOR</li>
+<li>Suscribir las <strong>Actas de Conformidad</strong> dentro de los plazos establecidos</li>
+<li>Mantener la <strong>confidencialidad</strong> de la tecnología y la metodología del PROVEEDOR</li>
+</ol>
+
+<h3>Cláusula Décimo Sexta Bis — No competencia y no contratación</h3>
+<p><strong>16 bis.1. No competencia.</strong> Durante la vigencia del Contrato y por un plazo de <strong>veinticuatro (24) meses</strong> posteriores a su terminación por cualquier causa, el CLIENTE se abstendrá de desarrollar, adquirir, contratar, financiar, promover o facilitar a terceros herramientas, servicios, sistemas o soluciones que repliquen, imiten o sustituyan total o parcialmente la funcionalidad, la lógica de detección o la metodología del software Auditor Pro o de cualquier componente tecnológico del PROVEEDOR.</p>
+<p><strong>16 bis.2. No contratación de personal.</strong> Durante la vigencia del Contrato y por un plazo de <strong>doce (12) meses</strong> posteriores a su terminación, el CLIENTE se abstendrá de contratar, vincular o asociar, directa o indirectamente, a personal, colaboradores o consultores del PROVEEDOR que hayan participado en la ejecución del servicio.</p>
+<p><strong>16 bis.3. Penalidad.</strong> La violación de cualquiera de las obligaciones previstas en la presente cláusula generará una penalidad equivalente a <strong>diez (10) veces</strong> el valor del SETUP del nivel contratado, sin perjuicio de las acciones civiles y penales que correspondan.</p>
+
+<h3>Cláusula Décimo Sexta Ter — Derecho de auditoría</h3>
+<p><strong>16 ter.1.</strong> El PROVEEDOR tendrá derecho a auditar, directamente o a través de terceros designados bajo NDA, los registros contables, administrativos y de facturación del CLIENTE vinculados a los hallazgos reportados, a los efectos de verificar la correcta liquidación del success fee y el cumplimiento del deber de gestión previsto en la Cláusula 11.</p>
+<p><strong>16 ter.2.</strong> La auditoría podrá ejercerse con una frecuencia no mayor a <strong>trimestral</strong> y con un preaviso mínimo de <strong>cinco (5) días hábiles</strong>. El CLIENTE se obliga a facilitar el acceso a la documentación requerida en un plazo no mayor a <strong>diez (10) días hábiles</strong> desde el requerimiento.</p>
+<p><strong>16 ter.3.</strong> En caso de que la auditoría revele una diferencia igual o superior al <strong>5%</strong> entre los montos declarados por el CLIENTE y los efectivamente verificados, el CLIENTE deberá abonar la diferencia con más los intereses punitorios previstos en la Cláusula 11 bis.2, y los costos de la auditoría serán a su exclusivo cargo.</p>
+
+<hr>
+
+<!-- TÍTULO VI -->
+<h2>Título VI — Confidencialidad</h2>
+
+<h3>Cláusula Décimo Séptima — Régimen de confidencialidad y protección de datos personales</h3>
+<p><strong>17.1. Alcance.</strong> Toda información técnica, económica, estratégica, comercial, operativa, médica, de pacientes o de cualquier otra naturaleza intercambiada entre las Partes tendrá carácter <strong>estrictamente confidencial</strong>.</p>
+<p><strong>17.2. Marco normativo.</strong> El tratamiento de datos personales bajo el presente Contrato se rige por la <strong>Ley 25.326 de Protección de Datos Personales</strong>, su Decreto Reglamentario 1558/2001, las disposiciones de la <strong>Agencia de Acceso a la Información Pública (AAIP)</strong> y toda normativa complementaria vigente.</p>
+<p><strong>17.3. Roles de las Partes.</strong> A los efectos de la Ley 25.326: el CLIENTE reviste el carácter de <strong>"Responsable del Tratamiento"</strong> (art. 2°, Ley 25.326), siendo el titular de las bases de datos de pacientes y de la información de salud objeto de procesamiento. El PROVEEDOR reviste el carácter de <strong>"Encargado de Tratamiento"</strong> (art. 25, Ley 25.326), procesando los datos exclusivamente por cuenta y orden del CLIENTE, conforme al objeto del presente Contrato y a las instrucciones documentadas del Responsable.</p>
+<p><strong>17.4. Obligaciones del PROVEEDOR como Encargado de Tratamiento.</strong> El PROVEEDOR se obliga a:</p>
+<ol>
+<li>Tratar los datos personales <strong>exclusivamente</strong> para la finalidad pactada en el presente Contrato</li>
+<li>Implementar las <strong>medidas de seguridad</strong> técnicas y organizativas adecuadas conforme al art. 9° de la Ley 25.326, incluyendo encriptación AES-256 o superior en tránsito y en reposo</li>
+<li><strong>No comunicar ni transferir</strong> datos personales a terceros sin autorización previa y por escrito del CLIENTE, salvo obligación legal</li>
+<li>Garantizar que el personal autorizado para tratar datos personales se haya comprometido a respetar la <strong>confidencialidad</strong></li>
+<li><strong>Asistir al CLIENTE</strong> en el cumplimiento de las obligaciones de respuesta a solicitudes de ejercicio de derechos de los titulares de datos (acceso, rectificación, supresión)</li>
+<li>Proceder a la <strong>destrucción certificada o devolución</strong> de los datos personales una vez finalizada la prestación del servicio, salvo obligación legal de conservación</li>
+</ol>
+<p><strong>17.5. Datos sensibles.</strong> Las Partes reconocen que los datos de salud procesados bajo el presente Contrato constituyen <strong>datos sensibles</strong> conforme al art. 2° de la Ley 25.326. El CLIENTE declara y garantiza que cuenta con la <strong>habilitación legal</strong> suficiente para el tratamiento de dichos datos y para su comunicación al PROVEEDOR en calidad de Encargado de Tratamiento, conforme a las excepciones previstas en el art. 8° de la Ley 25.326 (razones de interés general autorizadas por ley, estadísticas y datos disociados).</p>
+<p><strong>17.6. Derecho a datos anonimizados.</strong> El PROVEEDOR queda expresamente facultado a utilizar datos <strong>debidamente anonimizados e irreversiblemente disociados</strong> (conforme al art. 11 inc. 3.e de la Ley 25.326 y al art. 28 del Decreto 1558/2001) para el desarrollo, mejora, entrenamiento y calibración de sus algoritmos, modelos de detección y tecnología propietaria, sin que ello requiera consentimiento adicional del CLIENTE ni de los titulares de los datos, ni constituya cesión, transferencia ni comunicación de datos personales. Los datos anonimizados no serán considerados datos personales a los efectos legales.</p>
+<p><strong>17.7. Vigencia de la confidencialidad.</strong> La obligación de confidencialidad subsistirá por un plazo de: <strong>cinco (5) años</strong> posteriores a la terminación del Contrato para información comercial, estratégica y operativa; <strong>diez (10) años</strong> posteriores a la terminación del Contrato para información relativa a propiedad intelectual, tecnología propietaria y datos de pacientes.</p>
+<p><strong>17.8. Excepciones.</strong> No se considerará información confidencial aquella que: sea o se torne de <strong>dominio público</strong> sin culpa de la parte receptora; haya sido conocida <strong>previamente</strong> por la parte receptora de forma lícita; deba ser revelada por <strong>mandato judicial o legal</strong>, previa notificación fehaciente a la otra parte con una anticipación mínima de cinco (5) días hábiles a fin de que esta pueda ejercer sus derechos de oposición.</p>
+<p><strong>17.9. Penalidad.</strong> La violación del deber de confidencialidad o de las obligaciones de protección de datos personales generará una <strong>penalidad</strong> de <strong>PESOS VEINTE MILLONES ($20.000.000)</strong> —ajustable conforme al mecanismo de la Cláusula 9.5—, sin perjuicio de la indemnización por los daños y perjuicios efectivamente sufridos y de las sanciones administrativas que pudiera imponer la AAIP.</p>
+
+<hr>
+
+<!-- TÍTULO VII -->
+<h2>Título VII — Responsabilidad y Garantías</h2>
+
+<h3>Cláusula Décimo Octava — Limitación de responsabilidad</h3>
+<p><strong>18.1. Obligación de medios.</strong> El PROVEEDOR asume una <strong>obligación de medios</strong> y no garantiza resultados económicos específicos, montos determinados ni plazos de recupero.</p>
+<p><strong>18.2. Naturaleza de los reportes.</strong> Los reportes y alertas emitidos constituyen <strong>indicios informáticos calificados</strong> y no: dictámenes periciales; opiniones legales vinculantes; dictámenes médicos.</p>
+<p><strong>18.3. Indemnidad y exclusiones.</strong> El uso de la información contenida en los reportes para la adopción de decisiones sancionatorias, disciplinarias, legales o de cualquier otra índole es de <strong>exclusiva responsabilidad del CLIENTE</strong>, quien mantendrá <strong>indemne</strong> al PROVEEDOR frente a cualquier reclamo, acción o demanda de terceros derivada directa o indirectamente de dicho uso.</p>
+<p><strong>18.3.1. Exclusiones expresas de responsabilidad.</strong> Sin carácter taxativo, el PROVEEDOR <strong>no será responsable</strong> bajo ninguna circunstancia por:</p>
+<ul>
+<li>Multas, sanciones, penalidades o apercibimientos impuestos por <strong>PAMI, SEMPRE</strong> u otros financiadores, organismos de control o autoridades administrativas</li>
+<li><strong>Débitos retroactivos o futuros</strong> aplicados por obras sociales, prepagas o entidades financiadoras</li>
+<li><strong>Rechazos de facturación</strong> total o parcial por parte de financiadores</li>
+<li>Reclamos vinculados a <strong>mala praxis médica</strong>, iatrogenia o responsabilidad profesional sanitaria</li>
+<li>Decisiones administrativas, disciplinarias, sancionatorias o laborales adoptadas por el CLIENTE sobre la base de los reportes</li>
+<li>Perjuicios derivados de la <strong>inacción, demora o gestión deficiente</strong> del CLIENTE en el seguimiento de los hallazgos reportados</li>
+</ul>
+<p><strong>18.4. Límite cuantitativo.</strong> En ningún caso la responsabilidad total del PROVEEDOR bajo el presente Contrato excederá el equivalente a <strong>una (1) vez</strong> el monto efectivamente percibido en concepto de honorarios durante los últimos <strong>tres (3) meses</strong> anteriores al evento generador del reclamo.</p>
+
+<hr>
+
+<!-- TÍTULO VIII -->
+<h2>Título VIII — Vigencia, Rescisión y Supervivencia</h2>
+
+<h3>Cláusula Décimo Novena — Plazo y vigencia</h3>
+<p><strong>19.1.</strong> El presente Contrato entrará en vigencia a partir de la fecha de su suscripción y del pago efectivo del SETUP, y tendrá una duración de <strong>doce (12) meses</strong>, renovable automáticamente por períodos iguales salvo notificación en contrario con <strong>treinta (30) días</strong> de anticipación.</p>
+
+<h3>Cláusula Vigésima — Rescisión</h3>
+<p><strong>20.1. Rescisión sin causa por el PROVEEDOR.</strong> El PROVEEDOR podrá rescindir el presente Contrato sin expresión de causa, con un preaviso <strong>fehaciente</strong> de <strong>treinta (30) días corridos</strong>.</p>
+<p><strong>20.1 bis. Rescisión sin causa por el CLIENTE.</strong> El CLIENTE podrá rescindir el presente Contrato sin expresión de causa únicamente una vez transcurrido el <strong>plazo mínimo de permanencia de seis (6) meses</strong> desde la fecha de inicio efectivo del servicio, con un preaviso <strong>fehaciente</strong> de <strong>sesenta (60) días corridos</strong>. La rescisión anticipada (antes del plazo mínimo) por parte del CLIENTE generará una <strong>penalidad</strong> equivalente a <strong>tres (3) mensualidades</strong> del abono fijo del nivel contratado, más el <strong>success fee promedio</strong> de los meses efectivamente operados proyectado a los meses restantes del plazo mínimo. En el nivel <strong>Riesgo Compartido</strong>, la rescisión generará adicionalmente la obligación de pago de la cuota de amortización del SETUP conforme a la Cláusula 8.5 y 8.6.</p>
+<p><strong>20.2. Rescisión con causa.</strong> Constituyen causales de rescisión con justa causa:</p>
+<ul>
+<li>Incumplimiento grave de las obligaciones esenciales del Contrato</li>
+<li>Violación del régimen de confidencialidad o propiedad intelectual</li>
+<li>Concurso preventivo, quiebra o cesación de pagos de cualquiera de las Partes</li>
+<li>Imposibilidad sobreviniente de cumplimiento</li>
+</ul>
+<p><strong>20.3. Efectos de la rescisión.</strong> La rescisión, cualquiera sea su causa: <strong>no afectará</strong> los honorarios ya devengados; <strong>no extinguirá</strong> los honorarios derivados de hallazgos detectados durante la vigencia del Contrato; <strong>no liberará</strong> al CLIENTE del pago del SETUP ni de obligaciones pendientes.</p>
+
+<h3>Cláusula Vigésimo Primera — Supervivencia</h3>
+<p>Subsistirán con posterioridad a la terminación del Contrato, por cualquier causa, las siguientes cláusulas:</p>
+<ul>
+<li>Propiedad intelectual y licencia (Cláusulas 13 y 13 bis)</li>
+<li>Confidencialidad y protección de datos personales (Cláusula 17)</li>
+<li>Limitación de responsabilidad (Cláusula 18)</li>
+<li>Devengamiento y cobro de honorarios (Cláusulas 9, 10 y 11)</li>
+<li>Amortización del SETUP absorbido (Cláusulas 8.5 y 8.6)</li>
+<li>Mora automática e intereses (Cláusula 11 bis)</li>
+<li>No competencia y no contratación (Cláusula 16 bis)</li>
+<li>Derecho de auditoría (Cláusula 16 ter)</li>
+<li>Reglas Maestras Operativas (Cláusula 23)</li>
+<li>Fuerza mayor (Cláusula 26)</li>
+<li>Declaración de negociación libre (Cláusula 27)</li>
+<li>Penalidades contractuales</li>
+</ul>
+
+<hr>
+
+<!-- TÍTULO IX -->
+<h2>Título IX — Disposiciones Generales</h2>
+
+<h3>Cláusula Vigésimo Segunda — Jurisdicción y ley aplicable</h3>
+<p><strong>22.1.</strong> El presente Contrato se rige por las leyes de la <strong>República Argentina</strong>.</p>
+<p><strong>22.2.</strong> Para cualquier controversia derivada del presente Contrato, las Partes se someten a la jurisdicción exclusiva de los <strong>Tribunales Ordinarios de la ciudad de Santa Rosa, Provincia de La Pampa</strong>, con <strong>renuncia expresa</strong> a cualquier otro fuero o jurisdicción que pudiera corresponderles, incluyendo el fuero federal.</p>
+
+<h3>Cláusula Vigésimo Tercera — Reglas Maestras Operativas y Contractuales</h3>
+<p><strong>23.1.</strong> El CLIENTE reconoce y acepta que toda prestación de servicios se encuentra regida por <strong>Reglas Maestras Operativas y Contractuales</strong>, de carácter: <strong>esencial</strong> (integran el núcleo del Contrato); <strong>obligatorio</strong> (su cumplimiento es inexcusable); <strong>no negociable</strong> (no admiten modificación por el CLIENTE); <strong>dinámico</strong> (evolucionan con la tecnología y la normativa aplicable).</p>
+<p><strong>23.2.</strong> Las Reglas Maestras se consideran incorporadas <strong>de pleno derecho</strong> a la relación contractual en su versión vigente al momento de cada procesamiento, aun cuando no se encuentren transcritas íntegramente en el presente instrumento ni sean de acceso público.</p>
+<p><strong>23.3.</strong> Las mismas comprenden: <strong>Reglas Operativas Activas</strong> (de aplicación estándar) y <strong>Reglas Técnicas de Validación Avanzada o Reservadas</strong> (cuya activación, desactivación o parametrización constituye una decisión técnica exclusiva del PROVEEDOR). Ninguna modificación a las Reglas Maestras constituirá alteración contractual ni requerirá adenda alguna.</p>
+
+<h3>Cláusula Vigésimo Cuarta — Notificaciones</h3>
+<p>Todas las notificaciones entre las Partes deberán realizarse por escrito y se considerarán válidas cuando sean cursadas mediante: carta documento; correo electrónico con acuse de recibo a las casillas designadas por cada Parte; cualquier otro medio fehaciente.</p>
+<table class="th-col">
+<tr><td>Domicilio del PROVEEDOR</td><td><span class="fill-l"></span></td></tr>
+<tr><td>Correo electrónico del PROVEEDOR</td><td><span class="fill-l"></span></td></tr>
+<tr><td>Domicilio del CLIENTE</td><td><span class="fill-l"></span></td></tr>
+<tr><td>Correo electrónico del CLIENTE</td><td><span class="fill-l"></span></td></tr>
+</table>
+
+<h3>Cláusula Vigésimo Quinta — Disposiciones finales</h3>
+<p><strong>25.1. Integridad.</strong> El presente Contrato, junto con sus Anexos y Adendas, constituye el <strong>acuerdo íntegro</strong> entre las Partes y reemplaza cualquier entendimiento, negociación o acuerdo previo, verbal o escrito.</p>
+<p><strong>25.2. Independencia.</strong> La nulidad o inaplicabilidad de cualquier cláusula no afectará la validez de las restantes.</p>
+<p><strong>25.3. No renuncia.</strong> La tolerancia o demora de cualquiera de las Partes en el ejercicio de sus derechos no constituirá renuncia a los mismos.</p>
+<p><strong>25.4. Cesión.</strong> El CLIENTE no podrá ceder total ni parcialmente los derechos u obligaciones emergentes del presente Contrato sin la conformidad previa y por escrito del PROVEEDOR.</p>
+
+<h3>Cláusula Vigésimo Sexta — Fuerza mayor</h3>
+<p><strong>26.1.</strong> Ninguna de las Partes será responsable por el incumplimiento total o parcial de sus obligaciones cuando dicho incumplimiento sea consecuencia directa de un evento de <strong>fuerza mayor o caso fortuito</strong> (art. 1730 CCyCN), incluyendo pero no limitado a: catástrofes naturales, pandemias, conflictos bélicos, actos de terrorismo, huelgas generales, interrupciones masivas de servicios públicos, fallas sistémicas de infraestructura tecnológica de terceros, y <strong>cambios normativos o regulatorios abruptos</strong> de PAMI, SEMPRE u otros organismos que alteren sustancialmente las condiciones de prestación del servicio.</p>
+<p><strong>26.2.</strong> La Parte afectada deberá notificar a la otra dentro de los <strong>cinco (5) días hábiles</strong> siguientes a la ocurrencia del evento, acreditando su existencia y su relación causal con el incumplimiento. La suspensión de obligaciones subsistirá mientras dure el evento y por un plazo máximo de <strong>noventa (90) días corridos</strong>, transcurrido el cual cualquiera de las Partes podrá resolver el Contrato sin penalidad.</p>
+<p><strong>26.3. Exclusión.</strong> No constituirán fuerza mayor: la falta de recursos económicos del CLIENTE, la mora de financiadores u obras sociales en el pago de prestaciones, ni las dificultades operativas internas del CLIENTE.</p>
+
+<h3>Cláusula Vigésimo Séptima — Declaración de negociación libre</h3>
+<p><strong>27.1.</strong> Las Partes declaran que el presente Contrato ha sido <strong>libremente negociado</strong> entre ellas, en condiciones de igualdad, con pleno conocimiento de su contenido y alcance, habiendo contado cada una con la asistencia de asesores legales y técnicos propios. En consecuencia, las Partes renuncian a invocar la aplicación del régimen de contratos de adhesión o cláusulas abusivas previsto en los artículos 984 a 989 del Código Civil y Comercial de la Nación.</p>
+
+<hr>
+
+<!-- FIRMAS -->
+<h2>Firmas</h2>
+<p>En prueba de conformidad, se firman <strong>dos (2) ejemplares</strong> de un mismo tenor y a un solo efecto, en el lugar y fecha indicados en el encabezamiento.</p>
+
+<div class="sig">
+  <div class="sig-box">
+    <div class="sig-line"></div>
+    <p><strong>POR EL PROVEEDOR:</strong></p>
+    <p>Nombre: <span class="fill"></span></p>
+    <p>Cargo: <span class="fill-s"></span></p>
+    <p>DNI: <span class="fill-s"></span></p>
+  </div>
+  <div class="sig-box">
+    <div class="sig-line"></div>
+    <p><strong>POR EL CLIENTE:</strong></p>
+    <p>Nombre: <span class="fill"></span></p>
+    <p>Cargo: <span class="fill-s"></span></p>
+    <p>DNI: <span class="fill-s"></span></p>
+  </div>
+</div>
+
+<hr>
+
+<!-- ANEXOS -->
+<div class="anexo-box">
+<p><strong>📎 ANEXOS</strong> <em>(a incorporar según corresponda)</em></p>
+<p>• <strong>Anexo I:</strong> Especificaciones técnicas del software Auditor Pro</p>
+<p>• <strong>Anexo II:</strong> Modelo de Acta de Conformidad</p>
+<p>• <strong>Anexo III:</strong> Modelo de Adenda de Activación de Reglas Reservadas</p>
+<p>• <strong>Anexo IV:</strong> Protocolo de seguridad de datos</p>
+<p>• <strong>Anexo V:</strong> Reglas Maestras Operativas (versión vigente)</p>
+</div>
+
+</div><!-- /body -->
+</div><!-- /doc -->
+<script>document.addEventListener('DOMContentLoaded',function(){var b=document.createElement('button');b.className='no-print';b.textContent='Imprimir documento';b.style.cssText='position:fixed;bottom:20px;right:20px;z-index:99999;padding:12px 24px;background:#0F766E;color:#fff;border:none;border-radius:6px;cursor:pointer;font-family:Inter,sans-serif;font-size:11pt;font-weight:700;box-shadow:0 4px 12px rgba(0,0,0,.2);';b.onclick=function(){window.print();};document.body.appendChild(b);});</script>
+</body>
+</html>
