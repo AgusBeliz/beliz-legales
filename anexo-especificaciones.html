@@ -1,737 +1,25 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>⚙️ Anexo I: Especificaciones Técnicas de Auditor Pro v1.0 — HTML Legal Imprimible</title><style>
-/* cspell:disable-file */
-/* webkit printing magic: print all background colors */
-html {
-	-webkit-print-color-adjust: exact;
-}
-* {
-	box-sizing: border-box;
-	-webkit-print-color-adjust: exact;
-}
-
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-@media only screen {
-	body {
-		margin: 2em auto;
-		max-width: 900px;
-		color: rgb(55, 53, 47);
-	}
-}
-
-body {
-	line-height: 1.5;
-	white-space: pre-wrap;
-}
-
-a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
-}
-
-.pdf-relative-link-path {
-	font-size: 80%;
-	color: #444;
-}
-
-h1,
-h2,
-h3 {
-	letter-spacing: -0.01em;
-	line-height: 1.2;
-	font-weight: 600;
-	margin-bottom: 0;
-}
-
-/* Override strong tags inside headings to maintain consistent weight */
-h1 strong,
-h2 strong,
-h3 strong {
-	font-weight: 600;
-}
-
-.page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
-}
-
-h1 {
-	font-size: 1.875rem;
-	margin-top: 1.875rem;
-}
-
-h2 {
-	font-size: 1.5rem;
-	margin-top: 1.5rem;
-}
-
-h3 {
-	font-size: 1.25rem;
-	margin-top: 1.25rem;
-}
-
-.source {
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 1.5em;
-	word-break: break-all;
-}
-
-.callout {
-	border-radius: 10px;
-	padding: 1rem;
-}
-
-figure {
-	margin: 1.25em 0;
-	page-break-inside: avoid;
-}
-
-figcaption {
-	opacity: 0.5;
-	font-size: 85%;
-	margin-top: 0.5em;
-}
-
-mark {
-	background-color: transparent;
-}
-
-.indented {
-	padding-left: 1.5em;
-}
-
-hr {
-	background: transparent;
-	display: block;
-	width: 100%;
-	height: 1px;
-	visibility: visible;
-	border: none;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
-}
-
-img {
-	max-width: 100%;
-}
-
-@media only print {
-	img {
-		max-height: 100vh;
-		object-fit: contain;
-	}
-}
-
-@page {
-	margin: 1in;
-}
-
-.collection-content {
-	font-size: 0.875rem;
-}
-
-.collection-content td {
-	white-space: pre-wrap;
-	word-break: break-word;
-}
-
-.column-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.column {
-	padding: 0 1em;
-}
-
-.column:first-child {
-	padding-left: 0;
-}
-
-.column:last-child {
-	padding-right: 0;
-}
-
-.table_of_contents-item {
-	display: block;
-	font-size: 0.875rem;
-	line-height: 1.3;
-	padding: 0.125rem;
-}
-
-.table_of_contents-indent-1 {
-	margin-left: 1.5rem;
-}
-
-.table_of_contents-indent-2 {
-	margin-left: 3rem;
-}
-
-.table_of_contents-indent-3 {
-	margin-left: 4.5rem;
-}
-
-.table_of_contents-link {
-	text-decoration: none;
-	opacity: 0.7;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-}
-
-table,
-th,
-td {
-	border: 1px solid rgba(55, 53, 47, 0.09);
-	border-collapse: collapse;
-}
-
-table {
-	border-left: none;
-	border-right: none;
-}
-
-th,
-td {
-	font-weight: normal;
-	padding: 0.25em 0.5em;
-	line-height: 1.5;
-	min-height: 1.5em;
-	text-align: left;
-}
-
-th {
-	color: rgba(55, 53, 47, 0.6);
-}
-
-ol,
-ul {
-	margin: 0;
-	margin-block-start: 0.6em;
-	margin-block-end: 0.6em;
-}
-
-li > ol:first-child,
-li > ul:first-child {
-	margin-block-start: 0.6em;
-}
-
-ul > li {
-	list-style: disc;
-}
-
-ul.to-do-list {
-	padding-inline-start: 0;
-}
-
-ul.to-do-list > li {
-	list-style: none;
-}
-
-.to-do-children-checked {
-	text-decoration: line-through;
-	opacity: 0.375;
-}
-
-ul.toggle > li {
-	list-style: none;
-}
-
-ul {
-	padding-inline-start: 1.7em;
-}
-
-ul > li {
-	padding-left: 0.1em;
-}
-
-ol {
-	padding-inline-start: 1.6em;
-}
-
-ol > li {
-	padding-left: 0.2em;
-}
-
-.mono ol {
-	padding-inline-start: 2em;
-}
-
-.mono ol > li {
-	text-indent: -0.4em;
-}
-
-.toggle {
-	padding-inline-start: 0em;
-	list-style-type: none;
-}
-
-/* Indent toggle children */
-.toggle > li > details {
-	padding-left: 1.7em;
-}
-
-.toggle > li > details > summary {
-	margin-left: -1.1em;
-}
-
-.selected-value {
-	display: inline-block;
-	padding: 0 0.5em;
-	background: rgba(206, 205, 202, 0.5);
-	border-radius: 3px;
-	margin-right: 0.5em;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-	white-space: nowrap;
-}
-
-.collection-title {
-	display: inline-block;
-	margin-right: 1em;
-}
-
-.page-description {
-	margin-bottom: 2em;
-}
-
-.simple-table {
-	margin-top: 1em;
-	font-size: 0.875rem;
-	empty-cells: show;
-}
-.simple-table td {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table th {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table-header-color {
-	background: rgb(247, 246, 243);
-	color: black;
-}
-.simple-table-header {
-	font-weight: 500;
-}
-
-time {
-	opacity: 0.5;
-}
-
-.icon {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	max-width: 1.2em;
-	max-height: 1.2em;
-	text-decoration: none;
-	vertical-align: text-bottom;
-	margin-right: 0.5em;
-}
-
-img.icon {
-	border-radius: 3px;
-}
-
-.callout img.notion-static-icon {
-	width: 1em;
-	height: 1em;
-}
-
-.callout p {
-	margin: 0;
-}
-
-.callout h1,
-.callout h2,
-.callout h3 {
-	margin: 0 0 0.6rem;
-}
-
-.user-icon {
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	margin-right: 0.5rem;
-}
-
-.user-icon-inner {
-	font-size: 0.8em;
-}
-
-.text-icon {
-	border: 1px solid #000;
-	text-align: center;
-}
-
-.page-cover-image {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-	max-height: 30vh;
-}
-
-.page-header-icon {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
-
-.page-header-icon-with-cover {
-	margin-top: -0.72em;
-	margin-left: 0.07em;
-}
-
-.page-header-icon img {
-	border-radius: 3px;
-}
-
-.link-to-page {
-	margin: 1em 0;
-	padding: 0;
-	border: none;
-	font-weight: 500;
-}
-
-p > .user {
-	opacity: 0.5;
-}
-
-td > .user,
-td > time {
-	white-space: nowrap;
-}
-
-input[type="checkbox"] {
-	transform: scale(1.5);
-	margin-right: 0.6em;
-	vertical-align: middle;
-}
-
-p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-.image {
-	border: none;
-	margin: 1.5em 0;
-	padding: 0;
-	border-radius: 0;
-	text-align: center;
-}
-
-.code,
-code {
-	background: rgba(135, 131, 120, 0.15);
-	border-radius: 3px;
-	padding: 0.2em 0.4em;
-	border-radius: 3px;
-	font-size: 85%;
-	tab-size: 2;
-}
-
-code {
-	color: #eb5757;
-}
-
-.code {
-	padding: 1.5em 1em;
-}
-
-.code-wrap {
-	white-space: pre-wrap;
-	word-break: break-all;
-}
-
-.code > code {
-	background: none;
-	padding: 0;
-	font-size: 100%;
-	color: inherit;
-}
-
-blockquote {
-	font-size: 1em;
-	margin: 1em 0;
-	padding-left: 1em;
-	border-left: 3px solid rgb(55, 53, 47);
-}
-
-blockquote.quote-large {
-	font-size: 1.25em;
-}
-
-.bookmark {
-	text-decoration: none;
-	max-height: 8em;
-	padding: 0;
-	display: flex;
-	width: 100%;
-	align-items: stretch;
-}
-
-.bookmark-title {
-	font-size: 0.85em;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 1.75em;
-	white-space: nowrap;
-}
-
-.bookmark-text {
-	display: flex;
-	flex-direction: column;
-}
-
-.bookmark-info {
-	flex: 4 1 180px;
-	padding: 12px 14px 14px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.bookmark-image {
-	width: 33%;
-	flex: 1 1 180px;
-	display: block;
-	position: relative;
-	object-fit: cover;
-	border-radius: 1px;
-}
-
-.bookmark-description {
-	color: rgba(55, 53, 47, 0.6);
-	font-size: 0.75em;
-	overflow: hidden;
-	max-height: 4.5em;
-	word-break: break-word;
-}
-
-.bookmark-href {
-	font-size: 0.75em;
-	margin-top: 0.25em;
-}
-
-.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
-.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
-.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
-.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
-.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
-.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
-.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
-.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
-.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
-.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
-.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.highlight-default {
-	color: rgba(44, 44, 43, 1);
-}
-.highlight-gray {
-	color: rgba(125, 122, 117, 1);
-	fill: rgba(125, 122, 117, 1);
-}
-.highlight-brown {
-	color: rgba(159, 118, 90, 1);
-	fill: rgba(159, 118, 90, 1);
-}
-.highlight-orange {
-	color: rgba(210, 123, 45, 1);
-	fill: rgba(210, 123, 45, 1);
-}
-.highlight-yellow {
-	color: rgba(203, 148, 52, 1);
-	fill: rgba(203, 148, 52, 1);
-}
-.highlight-teal {
-	color: rgba(80, 148, 110, 1);
-	fill: rgba(80, 148, 110, 1);
-}
-.highlight-blue {
-	color: rgba(56, 125, 201, 1);
-	fill: rgba(56, 125, 201, 1);
-}
-.highlight-purple {
-	color: rgba(154, 107, 180, 1);
-	fill: rgba(154, 107, 180, 1);
-}
-.highlight-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.highlight-red {
-	color: rgba(207, 81, 72, 1);
-	fill: rgba(207, 81, 72, 1);
-}
-.highlight-default_background {
-	color: rgba(44, 44, 43, 1);
-}
-.highlight-gray_background {
-	background: rgba(42, 28, 0, 0.07);
-}
-.highlight-brown_background {
-	background: rgba(139, 46, 0, 0.086);
-}
-.highlight-orange_background {
-	background: rgba(224, 101, 1, 0.129);
-}
-.highlight-yellow_background {
-	background: rgba(211, 168, 0, 0.137);
-}
-.highlight-teal_background {
-	background: rgba(0, 100, 45, 0.09);
-}
-.highlight-blue_background {
-	background: rgba(0, 124, 215, 0.094);
-}
-.highlight-purple_background {
-	background: rgba(102, 0, 178, 0.078);
-}
-.highlight-pink_background {
-	background: rgba(197, 0, 93, 0.086);
-}
-.highlight-red_background {
-	background: rgba(223, 22, 0, 0.094);
-}
-.block-color-default {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray {
-	color: rgba(125, 122, 117, 1);
-	fill: rgba(125, 122, 117, 1);
-}
-.block-color-brown {
-	color: rgba(159, 118, 90, 1);
-	fill: rgba(159, 118, 90, 1);
-}
-.block-color-orange {
-	color: rgba(210, 123, 45, 1);
-	fill: rgba(210, 123, 45, 1);
-}
-.block-color-yellow {
-	color: rgba(203, 148, 52, 1);
-	fill: rgba(203, 148, 52, 1);
-}
-.block-color-teal {
-	color: rgba(80, 148, 110, 1);
-	fill: rgba(80, 148, 110, 1);
-}
-.block-color-blue {
-	color: rgba(56, 125, 201, 1);
-	fill: rgba(56, 125, 201, 1);
-}
-.block-color-purple {
-	color: rgba(154, 107, 180, 1);
-	fill: rgba(154, 107, 180, 1);
-}
-.block-color-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.block-color-red {
-	color: rgba(207, 81, 72, 1);
-	fill: rgba(207, 81, 72, 1);
-}
-.block-color-default_background {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray_background {
-	background: rgba(240, 239, 237, 1);
-}
-.block-color-brown_background {
-	background: rgba(245, 237, 233, 1);
-}
-.block-color-orange_background {
-	background: rgba(251, 235, 222, 1);
-}
-.block-color-yellow_background {
-	background: rgba(249, 243, 220, 1);
-}
-.block-color-teal_background {
-	background: rgba(232, 241, 236, 1);
-}
-.block-color-blue_background {
-	background: rgba(229, 242, 252, 1);
-}
-.block-color-purple_background {
-	background: rgba(243, 235, 249, 1);
-}
-.block-color-pink_background {
-	background: rgba(250, 233, 241, 1);
-}
-.block-color-red_background {
-	background: rgba(252, 233, 231, 1);
-}
-.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
-.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
-.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
-.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
-.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
-.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
-.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
-.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
-.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
-.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
-
-.checkbox {
-	display: inline-flex;
-	vertical-align: text-bottom;
-	width: 16;
-	height: 16;
-	background-size: 16px;
-	margin-left: 2px;
-	margin-right: 5px;
-}
-
-.checkbox-on {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-	
-</style></head><body><article id="349df58f-5ced-439a-8476-c0d074b9f0ba" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">⚙️</span></div><h1 class="page-title" dir="auto">⚙️ Anexo I: Especificaciones Técnicas de Auditor Pro v1.0 — HTML Legal Imprimible</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="ad24baab-525d-41a0-ae02-ca7a9c992bc3" class="code code-wrap"><code class="language-HTML" style="white-space:pre-wrap;word-break:break-all">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;es&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;&gt;
-&lt;title&gt;BELIZ™ — Anexo I: Especificaciones Técnicas de Auditor Pro v1.0&lt;/title&gt;
-&lt;style&gt;
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>BELIZ™ — Anexo I: Especificaciones Técnicas de Auditor Pro v1.0</title>
+<style>
 :root{--ink:#0f172a;--txt:#334155;--mut:#64748b;--ln:#e2e8f0;--acc:#1e3a5f;--gold:#b8860b}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 @page{size:A4;margin:22mm 20mm 25mm 20mm}
-body{font-family:&#x27;Lora&#x27;,&#x27;Georgia&#x27;,serif;font-size:11pt;line-height:1.55;color:var(--txt);max-width:210mm;margin:0 auto;padding:22mm 20mm 25mm 20mm}
+body{font-family:'Lora','Georgia',serif;font-size:11pt;line-height:1.55;color:var(--txt);max-width:210mm;margin:0 auto;padding:22mm 20mm 25mm 20mm}
 
-.print-hdr{position:fixed;top:0;left:0;right:0;height:14mm;display:flex;justify-content:space-between;align-items:center;padding:0 20mm;font-family:&#x27;Inter&#x27;,&#x27;Helvetica Neue&#x27;,sans-serif;font-size:7pt;color:var(--mut);border-bottom:1px solid var(--ln)}
-.print-ftr{position:fixed;bottom:0;left:0;right:0;height:12mm;display:flex;justify-content:space-between;align-items:center;padding:0 20mm;font-family:&#x27;Inter&#x27;,&#x27;Helvetica Neue&#x27;,sans-serif;font-size:7pt;color:var(--mut);border-top:1px solid var(--ln)}
+.print-hdr{position:fixed;top:0;left:0;right:0;height:14mm;display:flex;justify-content:space-between;align-items:center;padding:0 20mm;font-family:'Inter','Helvetica Neue',sans-serif;font-size:7pt;color:var(--mut);border-bottom:1px solid var(--ln)}
+.print-ftr{position:fixed;bottom:0;left:0;right:0;height:12mm;display:flex;justify-content:space-between;align-items:center;padding:0 20mm;font-family:'Inter','Helvetica Neue',sans-serif;font-size:7pt;color:var(--mut);border-top:1px solid var(--ln)}
 
-h1{font-family:&#x27;Montserrat&#x27;,&#x27;Helvetica Neue&#x27;,sans-serif;font-size:15pt;font-weight:800;color:var(--acc);text-align:center;margin:0 0 6pt 0;letter-spacing:-.3px;text-transform:uppercase}
-h2{font-family:&#x27;Montserrat&#x27;,&#x27;Helvetica Neue&#x27;,sans-serif;font-size:12pt;font-weight:700;color:var(--acc);margin:18pt 0 6pt 0;padding-bottom:3pt;border-bottom:1.5px solid var(--gold)}
-h3{font-family:&#x27;Montserrat&#x27;,&#x27;Helvetica Neue&#x27;,sans-serif;font-size:10.5pt;font-weight:600;color:var(--ink);margin:12pt 0 4pt 0}
+h1{font-family:'Montserrat','Helvetica Neue',sans-serif;font-size:15pt;font-weight:800;color:var(--acc);text-align:center;margin:0 0 6pt 0;letter-spacing:-.3px;text-transform:uppercase}
+h2{font-family:'Montserrat','Helvetica Neue',sans-serif;font-size:12pt;font-weight:700;color:var(--acc);margin:18pt 0 6pt 0;padding-bottom:3pt;border-bottom:1.5px solid var(--gold)}
+h3{font-family:'Montserrat','Helvetica Neue',sans-serif;font-size:10.5pt;font-weight:600;color:var(--ink);margin:12pt 0 4pt 0}
 p{margin:0 0 6pt 0;text-align:justify}
 
-.doc-badge{text-align:center;font-family:&#x27;Inter&#x27;,&#x27;Helvetica Neue&#x27;,sans-serif;font-size:8pt;color:var(--mut);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4pt}
-.doc-version{text-align:center;font-family:&#x27;Inter&#x27;,&#x27;Helvetica Neue&#x27;,sans-serif;font-size:8.5pt;color:var(--mut);margin-bottom:14pt}
+.doc-badge{text-align:center;font-family:'Inter','Helvetica Neue',sans-serif;font-size:8pt;color:var(--mut);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4pt}
+.doc-version{text-align:center;font-family:'Inter','Helvetica Neue',sans-serif;font-size:8.5pt;color:var(--mut);margin-bottom:14pt}
 
 .fill{display:inline-block;min-width:180px;border-bottom:1px dotted var(--mut);margin:0 2px;vertical-align:baseline}
 .fill-s{min-width:90px}
@@ -739,9 +27,9 @@ p{margin:0 0 6pt 0;text-align:justify}
 
 table{width:100%;border-collapse:collapse;margin:8pt 0 12pt 0;font-size:10pt}
 th,td{border:1px solid var(--ln);padding:5pt 8pt;text-align:left;vertical-align:top}
-th{background:var(--acc);color:#fff;font-family:&#x27;Montserrat&#x27;,&#x27;Helvetica Neue&#x27;,sans-serif;font-size:9pt;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+th{background:var(--acc);color:#fff;font-family:'Montserrat','Helvetica Neue',sans-serif;font-size:9pt;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
 .tbl-alt tr:nth-child(even){background:#f8fafc}
-.th-col td:first-child{background:#f1f5f9;font-weight:600;width:30%;font-family:&#x27;Montserrat&#x27;,&#x27;Helvetica Neue&#x27;,sans-serif;font-size:9.5pt;color:var(--acc)}
+.th-col td:first-child{background:#f1f5f9;font-weight:600;width:30%;font-family:'Montserrat','Helvetica Neue',sans-serif;font-size:9.5pt;color:var(--acc)}
 
 .co{border-left:3px solid var(--acc);background:#f0f4f8;padding:10pt 14pt;margin:10pt 0;border-radius:0 4px 4px 0;font-size:10pt}
 .co.warn{border-left-color:var(--gold);background:#fffbeb}
@@ -749,7 +37,7 @@ th{background:var(--acc);color:#fff;font-family:&#x27;Montserrat&#x27;,&#x27;Hel
 
 .sig{display:grid;grid-template-columns:1fr 1fr;gap:24pt;margin-top:20pt;page-break-inside:avoid}
 .sig-box{border-top:2px solid var(--ink);padding-top:10pt}
-.sig-box p{font-size:9.5pt;margin:2pt 0;font-family:&#x27;Inter&#x27;,&#x27;Helvetica Neue&#x27;,sans-serif}
+.sig-box p{font-size:9.5pt;margin:2pt 0;font-family:'Inter','Helvetica Neue',sans-serif}
 .sig-box .lbl{font-size:8pt;color:var(--mut);text-transform:uppercase;letter-spacing:.5px}
 .sig-space{height:50pt}
 
@@ -760,358 +48,358 @@ li{margin-bottom:3pt}
 .ref-block{background:#f8fafc;border:1px solid var(--ln);border-radius:4px;padding:10pt 14pt;margin:14pt 0;font-size:9pt;color:var(--mut)}
 .ref-block strong{color:var(--acc)}
 
-code{font-family:&#x27;Fira Mono&#x27;,&#x27;Courier New&#x27;,monospace;font-size:9pt;background:#f1f5f9;padding:1pt 4pt;border-radius:2px}
+code{font-family:'Fira Mono','Courier New',monospace;font-size:9pt;background:#f1f5f9;padding:1pt 4pt;border-radius:2px}
 
 @media print{
   *,*::before,*::after{overflow:visible !important;}
   html,body{height:auto !important;overflow:visible !important;max-width:none !important;width:100% !important;padding:0 !important;margin:0 !important;background:#fff !important;}
   .no-print{display:none}
 }
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
+</style>
+</head>
+<body>
 
-&lt;div class=&quot;print-hdr&quot;&gt;
-  &lt;span&gt;REF: DOCUMENTACIÓN LEGAL OFICIAL | CONFIDENCIAL&lt;/span&gt;
-  &lt;img src=&quot;https://beliz.com.ar/logo.png&quot; alt=&quot;BELIZ™&quot; style=&quot;height:8mm;&quot;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;print-ftr&quot;&gt;
-  &lt;span&gt;BELIZ™ | División Forense&lt;/span&gt;
-  &lt;span&gt;Anexo I — Especificaciones Técnicas v1.0&lt;/span&gt;
-&lt;/div&gt;
+<div class="print-hdr">
+  <span>REF: DOCUMENTACIÓN LEGAL OFICIAL | CONFIDENCIAL</span>
+  <img src="https://beliz.com.ar/logo.png" alt="BELIZ™" style="height:8mm;">
+</div>
+<div class="print-ftr">
+  <span>BELIZ™ | División Forense</span>
+  <span>Anexo I — Especificaciones Técnicas v1.0</span>
+</div>
 
-&lt;!-- ====== ENCABEZADO ====== --&gt;
-&lt;div style=&quot;text-align:center;margin-bottom:10pt;&quot;&gt;&lt;img src=&quot;https://beliz.com.ar/logo.png&quot; alt=&quot;BELIZ™&quot; style=&quot;height:60pt;&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;doc-badge&quot;&gt;BELIZ™ — División Forense · Documentación Legal Oficial&lt;/div&gt;
-&lt;h1&gt;Anexo I — Especificaciones Técnicas del Software Auditor Pro&lt;/h1&gt;
-&lt;div class=&quot;doc-version&quot;&gt;Versión 1.0 — Febrero 2026 · Borrador blindado — sujeto a revisión letrada final&lt;/div&gt;
+<!-- ====== ENCABEZADO ====== -->
+<div style="text-align:center;margin-bottom:10pt;"><img src="https://beliz.com.ar/logo.png" alt="BELIZ™" style="height:60pt;"></div>
+<div class="doc-badge">BELIZ™ — División Forense · Documentación Legal Oficial</div>
+<h1>Anexo I — Especificaciones Técnicas del Software Auditor Pro</h1>
+<div class="doc-version">Versión 1.0 — Febrero 2026 · Borrador blindado — sujeto a revisión letrada final</div>
 
-&lt;div class=&quot;ref-block&quot;&gt;
-  &lt;strong&gt;Referencia contractual:&lt;/strong&gt; Anexo I al Contrato Marco v5.1
-&lt;/div&gt;
+<div class="ref-block">
+  <strong>Referencia contractual:</strong> Anexo I al Contrato Marco v5.1
+</div>
 
-&lt;hr&gt;
+<hr>
 
-&lt;!-- ====== DATOS DE LAS PARTES ====== --&gt;
-&lt;h2&gt;Datos de las Partes&lt;/h2&gt;
-&lt;table class=&quot;th-col&quot;&gt;
-  &lt;tr&gt;
-    &lt;td&gt;PROVEEDOR&lt;/td&gt;
-    &lt;td&gt;BELIZ™ — División Forense, representada por &lt;strong&gt;AGUSTÍN BELIZ&lt;/strong&gt;, CUIT 20-44342660-5, con domicilio en A. Grassi 166, Santa Rosa, La Pampa (CP 6300)&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;CLIENTE&lt;/td&gt;
-    &lt;td&gt;&lt;span class=&quot;fill fill-l&quot;&gt;&lt;/span&gt;, CUIT &lt;span class=&quot;fill fill-s&quot;&gt;&lt;/span&gt;, con domicilio en &lt;span class=&quot;fill fill-l&quot;&gt;&lt;/span&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;Contrato Marco&lt;/td&gt;
-    &lt;td&gt;Suscripto con fecha &lt;span class=&quot;fill fill-s&quot;&gt;&lt;/span&gt;, nivel comercial: &lt;span class=&quot;fill&quot;&gt;&lt;/span&gt;&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
+<!-- ====== DATOS DE LAS PARTES ====== -->
+<h2>Datos de las Partes</h2>
+<table class="th-col">
+  <tr>
+    <td>PROVEEDOR</td>
+    <td>BELIZ™ — División Forense, representada por <strong>AGUSTÍN BELIZ</strong>, CUIT 20-44342660-5, con domicilio en A. Grassi 166, Santa Rosa, La Pampa (CP 6300)</td>
+  </tr>
+  <tr>
+    <td>CLIENTE</td>
+    <td><span class="fill fill-l"></span>, CUIT <span class="fill fill-s"></span>, con domicilio en <span class="fill fill-l"></span></td>
+  </tr>
+  <tr>
+    <td>Contrato Marco</td>
+    <td>Suscripto con fecha <span class="fill fill-s"></span>, nivel comercial: <span class="fill"></span></td>
+  </tr>
+</table>
 
-&lt;hr&gt;
+<hr>
 
-&lt;!-- ====== SECCIÓN 1 ====== --&gt;
-&lt;h2&gt;Sección 1 — Descripción General del Software&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;1.1. Denominación:&lt;/strong&gt; BELIZ™ Auditor Pro&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;1.2. Naturaleza:&lt;/strong&gt; Motor forense especializado en la detección automatizada de inconsistencias en facturación médica.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;1.3. Alcance funcional:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Identificación, detección y validación de inconsistencias financieras en facturación médica&lt;/li&gt;
-  &lt;li&gt;Detección de desvíos de facturación y subfacturación&lt;/li&gt;
-  &lt;li&gt;Identificación de rechazos indebidos y errores sistémicos&lt;/li&gt;
-  &lt;li&gt;Cuantificación de oportunidades de recupero y ahorro&lt;/li&gt;
-  &lt;li&gt;Blindaje preventivo de circuitos de facturación y control económico&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;1.4. Exclusiones expresas:&lt;/strong&gt; El software &lt;strong&gt;NO constituye&lt;/strong&gt; ni reemplaza:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Auditoría médica asistencial&lt;/li&gt;
-  &lt;li&gt;Diagnóstico clínico o evaluación de actos médicos&lt;/li&gt;
-  &lt;li&gt;Asesoramiento legal, contable o fiscal&lt;/li&gt;
-  &lt;li&gt;Intervención en decisiones vinculadas a mala praxis profesional&lt;/li&gt;
-&lt;/ul&gt;
+<!-- ====== SECCIÓN 1 ====== -->
+<h2>Sección 1 — Descripción General del Software</h2>
+<p><strong>1.1. Denominación:</strong> BELIZ™ Auditor Pro</p>
+<p><strong>1.2. Naturaleza:</strong> Motor forense especializado en la detección automatizada de inconsistencias en facturación médica.</p>
+<p><strong>1.3. Alcance funcional:</strong></p>
+<ul>
+  <li>Identificación, detección y validación de inconsistencias financieras en facturación médica</li>
+  <li>Detección de desvíos de facturación y subfacturación</li>
+  <li>Identificación de rechazos indebidos y errores sistémicos</li>
+  <li>Cuantificación de oportunidades de recupero y ahorro</li>
+  <li>Blindaje preventivo de circuitos de facturación y control económico</li>
+</ul>
+<p><strong>1.4. Exclusiones expresas:</strong> El software <strong>NO constituye</strong> ni reemplaza:</p>
+<ul>
+  <li>Auditoría médica asistencial</li>
+  <li>Diagnóstico clínico o evaluación de actos médicos</li>
+  <li>Asesoramiento legal, contable o fiscal</li>
+  <li>Intervención en decisiones vinculadas a mala praxis profesional</li>
+</ul>
 
-&lt;hr&gt;
+<hr>
 
-&lt;!-- ====== SECCIÓN 2 ====== --&gt;
-&lt;h2&gt;Sección 2 — Motor de Reglas Forense&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;2.1. Arquitectura:&lt;/strong&gt; Motor de reglas jerárquico con cadena de prioridad inviolable que evita el doble conteo de hallazgos.&lt;/p&gt;
-&lt;h3&gt;2.2. Reglas Financieras y Administrativas (activas por defecto)&lt;/h3&gt;
-&lt;table class=&quot;tbl-alt&quot;&gt;
-  &lt;tr&gt;
-    &lt;th&gt;ID&lt;/th&gt;
-    &lt;th&gt;Nombre&lt;/th&gt;
-    &lt;th&gt;Severidad&lt;/th&gt;
-    &lt;th&gt;Descripción funcional&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;strong&gt;R010&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;TC Múltiples Regiones&lt;/td&gt;
-    &lt;td&gt;LOW&lt;/td&gt;
-    &lt;td&gt;Detecta estudios tomográficos múltiples en misma sesión. Aplica descuento progresivo: 100% / 50% / 25%. Agrupa por paciente + fecha + comprobante.&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;strong&gt;R011&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;Cirugías Múltiples&lt;/td&gt;
-    &lt;td&gt;LOW&lt;/td&gt;
-    &lt;td&gt;Identifica cirugías simultáneas con descuentos por abordaje. Mismo abordaje: 100% + 50%. Distinto abordaje: 100% + 75%.&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;strong&gt;R008&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;Exceso Días Prequirúrgicos&lt;/td&gt;
-    &lt;td&gt;LOW&lt;/td&gt;
-    &lt;td&gt;Analiza días de internación previos a cirugía (ventana: 1–10 días). Máximo permitido: 2 días. Debita excedente íntegramente.&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;strong&gt;R004&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;Insumo Incluido en Módulo&lt;/td&gt;
-    &lt;td&gt;MEDIUM&lt;/td&gt;
-    &lt;td&gt;Detecta insumos facturados por separado cuando existe módulo quirúrgico que los incluye. Usa importeTotal (cantidad × unitario).&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;strong&gt;R012&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;Prestación Duplicada&lt;/td&gt;
-    &lt;td&gt;MEDIUM&lt;/td&gt;
-    &lt;td&gt;Identifica prestaciones idénticas: mismo código + paciente + día + profesional. Mantiene primera ocurrencia, marca las demás.&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;strong&gt;R003&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;Alto Costo / Desvío Precio&lt;/td&gt;
-    &lt;td&gt;HIGH&lt;/td&gt;
-    &lt;td&gt;Fallback. Con vademécum: compara contra arancel (+20% umbral). Sin vademécum: monto &gt; $1.000.000. Solo procesa líneas no capturadas por reglas anteriores.&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
+<!-- ====== SECCIÓN 2 ====== -->
+<h2>Sección 2 — Motor de Reglas Forense</h2>
+<p><strong>2.1. Arquitectura:</strong> Motor de reglas jerárquico con cadena de prioridad inviolable que evita el doble conteo de hallazgos.</p>
+<h3>2.2. Reglas Financieras y Administrativas (activas por defecto)</h3>
+<table class="tbl-alt">
+  <tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Severidad</th>
+    <th>Descripción funcional</th>
+  </tr>
+  <tr>
+    <td><strong>R010</strong></td>
+    <td>TC Múltiples Regiones</td>
+    <td>LOW</td>
+    <td>Detecta estudios tomográficos múltiples en misma sesión. Aplica descuento progresivo: 100% / 50% / 25%. Agrupa por paciente + fecha + comprobante.</td>
+  </tr>
+  <tr>
+    <td><strong>R011</strong></td>
+    <td>Cirugías Múltiples</td>
+    <td>LOW</td>
+    <td>Identifica cirugías simultáneas con descuentos por abordaje. Mismo abordaje: 100% + 50%. Distinto abordaje: 100% + 75%.</td>
+  </tr>
+  <tr>
+    <td><strong>R008</strong></td>
+    <td>Exceso Días Prequirúrgicos</td>
+    <td>LOW</td>
+    <td>Analiza días de internación previos a cirugía (ventana: 1–10 días). Máximo permitido: 2 días. Debita excedente íntegramente.</td>
+  </tr>
+  <tr>
+    <td><strong>R004</strong></td>
+    <td>Insumo Incluido en Módulo</td>
+    <td>MEDIUM</td>
+    <td>Detecta insumos facturados por separado cuando existe módulo quirúrgico que los incluye. Usa importeTotal (cantidad × unitario).</td>
+  </tr>
+  <tr>
+    <td><strong>R012</strong></td>
+    <td>Prestación Duplicada</td>
+    <td>MEDIUM</td>
+    <td>Identifica prestaciones idénticas: mismo código + paciente + día + profesional. Mantiene primera ocurrencia, marca las demás.</td>
+  </tr>
+  <tr>
+    <td><strong>R003</strong></td>
+    <td>Alto Costo / Desvío Precio</td>
+    <td>HIGH</td>
+    <td>Fallback. Con vademécum: compara contra arancel (+20% umbral). Sin vademécum: monto > $1.000.000. Solo procesa líneas no capturadas por reglas anteriores.</td>
+  </tr>
+</table>
 
-&lt;h3&gt;2.3. Cadena de ejecución&lt;/h3&gt;
-&lt;div class=&quot;co&quot;&gt;
-  &lt;p&gt;&lt;strong&gt;R010 → R011 → R008 → R004 → R012 → R003 (fallback)&lt;/strong&gt;&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;Invariante global:&lt;/strong&gt; Si una fila es procesada por una regla específica, R003 no la procesa (evita doble conteo).&lt;/p&gt;
-&lt;/div&gt;
+<h3>2.3. Cadena de ejecución</h3>
+<div class="co">
+  <p><strong>R010 → R011 → R008 → R004 → R012 → R003 (fallback)</strong></p>
+  <p><strong>Invariante global:</strong> Si una fila es procesada por una regla específica, R003 no la procesa (evita doble conteo).</p>
+</div>
 
-&lt;p&gt;&lt;strong&gt;2.4. Reglas de Validación Clínica (reservadas):&lt;/strong&gt; Orientadas a controles de coherencia biológica, frecuencia médica u otros parámetros sensibles. Su activación requiere la suscripción de la &lt;strong&gt;Adenda de Activación de Reglas Reservadas&lt;/strong&gt; y opera bajo exclusiva responsabilidad del CLIENTE.&lt;/p&gt;
+<p><strong>2.4. Reglas de Validación Clínica (reservadas):</strong> Orientadas a controles de coherencia biológica, frecuencia médica u otros parámetros sensibles. Su activación requiere la suscripción de la <strong>Adenda de Activación de Reglas Reservadas</strong> y opera bajo exclusiva responsabilidad del CLIENTE.</p>
 
-&lt;hr&gt;
+<hr>
 
-&lt;!-- ====== SECCIÓN 3 ====== --&gt;
-&lt;h2&gt;Sección 3 — Sistema de Categorización&lt;/h2&gt;
-&lt;p&gt;El motor implementa un sistema de macro-categorías con evaluación por especificidad descendente:&lt;/p&gt;
-&lt;table class=&quot;tbl-alt&quot;&gt;
-  &lt;tr&gt;
-    &lt;th&gt;Categoría&lt;/th&gt;
-    &lt;th&gt;Códigos / Criterios&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;strong&gt;Farmacia e Insumos&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;Códigos 9xxxx, INSxxxx, medicamentos&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;strong&gt;Hotelería y Soporte&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;Códigos 5xxxx (UTI/UCO), 96xxxx (camas)&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;strong&gt;Honorarios&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;Códigos 6xxxx (consultas), visitas médicas&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;strong&gt;Prestaciones Médicas&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;Códigos 3xxxx, 4xxxx, 7xxxx, 8xxxx&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;strong&gt;Otros&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;Fallback para códigos no clasificados&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
+<!-- ====== SECCIÓN 3 ====== -->
+<h2>Sección 3 — Sistema de Categorización</h2>
+<p>El motor implementa un sistema de macro-categorías con evaluación por especificidad descendente:</p>
+<table class="tbl-alt">
+  <tr>
+    <th>Categoría</th>
+    <th>Códigos / Criterios</th>
+  </tr>
+  <tr>
+    <td><strong>Farmacia e Insumos</strong></td>
+    <td>Códigos 9xxxx, INSxxxx, medicamentos</td>
+  </tr>
+  <tr>
+    <td><strong>Hotelería y Soporte</strong></td>
+    <td>Códigos 5xxxx (UTI/UCO), 96xxxx (camas)</td>
+  </tr>
+  <tr>
+    <td><strong>Honorarios</strong></td>
+    <td>Códigos 6xxxx (consultas), visitas médicas</td>
+  </tr>
+  <tr>
+    <td><strong>Prestaciones Médicas</strong></td>
+    <td>Códigos 3xxxx, 4xxxx, 7xxxx, 8xxxx</td>
+  </tr>
+  <tr>
+    <td><strong>Otros</strong></td>
+    <td>Fallback para códigos no clasificados</td>
+  </tr>
+</table>
 
-&lt;hr&gt;
+<hr>
 
-&lt;!-- ====== SECCIÓN 4 ====== --&gt;
-&lt;h2&gt;Sección 4 — Modos de Operación&lt;/h2&gt;
-&lt;table class=&quot;tbl-alt&quot;&gt;
-  &lt;tr&gt;
-    &lt;th&gt;Modo&lt;/th&gt;
-    &lt;th&gt;Descripción&lt;/th&gt;
-    &lt;th&gt;Aplicación&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;strong&gt;Con Vademécum&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;Comparación contra aranceles oficiales del financiador&lt;/td&gt;
-    &lt;td&gt;Cuando el financiador provee tabla de referencia&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;strong&gt;Sin Vademécum&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;Detección estructural por patrones y umbrales&lt;/td&gt;
-    &lt;td&gt;Cuando no hay tabla de referencia disponible&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;strong&gt;Híbrido&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;Combina ambos enfoques según disponibilidad de datos&lt;/td&gt;
-    &lt;td&gt;Modo estándar de operación&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
+<!-- ====== SECCIÓN 4 ====== -->
+<h2>Sección 4 — Modos de Operación</h2>
+<table class="tbl-alt">
+  <tr>
+    <th>Modo</th>
+    <th>Descripción</th>
+    <th>Aplicación</th>
+  </tr>
+  <tr>
+    <td><strong>Con Vademécum</strong></td>
+    <td>Comparación contra aranceles oficiales del financiador</td>
+    <td>Cuando el financiador provee tabla de referencia</td>
+  </tr>
+  <tr>
+    <td><strong>Sin Vademécum</strong></td>
+    <td>Detección estructural por patrones y umbrales</td>
+    <td>Cuando no hay tabla de referencia disponible</td>
+  </tr>
+  <tr>
+    <td><strong>Híbrido</strong></td>
+    <td>Combina ambos enfoques según disponibilidad de datos</td>
+    <td>Modo estándar de operación</td>
+  </tr>
+</table>
 
-&lt;hr&gt;
+<hr>
 
-&lt;!-- ====== SECCIÓN 5 ====== --&gt;
-&lt;h2&gt;Sección 5 — Métricas de Rendimiento&lt;/h2&gt;
-&lt;table class=&quot;tbl-alt&quot;&gt;
-  &lt;tr&gt;
-    &lt;th&gt;Métrica&lt;/th&gt;
-    &lt;th&gt;Valor&lt;/th&gt;
-    &lt;th&gt;Observaciones&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;Efectividad de detección&lt;/td&gt;
-    &lt;td&gt;&lt;strong&gt;85%&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;Sobre fuga detectable. Floor contractual: 70% (RM-06)&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;Tiempo de respuesta&lt;/td&gt;
-    &lt;td&gt;&lt;strong&gt;&amp;lt;1ms por línea&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;Validación individual&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;Capacidad de procesamiento&lt;/td&gt;
-    &lt;td&gt;&lt;strong&gt;100.000+ líneas&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;Por ciclo de análisis&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;Falsos positivos&lt;/td&gt;
-    &lt;td&gt;&lt;strong&gt;&amp;lt;5%&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;En reglas HIGH&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;Cobertura de reglas&lt;/td&gt;
-    &lt;td&gt;&lt;strong&gt;95%&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;De tipos de inconsistencia conocidos&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-&lt;div class=&quot;co warn&quot;&gt;
-  &lt;p&gt;&lt;strong&gt;⚠️ Nota:&lt;/strong&gt; Las métricas expresadas constituyen &lt;strong&gt;valores de referencia&lt;/strong&gt; basados en validaciones internas y no representan garantía de resultado. El PROVEEDOR asume una &lt;strong&gt;obligación de medios&lt;/strong&gt; conforme a la Cláusula 18.1 del Contrato Marco.&lt;/p&gt;
-&lt;/div&gt;
+<!-- ====== SECCIÓN 5 ====== -->
+<h2>Sección 5 — Métricas de Rendimiento</h2>
+<table class="tbl-alt">
+  <tr>
+    <th>Métrica</th>
+    <th>Valor</th>
+    <th>Observaciones</th>
+  </tr>
+  <tr>
+    <td>Efectividad de detección</td>
+    <td><strong>85%</strong></td>
+    <td>Sobre fuga detectable. Floor contractual: 70% (RM-06)</td>
+  </tr>
+  <tr>
+    <td>Tiempo de respuesta</td>
+    <td><strong>&lt;1ms por línea</strong></td>
+    <td>Validación individual</td>
+  </tr>
+  <tr>
+    <td>Capacidad de procesamiento</td>
+    <td><strong>100.000+ líneas</strong></td>
+    <td>Por ciclo de análisis</td>
+  </tr>
+  <tr>
+    <td>Falsos positivos</td>
+    <td><strong>&lt;5%</strong></td>
+    <td>En reglas HIGH</td>
+  </tr>
+  <tr>
+    <td>Cobertura de reglas</td>
+    <td><strong>95%</strong></td>
+    <td>De tipos de inconsistencia conocidos</td>
+  </tr>
+</table>
+<div class="co warn">
+  <p><strong>⚠️ Nota:</strong> Las métricas expresadas constituyen <strong>valores de referencia</strong> basados en validaciones internas y no representan garantía de resultado. El PROVEEDOR asume una <strong>obligación de medios</strong> conforme a la Cláusula 18.1 del Contrato Marco.</p>
+</div>
 
-&lt;hr&gt;
+<hr>
 
-&lt;!-- ====== SECCIÓN 6 ====== --&gt;
-&lt;h2&gt;Sección 6 — Trazabilidad y Reportería&lt;/h2&gt;
-&lt;h3&gt;6.1. Estructura de hallazgos&lt;/h3&gt;
-&lt;p&gt;Cada hallazgo generado por el motor incluye los siguientes campos trazables:&lt;/p&gt;
-&lt;table class=&quot;tbl-alt&quot;&gt;
-  &lt;tr&gt;
-    &lt;th&gt;Campo&lt;/th&gt;
-    &lt;th&gt;Descripción&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;code&gt;ruleId&lt;/code&gt;&lt;/td&gt;
-    &lt;td&gt;Identificador de la regla que generó el hallazgo&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;code&gt;severity&lt;/code&gt;&lt;/td&gt;
-    &lt;td&gt;Nivel de severidad (HIGH / MEDIUM / LOW)&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;code&gt;montoFacturado&lt;/code&gt;&lt;/td&gt;
-    &lt;td&gt;Monto original facturado por el CLIENTE&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;code&gt;montoReferencia&lt;/code&gt;&lt;/td&gt;
-    &lt;td&gt;Monto de referencia según vademécum o cálculo&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;code&gt;montoDesvio&lt;/code&gt;&lt;/td&gt;
-    &lt;td&gt;Diferencia detectada (≤ montoFacturado, invariante RM-02)&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;code&gt;evidencia&lt;/code&gt;&lt;/td&gt;
-    &lt;td&gt;Descripción técnica del hallazgo&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
+<!-- ====== SECCIÓN 6 ====== -->
+<h2>Sección 6 — Trazabilidad y Reportería</h2>
+<h3>6.1. Estructura de hallazgos</h3>
+<p>Cada hallazgo generado por el motor incluye los siguientes campos trazables:</p>
+<table class="tbl-alt">
+  <tr>
+    <th>Campo</th>
+    <th>Descripción</th>
+  </tr>
+  <tr>
+    <td><code>ruleId</code></td>
+    <td>Identificador de la regla que generó el hallazgo</td>
+  </tr>
+  <tr>
+    <td><code>severity</code></td>
+    <td>Nivel de severidad (HIGH / MEDIUM / LOW)</td>
+  </tr>
+  <tr>
+    <td><code>montoFacturado</code></td>
+    <td>Monto original facturado por el CLIENTE</td>
+  </tr>
+  <tr>
+    <td><code>montoReferencia</code></td>
+    <td>Monto de referencia según vademécum o cálculo</td>
+  </tr>
+  <tr>
+    <td><code>montoDesvio</code></td>
+    <td>Diferencia detectada (≤ montoFacturado, invariante RM-02)</td>
+  </tr>
+  <tr>
+    <td><code>evidencia</code></td>
+    <td>Descripción técnica del hallazgo</td>
+  </tr>
+</table>
 
-&lt;h3&gt;6.2. Tipos de reportes&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Dashboard Ejecutivo:&lt;/strong&gt; KPIs financieros y operativos consolidados&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Vista Forense:&lt;/strong&gt; Detalle técnico de cada hallazgo individual&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Log de Pipeline:&lt;/strong&gt; Trazabilidad completa del análisis (cadena de ejecución)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Export Institucional:&lt;/strong&gt; PDF con marca de agua BELIZ™&lt;/li&gt;
-&lt;/ul&gt;
+<h3>6.2. Tipos de reportes</h3>
+<ul>
+  <li><strong>Dashboard Ejecutivo:</strong> KPIs financieros y operativos consolidados</li>
+  <li><strong>Vista Forense:</strong> Detalle técnico de cada hallazgo individual</li>
+  <li><strong>Log de Pipeline:</strong> Trazabilidad completa del análisis (cadena de ejecución)</li>
+  <li><strong>Export Institucional:</strong> PDF con marca de agua BELIZ™</li>
+</ul>
 
-&lt;hr&gt;
+<hr>
 
-&lt;!-- ====== SECCIÓN 7 ====== --&gt;
-&lt;h2&gt;Sección 7 — Seguridad y Arquitectura de Datos&lt;/h2&gt;
-&lt;h3&gt;7.1. Modalidad Procesamiento Externo (Partner / Riesgo Compartido)&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Encriptación de datos en tránsito y en reposo (AES-256 o superior)&lt;/li&gt;
-  &lt;li&gt;Acceso restringido mediante autenticación multifactor&lt;/li&gt;
-  &lt;li&gt;Destrucción certificada al finalizar cada ciclo de análisis&lt;/li&gt;
-  &lt;li&gt;Procesamiento en entornos controlados y aislados&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;7.2. Modalidad On-Premise (Enterprise)&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;El software se ejecuta exclusivamente en infraestructura del CLIENTE&lt;/li&gt;
-  &lt;li&gt;Sin transferencia de datos hacia el PROVEEDOR&lt;/li&gt;
-  &lt;li&gt;El CLIENTE es responsable de la seguridad física y lógica&lt;/li&gt;
-  &lt;li&gt;Soporte remoto sin acceso directo a datos sensibles&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;7.3. Separación de campos sensibles:&lt;/strong&gt; Los campos &lt;code&gt;financiador&lt;/code&gt; y &lt;code&gt;diagnostico&lt;/code&gt; se procesan como campos &lt;strong&gt;separados&lt;/strong&gt; del exportable, nunca concatenados con la descripción de la prestación (RM-05).&lt;/p&gt;
+<!-- ====== SECCIÓN 7 ====== -->
+<h2>Sección 7 — Seguridad y Arquitectura de Datos</h2>
+<h3>7.1. Modalidad Procesamiento Externo (Partner / Riesgo Compartido)</h3>
+<ul>
+  <li>Encriptación de datos en tránsito y en reposo (AES-256 o superior)</li>
+  <li>Acceso restringido mediante autenticación multifactor</li>
+  <li>Destrucción certificada al finalizar cada ciclo de análisis</li>
+  <li>Procesamiento en entornos controlados y aislados</li>
+</ul>
+<h3>7.2. Modalidad On-Premise (Enterprise)</h3>
+<ul>
+  <li>El software se ejecuta exclusivamente en infraestructura del CLIENTE</li>
+  <li>Sin transferencia de datos hacia el PROVEEDOR</li>
+  <li>El CLIENTE es responsable de la seguridad física y lógica</li>
+  <li>Soporte remoto sin acceso directo a datos sensibles</li>
+</ul>
+<p><strong>7.3. Separación de campos sensibles:</strong> Los campos <code>financiador</code> y <code>diagnostico</code> se procesan como campos <strong>separados</strong> del exportable, nunca concatenados con la descripción de la prestación (RM-05).</p>
 
-&lt;hr&gt;
+<hr>
 
-&lt;!-- ====== SECCIÓN 8 ====== --&gt;
-&lt;h2&gt;Sección 8 — Financiadores Compatibles&lt;/h2&gt;
-&lt;table class=&quot;tbl-alt&quot;&gt;
-  &lt;tr&gt;
-    &lt;th&gt;Financiador&lt;/th&gt;
-    &lt;th&gt;Estado&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;strong&gt;PAMI&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;✅ Integrado&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;&lt;strong&gt;SEMPRE&lt;/strong&gt;&lt;/td&gt;
-    &lt;td&gt;✅ Integrado&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;OSDE, SIMEPA, Swiss Medical, Sancor Salud, Medifé, Galeno&lt;/td&gt;
-    &lt;td&gt;🛠️ En roadmap (adaptador en 7–14 días por financiador)&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-&lt;p&gt;La lista de financiadores compatibles podrá ser ampliada por el PROVEEDOR sin que ello constituya modificación contractual.&lt;/p&gt;
+<!-- ====== SECCIÓN 8 ====== -->
+<h2>Sección 8 — Financiadores Compatibles</h2>
+<table class="tbl-alt">
+  <tr>
+    <th>Financiador</th>
+    <th>Estado</th>
+  </tr>
+  <tr>
+    <td><strong>PAMI</strong></td>
+    <td>✅ Integrado</td>
+  </tr>
+  <tr>
+    <td><strong>SEMPRE</strong></td>
+    <td>✅ Integrado</td>
+  </tr>
+  <tr>
+    <td>OSDE, SIMEPA, Swiss Medical, Sancor Salud, Medifé, Galeno</td>
+    <td>🛠️ En roadmap (adaptador en 7–14 días por financiador)</td>
+  </tr>
+</table>
+<p>La lista de financiadores compatibles podrá ser ampliada por el PROVEEDOR sin que ello constituya modificación contractual.</p>
 
-&lt;hr&gt;
+<hr>
 
-&lt;!-- ====== SECCIÓN 9 ====== --&gt;
-&lt;h2&gt;Sección 9 — Reservas y Limitaciones&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;9.1.&lt;/strong&gt; Las especificaciones técnicas descritas en el presente Anexo corresponden a la &lt;strong&gt;versión vigente&lt;/strong&gt; del software al momento de la suscripción y podrán ser modificadas, actualizadas o mejoradas por el PROVEEDOR en ejercicio de su facultad técnica exclusiva (Cláusula Séptima del Contrato Marco), sin que ello constituya modificación contractual.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;9.2.&lt;/strong&gt; El PROVEEDOR no garantiza la compatibilidad del software con todos los formatos de exportación de todos los financiadores. La adaptación a nuevos financiadores está sujeta a la recepción de exportables reales y tablas de referencia.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;9.3.&lt;/strong&gt; Las métricas de rendimiento son &lt;strong&gt;valores de referencia&lt;/strong&gt; y no constituyen obligación de resultado. El rendimiento real dependerá de la calidad, completitud e integridad de los datos provistos por el CLIENTE.&lt;/p&gt;
+<!-- ====== SECCIÓN 9 ====== -->
+<h2>Sección 9 — Reservas y Limitaciones</h2>
+<p><strong>9.1.</strong> Las especificaciones técnicas descritas en el presente Anexo corresponden a la <strong>versión vigente</strong> del software al momento de la suscripción y podrán ser modificadas, actualizadas o mejoradas por el PROVEEDOR en ejercicio de su facultad técnica exclusiva (Cláusula Séptima del Contrato Marco), sin que ello constituya modificación contractual.</p>
+<p><strong>9.2.</strong> El PROVEEDOR no garantiza la compatibilidad del software con todos los formatos de exportación de todos los financiadores. La adaptación a nuevos financiadores está sujeta a la recepción de exportables reales y tablas de referencia.</p>
+<p><strong>9.3.</strong> Las métricas de rendimiento son <strong>valores de referencia</strong> y no constituyen obligación de resultado. El rendimiento real dependerá de la calidad, completitud e integridad de los datos provistos por el CLIENTE.</p>
 
-&lt;hr&gt;
+<hr>
 
-&lt;!-- ====== FIRMAS ====== --&gt;
-&lt;h2&gt;Firmas&lt;/h2&gt;
-&lt;div class=&quot;sig&quot;&gt;
-  &lt;div class=&quot;sig-box&quot;&gt;
-    &lt;p class=&quot;lbl&quot;&gt;POR EL PROVEEDOR&lt;/p&gt;
-    &lt;div class=&quot;sig-space&quot;&gt;&lt;/div&gt;
-    &lt;p&gt;&lt;strong&gt;Firma:&lt;/strong&gt;&lt;/p&gt;
-    &lt;p&gt;&lt;strong&gt;Nombre:&lt;/strong&gt; AGUSTÍN BELIZ&lt;/p&gt;
-    &lt;p&gt;&lt;strong&gt;Cargo:&lt;/strong&gt; Director Técnico — BELIZ™&lt;/p&gt;
-    &lt;p&gt;&lt;strong&gt;DNI:&lt;/strong&gt; 44.342.660&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;sig-box&quot;&gt;
-    &lt;p class=&quot;lbl&quot;&gt;POR EL CLIENTE&lt;/p&gt;
-    &lt;div class=&quot;sig-space&quot;&gt;&lt;/div&gt;
-    &lt;p&gt;&lt;strong&gt;Firma:&lt;/strong&gt;&lt;/p&gt;
-    &lt;p&gt;&lt;strong&gt;Nombre:&lt;/strong&gt; &lt;span class=&quot;fill&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-    &lt;p&gt;&lt;strong&gt;Cargo:&lt;/strong&gt; &lt;span class=&quot;fill&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-    &lt;p&gt;&lt;strong&gt;DNI:&lt;/strong&gt; &lt;span class=&quot;fill fill-s&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+<!-- ====== FIRMAS ====== -->
+<h2>Firmas</h2>
+<div class="sig">
+  <div class="sig-box">
+    <p class="lbl">POR EL PROVEEDOR</p>
+    <div class="sig-space"></div>
+    <p><strong>Firma:</strong></p>
+    <p><strong>Nombre:</strong> AGUSTÍN BELIZ</p>
+    <p><strong>Cargo:</strong> Director Técnico — BELIZ™</p>
+    <p><strong>DNI:</strong> 44.342.660</p>
+  </div>
+  <div class="sig-box">
+    <p class="lbl">POR EL CLIENTE</p>
+    <div class="sig-space"></div>
+    <p><strong>Firma:</strong></p>
+    <p><strong>Nombre:</strong> <span class="fill"></span></p>
+    <p><strong>Cargo:</strong> <span class="fill"></span></p>
+    <p><strong>DNI:</strong> <span class="fill fill-s"></span></p>
+  </div>
+</div>
 
-&lt;hr&gt;
-&lt;p style=&quot;text-align:center;font-size:8pt;color:var(--mut);margin-top:12pt;&quot;&gt;BELIZ™ — Documento confidencial — v1.0 — Febrero 2026&lt;/p&gt;
+<hr>
+<p style="text-align:center;font-size:8pt;color:var(--mut);margin-top:12pt;">BELIZ™ — Documento confidencial — v1.0 — Febrero 2026</p>
 
-&lt;script&gt;document.addEventListener(&#x27;DOMContentLoaded&#x27;,function(){var b=document.createElement(&#x27;button&#x27;);b.className=&#x27;no-print&#x27;;b.textContent=&#x27;Imprimir documento&#x27;;b.style.cssText=&#x27;position:fixed;bottom:20px;right:20px;z-index:99999;padding:12px 24px;background:#0F766E;color:#fff;border:none;border-radius:6px;cursor:pointer;font-family:Inter,sans-serif;font-size:11pt;font-weight:700;box-shadow:0 4px 12px rgba(0,0,0,.2);&#x27;;b.onclick=function(){window.print();};document.body.appendChild(b);});&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
+<script>document.addEventListener('DOMContentLoaded',function(){var b=document.createElement('button');b.className='no-print';b.textContent='Imprimir documento';b.style.cssText='position:fixed;bottom:20px;right:20px;z-index:99999;padding:12px 24px;background:#0F766E;color:#fff;border:none;border-radius:6px;cursor:pointer;font-family:Inter,sans-serif;font-size:11pt;font-weight:700;box-shadow:0 4px 12px rgba(0,0,0,.2);';b.onclick=function(){window.print();};document.body.appendChild(b);});</script>
+</body>
+</html>
