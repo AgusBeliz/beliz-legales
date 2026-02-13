@@ -1,752 +1,40 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>BELIZ™ NDA Pre-Comercial v1.1 — HTML Legal Imprimible</title><style>
-/* cspell:disable-file */
-/* webkit printing magic: print all background colors */
-html {
-	-webkit-print-color-adjust: exact;
-}
-* {
-	box-sizing: border-box;
-	-webkit-print-color-adjust: exact;
-}
-
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-@media only screen {
-	body {
-		margin: 2em auto;
-		max-width: 900px;
-		color: rgb(55, 53, 47);
-	}
-}
-
-body {
-	line-height: 1.5;
-	white-space: pre-wrap;
-}
-
-a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
-}
-
-.pdf-relative-link-path {
-	font-size: 80%;
-	color: #444;
-}
-
-h1,
-h2,
-h3 {
-	letter-spacing: -0.01em;
-	line-height: 1.2;
-	font-weight: 600;
-	margin-bottom: 0;
-}
-
-/* Override strong tags inside headings to maintain consistent weight */
-h1 strong,
-h2 strong,
-h3 strong {
-	font-weight: 600;
-}
-
-.page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
-}
-
-h1 {
-	font-size: 1.875rem;
-	margin-top: 1.875rem;
-}
-
-h2 {
-	font-size: 1.5rem;
-	margin-top: 1.5rem;
-}
-
-h3 {
-	font-size: 1.25rem;
-	margin-top: 1.25rem;
-}
-
-.source {
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 1.5em;
-	word-break: break-all;
-}
-
-.callout {
-	border-radius: 10px;
-	padding: 1rem;
-}
-
-figure {
-	margin: 1.25em 0;
-	page-break-inside: avoid;
-}
-
-figcaption {
-	opacity: 0.5;
-	font-size: 85%;
-	margin-top: 0.5em;
-}
-
-mark {
-	background-color: transparent;
-}
-
-.indented {
-	padding-left: 1.5em;
-}
-
-hr {
-	background: transparent;
-	display: block;
-	width: 100%;
-	height: 1px;
-	visibility: visible;
-	border: none;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
-}
-
-img {
-	max-width: 100%;
-}
-
-@media only print {
-	img {
-		max-height: 100vh;
-		object-fit: contain;
-	}
-}
-
-@page {
-	margin: 1in;
-}
-
-.collection-content {
-	font-size: 0.875rem;
-}
-
-.collection-content td {
-	white-space: pre-wrap;
-	word-break: break-word;
-}
-
-.column-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.column {
-	padding: 0 1em;
-}
-
-.column:first-child {
-	padding-left: 0;
-}
-
-.column:last-child {
-	padding-right: 0;
-}
-
-.table_of_contents-item {
-	display: block;
-	font-size: 0.875rem;
-	line-height: 1.3;
-	padding: 0.125rem;
-}
-
-.table_of_contents-indent-1 {
-	margin-left: 1.5rem;
-}
-
-.table_of_contents-indent-2 {
-	margin-left: 3rem;
-}
-
-.table_of_contents-indent-3 {
-	margin-left: 4.5rem;
-}
-
-.table_of_contents-link {
-	text-decoration: none;
-	opacity: 0.7;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-}
-
-table,
-th,
-td {
-	border: 1px solid rgba(55, 53, 47, 0.09);
-	border-collapse: collapse;
-}
-
-table {
-	border-left: none;
-	border-right: none;
-}
-
-th,
-td {
-	font-weight: normal;
-	padding: 0.25em 0.5em;
-	line-height: 1.5;
-	min-height: 1.5em;
-	text-align: left;
-}
-
-th {
-	color: rgba(55, 53, 47, 0.6);
-}
-
-ol,
-ul {
-	margin: 0;
-	margin-block-start: 0.6em;
-	margin-block-end: 0.6em;
-}
-
-li > ol:first-child,
-li > ul:first-child {
-	margin-block-start: 0.6em;
-}
-
-ul > li {
-	list-style: disc;
-}
-
-ul.to-do-list {
-	padding-inline-start: 0;
-}
-
-ul.to-do-list > li {
-	list-style: none;
-}
-
-.to-do-children-checked {
-	text-decoration: line-through;
-	opacity: 0.375;
-}
-
-ul.toggle > li {
-	list-style: none;
-}
-
-ul {
-	padding-inline-start: 1.7em;
-}
-
-ul > li {
-	padding-left: 0.1em;
-}
-
-ol {
-	padding-inline-start: 1.6em;
-}
-
-ol > li {
-	padding-left: 0.2em;
-}
-
-.mono ol {
-	padding-inline-start: 2em;
-}
-
-.mono ol > li {
-	text-indent: -0.4em;
-}
-
-.toggle {
-	padding-inline-start: 0em;
-	list-style-type: none;
-}
-
-/* Indent toggle children */
-.toggle > li > details {
-	padding-left: 1.7em;
-}
-
-.toggle > li > details > summary {
-	margin-left: -1.1em;
-}
-
-.selected-value {
-	display: inline-block;
-	padding: 0 0.5em;
-	background: rgba(206, 205, 202, 0.5);
-	border-radius: 3px;
-	margin-right: 0.5em;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-	white-space: nowrap;
-}
-
-.collection-title {
-	display: inline-block;
-	margin-right: 1em;
-}
-
-.page-description {
-	margin-bottom: 2em;
-}
-
-.simple-table {
-	margin-top: 1em;
-	font-size: 0.875rem;
-	empty-cells: show;
-}
-.simple-table td {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table th {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table-header-color {
-	background: rgb(247, 246, 243);
-	color: black;
-}
-.simple-table-header {
-	font-weight: 500;
-}
-
-time {
-	opacity: 0.5;
-}
-
-.icon {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	max-width: 1.2em;
-	max-height: 1.2em;
-	text-decoration: none;
-	vertical-align: text-bottom;
-	margin-right: 0.5em;
-}
-
-img.icon {
-	border-radius: 3px;
-}
-
-.callout img.notion-static-icon {
-	width: 1em;
-	height: 1em;
-}
-
-.callout p {
-	margin: 0;
-}
-
-.callout h1,
-.callout h2,
-.callout h3 {
-	margin: 0 0 0.6rem;
-}
-
-.user-icon {
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	margin-right: 0.5rem;
-}
-
-.user-icon-inner {
-	font-size: 0.8em;
-}
-
-.text-icon {
-	border: 1px solid #000;
-	text-align: center;
-}
-
-.page-cover-image {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-	max-height: 30vh;
-}
-
-.page-header-icon {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
-
-.page-header-icon-with-cover {
-	margin-top: -0.72em;
-	margin-left: 0.07em;
-}
-
-.page-header-icon img {
-	border-radius: 3px;
-}
-
-.link-to-page {
-	margin: 1em 0;
-	padding: 0;
-	border: none;
-	font-weight: 500;
-}
-
-p > .user {
-	opacity: 0.5;
-}
-
-td > .user,
-td > time {
-	white-space: nowrap;
-}
-
-input[type="checkbox"] {
-	transform: scale(1.5);
-	margin-right: 0.6em;
-	vertical-align: middle;
-}
-
-p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-.image {
-	border: none;
-	margin: 1.5em 0;
-	padding: 0;
-	border-radius: 0;
-	text-align: center;
-}
-
-.code,
-code {
-	background: rgba(135, 131, 120, 0.15);
-	border-radius: 3px;
-	padding: 0.2em 0.4em;
-	border-radius: 3px;
-	font-size: 85%;
-	tab-size: 2;
-}
-
-code {
-	color: #eb5757;
-}
-
-.code {
-	padding: 1.5em 1em;
-}
-
-.code-wrap {
-	white-space: pre-wrap;
-	word-break: break-all;
-}
-
-.code > code {
-	background: none;
-	padding: 0;
-	font-size: 100%;
-	color: inherit;
-}
-
-blockquote {
-	font-size: 1em;
-	margin: 1em 0;
-	padding-left: 1em;
-	border-left: 3px solid rgb(55, 53, 47);
-}
-
-blockquote.quote-large {
-	font-size: 1.25em;
-}
-
-.bookmark {
-	text-decoration: none;
-	max-height: 8em;
-	padding: 0;
-	display: flex;
-	width: 100%;
-	align-items: stretch;
-}
-
-.bookmark-title {
-	font-size: 0.85em;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 1.75em;
-	white-space: nowrap;
-}
-
-.bookmark-text {
-	display: flex;
-	flex-direction: column;
-}
-
-.bookmark-info {
-	flex: 4 1 180px;
-	padding: 12px 14px 14px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.bookmark-image {
-	width: 33%;
-	flex: 1 1 180px;
-	display: block;
-	position: relative;
-	object-fit: cover;
-	border-radius: 1px;
-}
-
-.bookmark-description {
-	color: rgba(55, 53, 47, 0.6);
-	font-size: 0.75em;
-	overflow: hidden;
-	max-height: 4.5em;
-	word-break: break-word;
-}
-
-.bookmark-href {
-	font-size: 0.75em;
-	margin-top: 0.25em;
-}
-
-.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
-.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
-.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
-.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
-.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
-.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
-.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
-.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
-.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
-.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
-.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.highlight-default {
-	color: rgba(44, 44, 43, 1);
-}
-.highlight-gray {
-	color: rgba(125, 122, 117, 1);
-	fill: rgba(125, 122, 117, 1);
-}
-.highlight-brown {
-	color: rgba(159, 118, 90, 1);
-	fill: rgba(159, 118, 90, 1);
-}
-.highlight-orange {
-	color: rgba(210, 123, 45, 1);
-	fill: rgba(210, 123, 45, 1);
-}
-.highlight-yellow {
-	color: rgba(203, 148, 52, 1);
-	fill: rgba(203, 148, 52, 1);
-}
-.highlight-teal {
-	color: rgba(80, 148, 110, 1);
-	fill: rgba(80, 148, 110, 1);
-}
-.highlight-blue {
-	color: rgba(56, 125, 201, 1);
-	fill: rgba(56, 125, 201, 1);
-}
-.highlight-purple {
-	color: rgba(154, 107, 180, 1);
-	fill: rgba(154, 107, 180, 1);
-}
-.highlight-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.highlight-red {
-	color: rgba(207, 81, 72, 1);
-	fill: rgba(207, 81, 72, 1);
-}
-.highlight-default_background {
-	color: rgba(44, 44, 43, 1);
-}
-.highlight-gray_background {
-	background: rgba(42, 28, 0, 0.07);
-}
-.highlight-brown_background {
-	background: rgba(139, 46, 0, 0.086);
-}
-.highlight-orange_background {
-	background: rgba(224, 101, 1, 0.129);
-}
-.highlight-yellow_background {
-	background: rgba(211, 168, 0, 0.137);
-}
-.highlight-teal_background {
-	background: rgba(0, 100, 45, 0.09);
-}
-.highlight-blue_background {
-	background: rgba(0, 124, 215, 0.094);
-}
-.highlight-purple_background {
-	background: rgba(102, 0, 178, 0.078);
-}
-.highlight-pink_background {
-	background: rgba(197, 0, 93, 0.086);
-}
-.highlight-red_background {
-	background: rgba(223, 22, 0, 0.094);
-}
-.block-color-default {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray {
-	color: rgba(125, 122, 117, 1);
-	fill: rgba(125, 122, 117, 1);
-}
-.block-color-brown {
-	color: rgba(159, 118, 90, 1);
-	fill: rgba(159, 118, 90, 1);
-}
-.block-color-orange {
-	color: rgba(210, 123, 45, 1);
-	fill: rgba(210, 123, 45, 1);
-}
-.block-color-yellow {
-	color: rgba(203, 148, 52, 1);
-	fill: rgba(203, 148, 52, 1);
-}
-.block-color-teal {
-	color: rgba(80, 148, 110, 1);
-	fill: rgba(80, 148, 110, 1);
-}
-.block-color-blue {
-	color: rgba(56, 125, 201, 1);
-	fill: rgba(56, 125, 201, 1);
-}
-.block-color-purple {
-	color: rgba(154, 107, 180, 1);
-	fill: rgba(154, 107, 180, 1);
-}
-.block-color-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.block-color-red {
-	color: rgba(207, 81, 72, 1);
-	fill: rgba(207, 81, 72, 1);
-}
-.block-color-default_background {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray_background {
-	background: rgba(240, 239, 237, 1);
-}
-.block-color-brown_background {
-	background: rgba(245, 237, 233, 1);
-}
-.block-color-orange_background {
-	background: rgba(251, 235, 222, 1);
-}
-.block-color-yellow_background {
-	background: rgba(249, 243, 220, 1);
-}
-.block-color-teal_background {
-	background: rgba(232, 241, 236, 1);
-}
-.block-color-blue_background {
-	background: rgba(229, 242, 252, 1);
-}
-.block-color-purple_background {
-	background: rgba(243, 235, 249, 1);
-}
-.block-color-pink_background {
-	background: rgba(250, 233, 241, 1);
-}
-.block-color-red_background {
-	background: rgba(252, 233, 231, 1);
-}
-.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
-.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
-.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
-.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
-.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
-.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
-.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
-.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
-.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
-.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
-
-.checkbox {
-	display: inline-flex;
-	vertical-align: text-bottom;
-	width: 16;
-	height: 16;
-	background-size: 16px;
-	margin-left: 2px;
-	margin-right: 5px;
-}
-
-.checkbox-on {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-	
-</style></head><body><article id="7ed39c5c-6b09-4c2d-9efe-bace25b478d4" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">🔐</span></div><h1 class="page-title" dir="auto">BELIZ™ NDA Pre-Comercial v1.1 — HTML Legal Imprimible</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="auto"><script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" integrity="sha512-7Z9J3l1+EYfeaPKcGXu3MS/7T+w19WtKQY/n+xzmw4hZhJ9tyYmcUS+4QqAlzhicE5LAfMQSF3iFTK9bQdTxXg==" crossorigin="anonymous" referrerPolicy="no-referrer"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerPolicy="no-referrer"/><pre id="0a90f3ff-c0b7-49b4-815c-c0a3a9256230" class="code code-wrap"><code class="language-HTML" style="white-space:pre-wrap;word-break:break-all">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;es&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;title&gt;BELIZ™ | NDA Pre-Comercial v1.1&lt;/title&gt;
-&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=Montserrat:wght@700;800;900&amp;family=Lora:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
-&lt;style&gt;
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BELIZ™ | NDA Pre-Comercial v1.1</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Montserrat:wght@700;800;900&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
 :root{--ink:#0B132B;--txt:#1a1a1a;--mut:#64748B;--ln:#d1d5db;--acc:#0F766E;--gold:#8B7355;}
 *{box-sizing:border-box;margin:0;padding:0;}
 @page{size:A4;margin:32mm 18mm 25mm 18mm;}
-body{font-family:&#x27;Lora&#x27;,Georgia,&#x27;Times New Roman&#x27;,serif;font-size:10pt;color:var(--txt);line-height:1.55;background:#e5e5e5;}
+body{font-family:'Lora',Georgia,'Times New Roman',serif;font-size:10pt;color:var(--txt);line-height:1.55;background:#e5e5e5;}
 .doc{max-width:210mm;margin:20px auto;background:#fff;box-shadow:0 8px 30px rgba(0,0,0,.12);}
 @media print{*,*::before,*::after{overflow:visible !important;}html,body{height:auto !important;overflow:visible !important;background:#fff !important;margin:0 !important;padding:0 !important;width:100% !important;max-width:none !important;}.doc{display:block !important;position:static !important;overflow:visible !important;height:auto !important;max-height:none !important;max-width:none !important;width:100% !important;margin:0 !important;padding:0 !important;box-shadow:none !important;}.body{display:block !important;overflow:visible !important;height:auto !important;max-height:none !important;padding:5px 0 0 !important;}.no-print{display:none !important;}}
-.ph{position:fixed;top:0;left:0;right:0;padding:6px 0;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;font-family:&#x27;Inter&#x27;,sans-serif;background:#fff;z-index:10;}
+.ph{position:fixed;top:0;left:0;right:0;padding:6px 0;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;font-family:'Inter',sans-serif;background:#fff;z-index:10;}
 .ph-ref{font-size:6.5pt;color:var(--mut);text-transform:uppercase;letter-spacing:.8px;}
-.ph-brand{font-family:&#x27;Montserrat&#x27;,sans-serif;font-weight:900;font-size:14pt;color:var(--ink);letter-spacing:-.5px;}
-.pf{position:fixed;bottom:0;left:0;right:0;padding:6px 0;border-top:1px solid var(--ln);display:flex;justify-content:space-between;font-family:&#x27;Inter&#x27;,sans-serif;font-size:6.5pt;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;background:#fff;z-index:10;}
+.ph-brand{font-family:'Montserrat',sans-serif;font-weight:900;font-size:14pt;color:var(--ink);letter-spacing:-.5px;}
+.pf{position:fixed;bottom:0;left:0;right:0;padding:6px 0;border-top:1px solid var(--ln);display:flex;justify-content:space-between;font-family:'Inter',sans-serif;font-size:6.5pt;color:var(--mut);text-transform:uppercase;letter-spacing:.5px;background:#fff;z-index:10;}
 @media screen{.ph,.pf{position:relative;}}
 .body{padding:40px 45px 40px;}
 .cover{text-align:center;padding:20px 0 15px;border-bottom:2px solid var(--ink);margin-bottom:20px;}
-.cover-brand{font-family:&#x27;Montserrat&#x27;,sans-serif;font-weight:900;font-size:28pt;color:var(--ink);letter-spacing:-1px;margin-bottom:5px;}
-.cover-div{font-family:&#x27;Inter&#x27;,sans-serif;font-size:7pt;color:var(--acc);text-transform:uppercase;letter-spacing:2px;margin-bottom:15px;}
-.cover-title{font-family:&#x27;Montserrat&#x27;,sans-serif;font-size:12pt;font-weight:800;color:var(--ink);text-transform:uppercase;line-height:1.35;margin-bottom:5px;}
-.cover-sub{font-family:&#x27;Inter&#x27;,sans-serif;font-size:7.5pt;color:var(--mut);text-transform:uppercase;letter-spacing:1px;}
-.cover-ver{font-family:&#x27;Inter&#x27;,sans-serif;font-size:7pt;color:var(--gold);font-weight:700;margin-top:8px;text-transform:uppercase;letter-spacing:1px;}
-h2{font-family:&#x27;Montserrat&#x27;,sans-serif;font-size:10.5pt;font-weight:800;color:var(--ink);text-transform:uppercase;border-bottom:2px solid var(--ink);padding-bottom:3px;margin:22px 0 12px;page-break-after:avoid;}
-h3{font-family:&#x27;Montserrat&#x27;,sans-serif;font-size:9.5pt;font-weight:700;color:var(--ink);text-transform:uppercase;margin:16px 0 8px;page-break-after:avoid;}
+.cover-brand{font-family:'Montserrat',sans-serif;font-weight:900;font-size:28pt;color:var(--ink);letter-spacing:-1px;margin-bottom:5px;}
+.cover-div{font-family:'Inter',sans-serif;font-size:7pt;color:var(--acc);text-transform:uppercase;letter-spacing:2px;margin-bottom:15px;}
+.cover-title{font-family:'Montserrat',sans-serif;font-size:12pt;font-weight:800;color:var(--ink);text-transform:uppercase;line-height:1.35;margin-bottom:5px;}
+.cover-sub{font-family:'Inter',sans-serif;font-size:7.5pt;color:var(--mut);text-transform:uppercase;letter-spacing:1px;}
+.cover-ver{font-family:'Inter',sans-serif;font-size:7pt;color:var(--gold);font-weight:700;margin-top:8px;text-transform:uppercase;letter-spacing:1px;}
+h2{font-family:'Montserrat',sans-serif;font-size:10.5pt;font-weight:800;color:var(--ink);text-transform:uppercase;border-bottom:2px solid var(--ink);padding-bottom:3px;margin:22px 0 12px;page-break-after:avoid;}
+h3{font-family:'Montserrat',sans-serif;font-size:9.5pt;font-weight:700;color:var(--ink);text-transform:uppercase;margin:16px 0 8px;page-break-after:avoid;}
 p{margin:0 0 7px;text-align:justify;}
 .indent{margin-left:15px;}
 strong{font-weight:700;}
 em{font-style:italic;}
 table{width:100%;border-collapse:collapse;margin:8px 0 12px;font-size:9pt;}
-th{background:var(--ink);color:#fff;padding:5px 8px;text-align:left;font-family:&#x27;Inter&#x27;,sans-serif;font-weight:700;font-size:7.5pt;text-transform:uppercase;letter-spacing:.5px;}
+th{background:var(--ink);color:#fff;padding:5px 8px;text-align:left;font-family:'Inter',sans-serif;font-weight:700;font-size:7.5pt;text-transform:uppercase;letter-spacing:.5px;}
 td{padding:5px 8px;border-bottom:1px solid var(--ln);vertical-align:top;}
 tr:last-child td{border-bottom:none;}
 .tbl-alt tr:nth-child(even) td{background:#f8f9fa;}
-.th-col td:first-child{font-weight:700;background:#f8f9fa;width:32%;font-family:&#x27;Inter&#x27;,sans-serif;font-size:8.5pt;}
+.th-col td:first-child{font-weight:700;background:#f8f9fa;width:32%;font-family:'Inter',sans-serif;font-size:8.5pt;}
 .co{border-left:3px solid var(--acc);background:#f0f9ff;padding:8px 12px;margin:8px 0 12px;font-size:9.5pt;}
 .co.warn{border-color:#f59e0b;background:#fffbeb;}
 .co.danger{border-color:#dc2626;background:#fef2f2;}
@@ -764,158 +52,158 @@ hr{border:none;border-top:1px solid var(--ln);margin:15px 0;}
 .center{text-align:center;}
 .small{font-size:8.5pt;color:var(--mut);}
 .no-break{page-break-inside:avoid;}
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
+</style>
+</head>
+<body>
 
-&lt;div class=&quot;ph&quot;&gt;
-  &lt;span class=&quot;ph-ref&quot;&gt;Ref: Documentación Legal Oficial | Confidencial&lt;/span&gt;
-  &lt;img src=&quot;https://beliz.com.ar/logo.png&quot; alt=&quot;BELIZ™&quot; style=&quot;height:8mm;&quot;&gt;
-&lt;/div&gt;
+<div class="ph">
+  <span class="ph-ref">Ref: Documentación Legal Oficial | Confidencial</span>
+  <img src="https://beliz.com.ar/logo.png" alt="BELIZ™" style="height:8mm;">
+</div>
 
-&lt;div class=&quot;pf&quot;&gt;
-  &lt;span&gt;BELIZ™ | División Forense&lt;/span&gt;
-  &lt;span&gt;NDA Pre-Comercial v1.1 — Documento Pre-Contractual&lt;/span&gt;
-&lt;/div&gt;
+<div class="pf">
+  <span>BELIZ™ | División Forense</span>
+  <span>NDA Pre-Comercial v1.1 — Documento Pre-Contractual</span>
+</div>
 
-&lt;div class=&quot;doc&quot;&gt;
-&lt;div class=&quot;body&quot;&gt;
+<div class="doc">
+<div class="body">
 
-&lt;!-- COVER --&gt;
-&lt;div class=&quot;cover&quot;&gt;
-  &lt;img src=&quot;https://beliz.com.ar/logo.png&quot; alt=&quot;BELIZ™&quot; style=&quot;height:60pt;margin-bottom:5px;&quot;&gt;
-  &lt;div class=&quot;cover-div&quot;&gt;División Forense&lt;/div&gt;
-  &lt;div class=&quot;cover-title&quot;&gt;Acuerdo de Confidencialidad&lt;br&gt;Pre-Comercial (NDA)&lt;/div&gt;
-  &lt;div class=&quot;cover-sub&quot;&gt;Documento Pre-Contractual | Confidencial&lt;/div&gt;
-  &lt;div class=&quot;cover-ver&quot;&gt;Versión Blindada v1.1&lt;/div&gt;
-&lt;/div&gt;
+<!-- COVER -->
+<div class="cover">
+  <img src="https://beliz.com.ar/logo.png" alt="BELIZ™" style="height:60pt;margin-bottom:5px;">
+  <div class="cover-div">División Forense</div>
+  <div class="cover-title">Acuerdo de Confidencialidad<br>Pre-Comercial (NDA)</div>
+  <div class="cover-sub">Documento Pre-Contractual | Confidencial</div>
+  <div class="cover-ver">Versión Blindada v1.1</div>
+</div>
 
-&lt;!-- COMPARECENCIA --&gt;
-&lt;p&gt;En la ciudad de &lt;strong&gt;Santa Rosa&lt;/strong&gt;, Provincia de La Pampa, República Argentina, a los &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt; días del mes de &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt; de &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;, entre:&lt;/p&gt;
+<!-- COMPARECENCIA -->
+<p>En la ciudad de <strong>Santa Rosa</strong>, Provincia de La Pampa, República Argentina, a los <span class="fill-s"></span> días del mes de <span class="fill-s"></span> de <span class="fill-s"></span>, entre:</p>
 
-&lt;p&gt;&lt;strong&gt;PARTE REVELADORA:&lt;/strong&gt;&lt;/p&gt;
-&lt;table class=&quot;th-col&quot;&gt;
-&lt;tr&gt;&lt;td&gt;Denominación&lt;/td&gt;&lt;td&gt;BELIZ™ — División Forense&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Representante&lt;/td&gt;&lt;td&gt;AGUSTÍN BELIZ&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;DNI&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;CUIT&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Domicilio&lt;/td&gt;&lt;td&gt;Santa Rosa, Provincia de La Pampa&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-&lt;p&gt;En adelante, &lt;strong&gt;&quot;BELIZ™&quot;&lt;/strong&gt;.&lt;/p&gt;
+<p><strong>PARTE REVELADORA:</strong></p>
+<table class="th-col">
+<tr><td>Denominación</td><td>BELIZ™ — División Forense</td></tr>
+<tr><td>Representante</td><td>AGUSTÍN BELIZ</td></tr>
+<tr><td>DNI</td><td><span class="fill"></span></td></tr>
+<tr><td>CUIT</td><td><span class="fill"></span></td></tr>
+<tr><td>Domicilio</td><td>Santa Rosa, Provincia de La Pampa</td></tr>
+</table>
+<p>En adelante, <strong>"BELIZ™"</strong>.</p>
 
-&lt;p&gt;&lt;strong&gt;PARTE RECEPTORA:&lt;/strong&gt;&lt;/p&gt;
-&lt;table class=&quot;th-col&quot;&gt;
-&lt;tr&gt;&lt;td&gt;Razón social&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill-l&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;CUIT&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Domicilio&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill-l&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Representante&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill&quot;&gt;&lt;/span&gt;, DNI &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Cargo&lt;/td&gt;&lt;td&gt;&lt;span class=&quot;fill&quot;&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;
-&lt;/table&gt;
-&lt;p&gt;En adelante, el &lt;strong&gt;&quot;RECEPTOR&quot;&lt;/strong&gt;. Conjuntamente, las &lt;strong&gt;&quot;Partes&quot;&lt;/strong&gt;.&lt;/p&gt;
+<p><strong>PARTE RECEPTORA:</strong></p>
+<table class="th-col">
+<tr><td>Razón social</td><td><span class="fill-l"></span></td></tr>
+<tr><td>CUIT</td><td><span class="fill"></span></td></tr>
+<tr><td>Domicilio</td><td><span class="fill-l"></span></td></tr>
+<tr><td>Representante</td><td><span class="fill"></span>, DNI <span class="fill-s"></span></td></tr>
+<tr><td>Cargo</td><td><span class="fill"></span></td></tr>
+</table>
+<p>En adelante, el <strong>"RECEPTOR"</strong>. Conjuntamente, las <strong>"Partes"</strong>.</p>
 
-&lt;hr&gt;
+<hr>
 
-&lt;!-- CLÁUSULA 1 --&gt;
-&lt;h2&gt;Cláusula 1 — Objeto&lt;/h2&gt;
-&lt;p&gt;El presente acuerdo tiene por objeto regular el tratamiento de la información confidencial que las Partes intercambien durante las conversaciones comerciales previas a la eventual contratación de servicios de auditoría forense de facturación.&lt;/p&gt;
+<!-- CLÁUSULA 1 -->
+<h2>Cláusula 1 — Objeto</h2>
+<p>El presente acuerdo tiene por objeto regular el tratamiento de la información confidencial que las Partes intercambien durante las conversaciones comerciales previas a la eventual contratación de servicios de auditoría forense de facturación.</p>
 
-&lt;!-- CLÁUSULA 2 --&gt;
-&lt;h2&gt;Cláusula 2 — Información Confidencial&lt;/h2&gt;
-&lt;p&gt;Se considera &lt;strong&gt;Información Confidencial&lt;/strong&gt; toda información, datos, documentos, materiales, metodologías, algoritmos, reglas de negocio, modelos financieros, datos de clientes, estrategias comerciales, software, know-how y cualquier otro contenido revelado por una Parte a la otra, ya sea de forma oral, escrita, electrónica o por cualquier otro medio, incluyendo pero no limitado a:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Propuestas comerciales y económicas&lt;/li&gt;
-&lt;li&gt;Estimaciones de exposición financiera&lt;/li&gt;
-&lt;li&gt;Descripciones técnicas del motor de reglas&lt;/li&gt;
-&lt;li&gt;Datos de facturación y prestacionales del RECEPTOR&lt;/li&gt;
-&lt;li&gt;Informes preliminares o de diagnóstico&lt;/li&gt;
-&lt;li&gt;Cualquier documentación marcada como &quot;Confidencial&quot; o que razonablemente deba considerarse como tal&lt;/li&gt;
-&lt;/ul&gt;
+<!-- CLÁUSULA 2 -->
+<h2>Cláusula 2 — Información Confidencial</h2>
+<p>Se considera <strong>Información Confidencial</strong> toda información, datos, documentos, materiales, metodologías, algoritmos, reglas de negocio, modelos financieros, datos de clientes, estrategias comerciales, software, know-how y cualquier otro contenido revelado por una Parte a la otra, ya sea de forma oral, escrita, electrónica o por cualquier otro medio, incluyendo pero no limitado a:</p>
+<ul>
+<li>Propuestas comerciales y económicas</li>
+<li>Estimaciones de exposición financiera</li>
+<li>Descripciones técnicas del motor de reglas</li>
+<li>Datos de facturación y prestacionales del RECEPTOR</li>
+<li>Informes preliminares o de diagnóstico</li>
+<li>Cualquier documentación marcada como "Confidencial" o que razonablemente deba considerarse como tal</li>
+</ul>
 
-&lt;!-- CLÁUSULA 3 --&gt;
-&lt;h2&gt;Cláusula 3 — Obligaciones&lt;/h2&gt;
-&lt;p&gt;La Parte Receptora se obliga a:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;No divulgar&lt;/strong&gt; la Información Confidencial a terceros sin consentimiento previo y por escrito de la Parte Reveladora.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Limitar el acceso&lt;/strong&gt; exclusivamente al personal que necesite conocerla para evaluar la relación comercial.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;No utilizar&lt;/strong&gt; la información para fines distintos al objeto del presente acuerdo.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;No copiar, reproducir ni almacenar&lt;/strong&gt; la información más allá de lo estrictamente necesario.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Devolver o destruir&lt;/strong&gt; toda la información confidencial dentro de los &lt;strong&gt;diez (10) días&lt;/strong&gt; siguientes a la solicitud de la Parte Reveladora o a la finalización de las conversaciones, debiendo emitir &lt;strong&gt;constancia escrita certificada&lt;/strong&gt; de la destrucción o devolución completa.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;No utilizar&lt;/strong&gt; la información revelada por BELIZ™ para desarrollar, adquirir, contratar o financiar herramientas, servicios o sistemas que repliquen, imiten o sustituyan total o parcialmente la funcionalidad, metodología o lógica de detección de la tecnología BELIZ™.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;No contratar, vincular ni asociar&lt;/strong&gt;, directa o indirectamente, a personal, colaboradores o consultores de BELIZ™ que hayan participado en las conversaciones comerciales, durante la vigencia del presente acuerdo y por un plazo de &lt;strong&gt;doce (12) meses&lt;/strong&gt; posteriores a su terminación.&lt;/li&gt;
-&lt;/ol&gt;
+<!-- CLÁUSULA 3 -->
+<h2>Cláusula 3 — Obligaciones</h2>
+<p>La Parte Receptora se obliga a:</p>
+<ol>
+<li><strong>No divulgar</strong> la Información Confidencial a terceros sin consentimiento previo y por escrito de la Parte Reveladora.</li>
+<li><strong>Limitar el acceso</strong> exclusivamente al personal que necesite conocerla para evaluar la relación comercial.</li>
+<li><strong>No utilizar</strong> la información para fines distintos al objeto del presente acuerdo.</li>
+<li><strong>No copiar, reproducir ni almacenar</strong> la información más allá de lo estrictamente necesario.</li>
+<li><strong>Devolver o destruir</strong> toda la información confidencial dentro de los <strong>diez (10) días</strong> siguientes a la solicitud de la Parte Reveladora o a la finalización de las conversaciones, debiendo emitir <strong>constancia escrita certificada</strong> de la destrucción o devolución completa.</li>
+<li><strong>No utilizar</strong> la información revelada por BELIZ™ para desarrollar, adquirir, contratar o financiar herramientas, servicios o sistemas que repliquen, imiten o sustituyan total o parcialmente la funcionalidad, metodología o lógica de detección de la tecnología BELIZ™.</li>
+<li><strong>No contratar, vincular ni asociar</strong>, directa o indirectamente, a personal, colaboradores o consultores de BELIZ™ que hayan participado en las conversaciones comerciales, durante la vigencia del presente acuerdo y por un plazo de <strong>doce (12) meses</strong> posteriores a su terminación.</li>
+</ol>
 
-&lt;!-- CLÁUSULA 4 --&gt;
-&lt;h2&gt;Cláusula 4 — Excepciones&lt;/h2&gt;
-&lt;p&gt;No se considerará Información Confidencial aquella que:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Sea o devenga de &lt;strong&gt;dominio público&lt;/strong&gt; sin culpa del RECEPTOR&lt;/li&gt;
-&lt;li&gt;Haya sido conocida &lt;strong&gt;previamente&lt;/strong&gt; por el RECEPTOR de manera lícita&lt;/li&gt;
-&lt;li&gt;Sea recibida de un &lt;strong&gt;tercero&lt;/strong&gt; sin obligación de confidencialidad&lt;/li&gt;
-&lt;li&gt;Deba ser revelada por &lt;strong&gt;orden judicial&lt;/strong&gt; o disposición legal, previa notificación a la otra Parte&lt;/li&gt;
-&lt;/ul&gt;
+<!-- CLÁUSULA 4 -->
+<h2>Cláusula 4 — Excepciones</h2>
+<p>No se considerará Información Confidencial aquella que:</p>
+<ul>
+<li>Sea o devenga de <strong>dominio público</strong> sin culpa del RECEPTOR</li>
+<li>Haya sido conocida <strong>previamente</strong> por el RECEPTOR de manera lícita</li>
+<li>Sea recibida de un <strong>tercero</strong> sin obligación de confidencialidad</li>
+<li>Deba ser revelada por <strong>orden judicial</strong> o disposición legal, previa notificación a la otra Parte</li>
+</ul>
 
-&lt;!-- CLÁUSULA 5 --&gt;
-&lt;h2&gt;Cláusula 5 — Propiedad Intelectual&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;5.1.&lt;/strong&gt; El presente acuerdo &lt;strong&gt;no otorga&lt;/strong&gt; al RECEPTOR ningún derecho de propiedad intelectual, industrial o de autor sobre la tecnología, metodología, algoritmos, reglas de negocio, software, reportes, modelos forenses o know-how de BELIZ™. Toda la información técnica revelada permanece como &lt;strong&gt;propiedad exclusiva e inalienable&lt;/strong&gt; de BELIZ™, protegida por la Ley 11.723 y normativa concordante.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;5.2.&lt;/strong&gt; Queda &lt;strong&gt;terminantemente prohibido&lt;/strong&gt; al RECEPTOR utilizar la información revelada por BELIZ™ —incluyendo demos, estimaciones de exposición, descripciones técnicas y cualquier material presentado— para &lt;strong&gt;entrenar, configurar, calibrar o desarrollar&lt;/strong&gt; sistemas propios o de terceros, incluyendo modelos de inteligencia artificial o machine learning.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;5.3.&lt;/strong&gt; La violación de las prohibiciones del presente artículo generará una &lt;strong&gt;penalidad&lt;/strong&gt; equivalente a &lt;strong&gt;PESOS CINCUENTA MILLONES ($50.000.000)&lt;/strong&gt;, sin perjuicio de las acciones civiles y penales que correspondan.&lt;/p&gt;
+<!-- CLÁUSULA 5 -->
+<h2>Cláusula 5 — Propiedad Intelectual</h2>
+<p><strong>5.1.</strong> El presente acuerdo <strong>no otorga</strong> al RECEPTOR ningún derecho de propiedad intelectual, industrial o de autor sobre la tecnología, metodología, algoritmos, reglas de negocio, software, reportes, modelos forenses o know-how de BELIZ™. Toda la información técnica revelada permanece como <strong>propiedad exclusiva e inalienable</strong> de BELIZ™, protegida por la Ley 11.723 y normativa concordante.</p>
+<p><strong>5.2.</strong> Queda <strong>terminantemente prohibido</strong> al RECEPTOR utilizar la información revelada por BELIZ™ —incluyendo demos, estimaciones de exposición, descripciones técnicas y cualquier material presentado— para <strong>entrenar, configurar, calibrar o desarrollar</strong> sistemas propios o de terceros, incluyendo modelos de inteligencia artificial o machine learning.</p>
+<p><strong>5.3.</strong> La violación de las prohibiciones del presente artículo generará una <strong>penalidad</strong> equivalente a <strong>PESOS CINCUENTA MILLONES ($50.000.000)</strong>, sin perjuicio de las acciones civiles y penales que correspondan.</p>
 
-&lt;!-- CLÁUSULA 6 --&gt;
-&lt;h2&gt;Cláusula 6 — Vigencia&lt;/h2&gt;
-&lt;p&gt;La obligación de confidencialidad se mantendrá vigente por los siguientes plazos, contados desde la fecha de firma del presente, independientemente de que se concrete o no la relación contractual:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Cinco (5) años&lt;/strong&gt; para información comercial, estratégica y operativa&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Diez (10) años&lt;/strong&gt; para información relativa a propiedad intelectual, tecnología propietaria, algoritmos, reglas de negocio, metodología y know-how de BELIZ™&lt;/li&gt;
-&lt;/ul&gt;
+<!-- CLÁUSULA 6 -->
+<h2>Cláusula 6 — Vigencia</h2>
+<p>La obligación de confidencialidad se mantendrá vigente por los siguientes plazos, contados desde la fecha de firma del presente, independientemente de que se concrete o no la relación contractual:</p>
+<ul>
+<li><strong>Cinco (5) años</strong> para información comercial, estratégica y operativa</li>
+<li><strong>Diez (10) años</strong> para información relativa a propiedad intelectual, tecnología propietaria, algoritmos, reglas de negocio, metodología y know-how de BELIZ™</li>
+</ul>
 
-&lt;!-- CLÁUSULA 7 --&gt;
-&lt;h2&gt;Cláusula 7 — Penalidad&lt;/h2&gt;
-&lt;p&gt;El incumplimiento de las obligaciones de confidencialidad asumidas en el presente acuerdo generará una &lt;strong&gt;penalidad&lt;/strong&gt; de &lt;strong&gt;PESOS VEINTE MILLONES ($20.000.000)&lt;/strong&gt;, sin perjuicio de las acciones civiles y penales que pudieran corresponder y de la indemnización por los daños y perjuicios efectivamente sufridos.&lt;/p&gt;
+<!-- CLÁUSULA 7 -->
+<h2>Cláusula 7 — Penalidad</h2>
+<p>El incumplimiento de las obligaciones de confidencialidad asumidas en el presente acuerdo generará una <strong>penalidad</strong> de <strong>PESOS VEINTE MILLONES ($20.000.000)</strong>, sin perjuicio de las acciones civiles y penales que pudieran corresponder y de la indemnización por los daños y perjuicios efectivamente sufridos.</p>
 
-&lt;!-- CLÁUSULA 8 --&gt;
-&lt;h2&gt;Cláusula 8 — Protección de Datos Personales&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;8.1.&lt;/strong&gt; En caso de que durante las conversaciones comerciales el RECEPTOR provea datos personales o datos sensibles de salud (exportables de facturación con datos de pacientes), BELIZ™ los tratará conforme a la &lt;strong&gt;Ley 25.326 de Protección de Datos Personales&lt;/strong&gt;, en calidad de &lt;strong&gt;Encargado de Tratamiento&lt;/strong&gt; (art. 25, Ley 25.326), exclusivamente para la elaboración de estimaciones de exposición financiera.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;8.2.&lt;/strong&gt; BELIZ™ procederá a la &lt;strong&gt;destrucción certificada&lt;/strong&gt; de dichos datos dentro de los &lt;strong&gt;diez (10) días&lt;/strong&gt; siguientes a la finalización de las conversaciones comerciales si no se concreta la relación contractual.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;8.3.&lt;/strong&gt; BELIZ™ queda facultado a utilizar datos &lt;strong&gt;debidamente anonimizados e irreversiblemente disociados&lt;/strong&gt; (art. 11 inc. 3.e, Ley 25.326) para el desarrollo y mejora de sus algoritmos, sin que ello constituya comunicación de datos personales.&lt;/p&gt;
+<!-- CLÁUSULA 8 -->
+<h2>Cláusula 8 — Protección de Datos Personales</h2>
+<p><strong>8.1.</strong> En caso de que durante las conversaciones comerciales el RECEPTOR provea datos personales o datos sensibles de salud (exportables de facturación con datos de pacientes), BELIZ™ los tratará conforme a la <strong>Ley 25.326 de Protección de Datos Personales</strong>, en calidad de <strong>Encargado de Tratamiento</strong> (art. 25, Ley 25.326), exclusivamente para la elaboración de estimaciones de exposición financiera.</p>
+<p><strong>8.2.</strong> BELIZ™ procederá a la <strong>destrucción certificada</strong> de dichos datos dentro de los <strong>diez (10) días</strong> siguientes a la finalización de las conversaciones comerciales si no se concreta la relación contractual.</p>
+<p><strong>8.3.</strong> BELIZ™ queda facultado a utilizar datos <strong>debidamente anonimizados e irreversiblemente disociados</strong> (art. 11 inc. 3.e, Ley 25.326) para el desarrollo y mejora de sus algoritmos, sin que ello constituya comunicación de datos personales.</p>
 
-&lt;!-- CLÁUSULA 9 --&gt;
-&lt;h2&gt;Cláusula 9 — Jurisdicción&lt;/h2&gt;
-&lt;p&gt;Las Partes se someten a la jurisdicción exclusiva de los &lt;strong&gt;Tribunales Ordinarios de la ciudad de Santa Rosa, Provincia de La Pampa&lt;/strong&gt;, con renuncia expresa a cualquier otro fuero.&lt;/p&gt;
+<!-- CLÁUSULA 9 -->
+<h2>Cláusula 9 — Jurisdicción</h2>
+<p>Las Partes se someten a la jurisdicción exclusiva de los <strong>Tribunales Ordinarios de la ciudad de Santa Rosa, Provincia de La Pampa</strong>, con renuncia expresa a cualquier otro fuero.</p>
 
-&lt;!-- CLÁUSULA 10 --&gt;
-&lt;h2&gt;Cláusula 10 — Supervivencia&lt;/h2&gt;
-&lt;p&gt;Las obligaciones de confidencialidad, propiedad intelectual, no competencia, no contratación de personal y protección de datos personales previstas en el presente acuerdo &lt;strong&gt;subsistirán&lt;/strong&gt; con posterioridad a su terminación, por cualquier causa, durante los plazos indicados en cada cláusula.&lt;/p&gt;
+<!-- CLÁUSULA 10 -->
+<h2>Cláusula 10 — Supervivencia</h2>
+<p>Las obligaciones de confidencialidad, propiedad intelectual, no competencia, no contratación de personal y protección de datos personales previstas en el presente acuerdo <strong>subsistirán</strong> con posterioridad a su terminación, por cualquier causa, durante los plazos indicados en cada cláusula.</p>
 
-&lt;hr&gt;
+<hr>
 
-&lt;!-- FIRMAS --&gt;
-&lt;h2&gt;Firmas&lt;/h2&gt;
-&lt;p&gt;En prueba de conformidad, se firman &lt;strong&gt;dos (2) ejemplares&lt;/strong&gt; de un mismo tenor y a un solo efecto, en el lugar y fecha indicados en el encabezamiento.&lt;/p&gt;
+<!-- FIRMAS -->
+<h2>Firmas</h2>
+<p>En prueba de conformidad, se firman <strong>dos (2) ejemplares</strong> de un mismo tenor y a un solo efecto, en el lugar y fecha indicados en el encabezamiento.</p>
 
-&lt;div class=&quot;sig&quot;&gt;
-  &lt;div class=&quot;sig-box&quot;&gt;
-    &lt;div class=&quot;sig-line&quot;&gt;&lt;/div&gt;
-    &lt;p&gt;&lt;strong&gt;POR BELIZ™:&lt;/strong&gt;&lt;/p&gt;
-    &lt;p&gt;Nombre: Agustín Beliz&lt;/p&gt;
-    &lt;p&gt;Cargo: CEO — BELIZ™&lt;/p&gt;
-    &lt;p&gt;DNI: &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-    &lt;p&gt;Fecha: &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;sig-box&quot;&gt;
-    &lt;div class=&quot;sig-line&quot;&gt;&lt;/div&gt;
-    &lt;p&gt;&lt;strong&gt;POR EL RECEPTOR:&lt;/strong&gt;&lt;/p&gt;
-    &lt;p&gt;Nombre: &lt;span class=&quot;fill&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-    &lt;p&gt;Cargo: &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-    &lt;p&gt;DNI: &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-    &lt;p&gt;Fecha: &lt;span class=&quot;fill-s&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+<div class="sig">
+  <div class="sig-box">
+    <div class="sig-line"></div>
+    <p><strong>POR BELIZ™:</strong></p>
+    <p>Nombre: Agustín Beliz</p>
+    <p>Cargo: CEO — BELIZ™</p>
+    <p>DNI: <span class="fill-s"></span></p>
+    <p>Fecha: <span class="fill-s"></span></p>
+  </div>
+  <div class="sig-box">
+    <div class="sig-line"></div>
+    <p><strong>POR EL RECEPTOR:</strong></p>
+    <p>Nombre: <span class="fill"></span></p>
+    <p>Cargo: <span class="fill-s"></span></p>
+    <p>DNI: <span class="fill-s"></span></p>
+    <p>Fecha: <span class="fill-s"></span></p>
+  </div>
+</div>
 
-&lt;hr&gt;
-&lt;p class=&quot;small center&quot;&gt;Documento pre-contractual confidencial — BELIZ™ — NDA v1.1&lt;/p&gt;
+<hr>
+<p class="small center">Documento pre-contractual confidencial — BELIZ™ — NDA v1.1</p>
 
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;document.addEventListener(&#x27;DOMContentLoaded&#x27;,function(){var b=document.createElement(&#x27;button&#x27;);b.className=&#x27;no-print&#x27;;b.textContent=&#x27;Imprimir documento&#x27;;b.style.cssText=&#x27;position:fixed;bottom:20px;right:20px;z-index:99999;padding:12px 24px;background:#0F766E;color:#fff;border:none;border-radius:6px;cursor:pointer;font-family:Inter,sans-serif;font-size:11pt;font-weight:700;box-shadow:0 4px 12px rgba(0,0,0,.2);&#x27;;b.onclick=function(){window.print();};document.body.appendChild(b);});&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
+</div>
+</div>
+<script>document.addEventListener('DOMContentLoaded',function(){var b=document.createElement('button');b.className='no-print';b.textContent='Imprimir documento';b.style.cssText='position:fixed;bottom:20px;right:20px;z-index:99999;padding:12px 24px;background:#0F766E;color:#fff;border:none;border-radius:6px;cursor:pointer;font-family:Inter,sans-serif;font-size:11pt;font-weight:700;box-shadow:0 4px 12px rgba(0,0,0,.2);';b.onclick=function(){window.print();};document.body.appendChild(b);});</script>
+</body>
+</html>
